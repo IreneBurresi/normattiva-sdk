@@ -1,0 +1,1047 @@
+/* ---------------------------------------------------------------------------
+ * Carta e inchiostro.
+ *
+ * La tavolozza viene da «Norma in Chiaro»: carta calda, inchiostro
+ * verde-grigio invece che nero, e un indaco profondo come unico accento di
+ * marca. Gli altri accenti restano riservati alla sintassi del codice.
+ * Qui sono ridotti a quello che serve a una documentazione, e mappati sulle
+ * variabili di Material.
+ *
+ * Due strati, come nell'originale:
+ *   1. --raw-*   la tavolozza grezza, che non nomina un ruolo
+ *   2. --md-*    le variabili di Material, che sono i ruoli
+ * ------------------------------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  /* --- carta (neutri chiari) --- */
+  --raw-paper-0: #ffffff;
+  --raw-paper-50: #f6f5f1;
+  --raw-paper-100: #edece6;
+  --raw-paper-150: #eeede7;
+  --raw-paper-200: #d8d6ce;
+  --raw-paper-300: #b7b4a8;
+  --raw-paper-400: #e6e4dc;
+  --raw-paper-500: #8b9089;
+
+  /* --- inchiostro (testo su carta) --- */
+  --raw-ink-500: #8b9089;
+  --raw-ink-600: #565f59;
+  --raw-ink-900: #1e2321;
+
+  /* --- notte (neutri scuri) --- */
+  --raw-night-0: #0e1011;
+  --raw-night-600: #6d7269;
+  --raw-night-700: #3c403c;
+  --raw-night-800: #2d302e;
+  --raw-night-850: #1d2022;
+  --raw-night-900: #1a1d1f;
+  --raw-night-950: #16181a;
+  --raw-mist-100: #e9e7e0;
+  --raw-mist-300: #a8a79e;
+  --raw-mist-400: #6d7269;
+
+  /* --- indaco: l'unico accento di marca --- */
+  --raw-indaco-100: #ecebf7;
+  --raw-indaco-200: #c7c1e6;
+  --raw-indaco-300: #a89bf0;
+  --raw-indaco-600: #3d3470;
+  --raw-indaco-800: #26223f;
+  --raw-notte-900: #221d40;
+  --raw-notte-950: #1c1834;
+  --raw-notte-990: #14112a;
+
+  /* --- gli altri accenti: qui servono alla sintassi e alle ammonizioni --- */
+  --raw-blue-300: #7fbee8;
+  --raw-blue-600: #1f5a87;
+  --raw-purple-300: #a99be0;
+  --raw-purple-600: #55488a;
+  --raw-rose-300: #f090ab;
+  --raw-rose-600: #a8365a;
+  --raw-ochre-300: #e0b94a;
+  --raw-ochre-700: #7a5f14;
+  --raw-verde-300: #7fc9a3;
+  --raw-verde-600: #2f6b52;
+
+  /* --- caratteri ---
+     Due ruoli, non due gusti. Lo slab (Zilla Slab) è per la prosa: righe lunghe
+     da leggere di seguito. Il grotesque (Public Sans) è per tutto ciò che si
+     guarda invece di leggere — menu, schede, indice, etichette, titoli — dove
+     conta riconoscere una parola a colpo d'occhio, non seguirne cento.
+     Public Sans è disegnato per i documenti pubblici, ed è più caldo dei
+     grotesque da interfaccia, che accanto a questa carta risultano freddi. */
+  --nrm-font-titoli: "Public Sans", "Zilla Slab", -apple-system, system-ui, sans-serif;
+  /* La pila è scritta per esteso e non con `var(--md-text-font-family)`: quella
+     variabile Material la definisce su `body`, non su `:root`, e annidarla qui
+     rende l'intero token invalido. Il sintomo è muto — `font-family` ripiega
+     sull'ereditato, quindi il titolo prende il carattere del corpo e sembra
+     solo che la regola non sia stata scritta. */
+
+  /* --- movimento: una curva sola per ogni controllo --- */
+  --nrm-ease: cubic-bezier(0.2, 0, 0.2, 1);
+  --nrm-hover: 120ms;
+  --nrm-toggle: 180ms;
+
+  /* --- la banda dell'intestazione, che è la stessa in entrambi i temi --- */
+  --nrm-banda: var(--raw-notte-950);
+  --nrm-su-banda: var(--raw-paper-400);
+}
+
+/* ============================== tema chiaro ============================== */
+
+[data-md-color-scheme="normattiva"] {
+  --md-default-bg-color: var(--raw-paper-50);
+  --md-default-bg-color--light: var(--raw-paper-100);
+  --md-default-bg-color--lighter: var(--raw-paper-150);
+  --md-default-fg-color: var(--raw-ink-900);
+  --md-default-fg-color--light: var(--raw-ink-600);
+  --md-default-fg-color--lighter: var(--raw-ink-500);
+  --md-default-fg-color--lightest: var(--raw-paper-200);
+
+  --md-primary-fg-color: var(--nrm-banda);
+  --md-primary-fg-color--light: var(--raw-notte-900);
+  --md-primary-fg-color--dark: var(--raw-notte-990);
+  --md-primary-bg-color: var(--nrm-su-banda);
+  --md-primary-bg-color--light: color-mix(in srgb, var(--nrm-su-banda) 70%, transparent);
+
+  --md-accent-fg-color: var(--raw-indaco-600);
+  --md-accent-fg-color--transparent: color-mix(in srgb, var(--raw-indaco-600) 10%, transparent);
+  --md-accent-bg-color: var(--raw-paper-0);
+
+  --md-typeset-color: var(--raw-ink-900);
+  --md-typeset-a-color: var(--raw-indaco-600);
+  --md-typeset-mark-color: var(--raw-indaco-100);
+  --md-typeset-del-color: color-mix(in srgb, var(--raw-rose-600) 18%, transparent);
+  --md-typeset-ins-color: color-mix(in srgb, var(--raw-indaco-600) 18%, transparent);
+
+  --md-code-fg-color: var(--raw-ink-900);
+  --md-code-bg-color: var(--raw-paper-150);
+  --md-code-hl-color: color-mix(in srgb, var(--raw-ochre-700) 16%, transparent);
+  --md-code-hl-keyword-color: var(--raw-purple-600);
+  --md-code-hl-string-color: var(--raw-ochre-700);
+  --md-code-hl-function-color: var(--raw-blue-600);
+  --md-code-hl-number-color: var(--raw-rose-600);
+  --md-code-hl-constant-color: var(--raw-indaco-600);
+  --md-code-hl-name-color: var(--raw-ink-900);
+  --md-code-hl-operator-color: var(--raw-ink-600);
+  --md-code-hl-punctuation-color: var(--raw-ink-600);
+  --md-code-hl-comment-color: var(--raw-ink-500);
+
+  --md-footer-bg-color: var(--raw-notte-950);
+  --md-footer-bg-color--dark: var(--raw-notte-990);
+  --md-footer-fg-color: var(--raw-paper-400);
+
+  --nrm-selezione: var(--raw-indaco-200);
+  --nrm-avviso: var(--raw-ochre-700);
+  --nrm-icona-tenue: var(--raw-paper-500);
+  --nrm-icona-viva: var(--raw-ink-600);
+  --nrm-barra-codice: color-mix(in srgb, var(--raw-ink-900) 7%, transparent);
+  --nrm-conferma: var(--raw-verde-600);
+
+  --md-mermaid-font-family: var(--nrm-font-titoli);
+  --md-mermaid-edge-color: var(--raw-paper-500);
+  --md-mermaid-node-bg-color: var(--raw-indaco-100);
+  --md-mermaid-node-fg-color: var(--raw-indaco-600);
+  --md-mermaid-label-bg-color: var(--raw-paper-0);
+  --md-mermaid-label-fg-color: var(--raw-ink-900);
+  --md-mermaid-sequence-actor-bg-color: var(--raw-paper-0);
+  --md-mermaid-sequence-actor-fg-color: var(--raw-ink-900);
+  --md-mermaid-sequence-actor-border-color: var(--raw-indaco-600);
+  --md-mermaid-sequence-actor-line-color: var(--raw-paper-300);
+  --md-mermaid-sequence-box-bg-color: var(--raw-paper-100);
+  --md-mermaid-sequence-label-bg-color: var(--raw-indaco-100);
+  --md-mermaid-sequence-label-fg-color: var(--raw-indaco-600);
+  --md-mermaid-sequence-loop-bg-color: var(--raw-paper-0);
+  --md-mermaid-sequence-loop-border-color: var(--raw-indaco-600);
+  --md-mermaid-sequence-message-line-color: var(--raw-paper-500);
+  --md-mermaid-sequence-message-fg-color: var(--raw-ink-900);
+  --md-mermaid-sequence-note-bg-color: var(--raw-paper-100);
+  --md-mermaid-sequence-note-fg-color: var(--raw-ink-600);
+  --md-mermaid-sequence-note-border-color: var(--raw-paper-200);
+  --md-mermaid-sequence-number-bg-color: var(--raw-indaco-600);
+  --md-mermaid-sequence-number-fg-color: var(--raw-paper-0);
+
+  color-scheme: light;
+}
+
+/* =============================== tema scuro ============================== */
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: var(--raw-night-950);
+  --md-default-bg-color--light: var(--raw-night-900);
+  --md-default-bg-color--lighter: var(--raw-night-850);
+  --md-default-fg-color: var(--raw-mist-100);
+  --md-default-fg-color--light: var(--raw-mist-300);
+  --md-default-fg-color--lighter: var(--raw-mist-400);
+  --md-default-fg-color--lightest: var(--raw-night-800);
+
+  --md-primary-fg-color: var(--raw-notte-990);
+  --md-primary-fg-color--light: var(--raw-notte-950);
+  --md-primary-fg-color--dark: var(--raw-night-0);
+  --md-primary-bg-color: var(--raw-paper-400);
+  --md-primary-bg-color--light: color-mix(in srgb, var(--raw-paper-400) 70%, transparent);
+
+  --md-accent-fg-color: var(--raw-indaco-300);
+  --md-accent-fg-color--transparent: color-mix(in srgb, var(--raw-indaco-300) 12%, transparent);
+  --md-accent-bg-color: var(--raw-night-0);
+
+  --md-typeset-color: var(--raw-mist-100);
+  --md-typeset-a-color: var(--raw-indaco-300);
+  --md-typeset-mark-color: var(--raw-notte-900);
+
+  --md-code-fg-color: var(--raw-mist-100);
+  --md-code-bg-color: var(--raw-night-850);
+  --md-code-hl-keyword-color: var(--raw-purple-300);
+  --md-code-hl-string-color: var(--raw-ochre-300);
+  --md-code-hl-function-color: var(--raw-blue-300);
+  --md-code-hl-number-color: var(--raw-rose-300);
+  --md-code-hl-constant-color: var(--raw-indaco-300);
+  --md-code-hl-name-color: var(--raw-mist-100);
+  --md-code-hl-operator-color: var(--raw-mist-300);
+  --md-code-hl-punctuation-color: var(--raw-mist-300);
+  --md-code-hl-comment-color: var(--raw-mist-400);
+
+  --md-footer-bg-color: var(--raw-notte-990);
+  --md-footer-bg-color--dark: var(--raw-night-0);
+
+  --nrm-banda: var(--raw-notte-990);
+  --nrm-selezione: var(--raw-indaco-800);
+  --nrm-avviso: var(--raw-ochre-300);
+  --nrm-icona-tenue: var(--raw-night-600);
+  --nrm-icona-viva: var(--raw-mist-300);
+  --nrm-barra-codice: color-mix(in srgb, var(--raw-mist-100) 10%, transparent);
+  --nrm-conferma: var(--raw-verde-300);
+
+  --md-mermaid-font-family: var(--nrm-font-titoli);
+  --md-mermaid-edge-color: var(--raw-mist-400);
+  --md-mermaid-node-bg-color: var(--raw-indaco-800);
+  --md-mermaid-node-fg-color: var(--raw-indaco-300);
+  --md-mermaid-label-bg-color: var(--raw-night-850);
+  --md-mermaid-label-fg-color: var(--raw-mist-100);
+  --md-mermaid-sequence-actor-bg-color: var(--raw-night-850);
+  --md-mermaid-sequence-actor-fg-color: var(--raw-mist-100);
+  --md-mermaid-sequence-actor-border-color: var(--raw-indaco-300);
+  --md-mermaid-sequence-actor-line-color: var(--raw-night-700);
+  --md-mermaid-sequence-box-bg-color: var(--raw-night-900);
+  --md-mermaid-sequence-label-bg-color: var(--raw-indaco-800);
+  --md-mermaid-sequence-label-fg-color: var(--raw-indaco-300);
+  --md-mermaid-sequence-loop-bg-color: var(--raw-night-900);
+  --md-mermaid-sequence-loop-border-color: var(--raw-indaco-300);
+  --md-mermaid-sequence-message-line-color: var(--raw-mist-400);
+  --md-mermaid-sequence-message-fg-color: var(--raw-mist-100);
+  --md-mermaid-sequence-note-bg-color: var(--raw-night-800);
+  --md-mermaid-sequence-note-fg-color: var(--raw-mist-300);
+  --md-mermaid-sequence-note-border-color: var(--raw-night-700);
+  --md-mermaid-sequence-number-bg-color: var(--raw-indaco-300);
+  --md-mermaid-sequence-number-fg-color: var(--raw-night-950);
+
+  color-scheme: dark;
+}
+
+::selection {
+  background: var(--nrm-selezione);
+}
+
+/* ============================== intestazione =============================
+   Una banda continua in indaco notte: intestazione e schede sono lo stesso
+   colore e non hanno
+   una linea fra loro, come sul sito di Material. L'ombra la porta solo la
+   pagina scrollata, così a riposo la banda è piatta e non finge un rilievo. */
+
+.md-header {
+  background-color: var(--nrm-banda);
+  box-shadow: none;
+}
+
+.md-header--shadow {
+  box-shadow:
+    0 0 0.2rem color-mix(in srgb, var(--raw-night-0) 10%, transparent),
+    0 0.2rem 0.4rem color-mix(in srgb, var(--raw-night-0) 20%, transparent);
+}
+
+.md-tabs {
+  background-color: var(--nrm-banda);
+}
+
+/* Il nome del sito porta il carattere da display: è l'unico posto
+   dell'intestazione dove un carattere con personalità non disturba la lettura. */
+.md-header__topic .md-ellipsis {
+  font-family: var(--nrm-font-titoli);
+  font-weight: 700;
+  letter-spacing: -0.015em;
+}
+
+/* Le schede: maiuscoletto spaziato, e il segno della scheda corrente è una
+   riga sotto invece di un semplice grassetto, che a questa dimensione non si
+   distingue. */
+.md-tabs__link {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  opacity: 0.72;
+  transition:
+    opacity var(--nrm-hover) var(--nrm-ease),
+    color var(--nrm-hover) var(--nrm-ease);
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  opacity: 1;
+}
+
+.md-tabs__item--active .md-tabs__link {
+  position: relative;
+  font-weight: 700;
+}
+
+.md-tabs__item--active .md-tabs__link::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: -0.35rem;
+  block-size: 2px;
+  border-radius: 2px;
+  background: var(--raw-indaco-300);
+}
+
+/* La ricerca è un pozzo dentro la banda, non un campo appoggiato sopra. */
+.md-search__form {
+  border-radius: 6px;
+  background-color: color-mix(in srgb, var(--raw-night-0) 28%, transparent);
+  transition: background-color var(--nrm-hover) var(--nrm-ease);
+}
+
+.md-search__form:hover {
+  background-color: color-mix(in srgb, var(--raw-night-0) 36%, transparent);
+}
+
+[data-md-toggle="search"]:checked ~ .md-header .md-search__form {
+  border-radius: 6px 6px 0 0;
+  background-color: var(--md-default-bg-color);
+}
+
+/* ============================ barra laterale ============================= */
+
+.md-nav__title {
+  font-family: var(--nrm-font-titoli);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.62rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.md-nav__link--active,
+.md-nav__link:focus,
+.md-nav__link:hover {
+  color: var(--md-accent-fg-color);
+}
+
+/* La voce corrente si legge da una riga sull'inizio, non solo dal colore:
+   il colore da solo non basta a chi non lo distingue (WCAG 1.4.1). */
+.md-sidebar--primary .md-nav__link--active {
+  font-weight: 700;
+  box-shadow: inset 2px 0 0 var(--md-accent-fg-color);
+  padding-inline-start: 0.6rem;
+  margin-inline-start: -0.6rem;
+}
+
+/* =============================== contenuto =============================== */
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: var(--nrm-font-titoli);
+  font-weight: 600;
+  letter-spacing: -0.018em;
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset h1 {
+  font-weight: 700;
+}
+
+/* Una riga sopra i titoli di secondo livello segna il cambio di argomento
+   meglio dello spazio da solo, che a schermo si legge come una pausa e basta. */
+.md-typeset h2 {
+  margin-block-start: 2.2em;
+  padding-block-start: 0.4em;
+  border-block-start: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset h1 + h2,
+.md-typeset hr + h2 {
+  margin-block-start: 1.2em;
+  padding-block-start: 0;
+  border-block-start: none;
+}
+
+.md-typeset a {
+  text-underline-offset: 2px;
+  transition:
+    color var(--nrm-hover) var(--nrm-ease),
+    text-decoration-thickness var(--nrm-hover) var(--nrm-ease);
+}
+
+.md-typeset a:hover {
+  text-decoration-thickness: 2px;
+}
+
+.md-typeset code {
+  border-radius: 4px;
+}
+
+.md-typeset pre > code {
+  border-radius: 12px;
+}
+
+.md-typeset blockquote {
+  border-inline-start: 3px solid var(--md-accent-fg-color);
+  color: var(--md-default-fg-color--light);
+}
+
+/* Le tabelle qui portano quasi sempre una decisione, non dei dati: vanno
+   lette, quindi la riga di intestazione si stacca. */
+.md-typeset table:not([class]) {
+  border-radius: 12px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.72rem;
+}
+
+.md-typeset table:not([class]) th {
+  background: var(--md-code-bg-color);
+  font-weight: 700;
+}
+
+/* ============================= ammonizioni ===============================
+   Due tipi in più. Le stranezze del servizio sono il cuore di questa
+   libreria, e confonderle con una nota qualunque le farebbe passare
+   inosservate. */
+
+:root {
+  --md-admonition-icon--trappola: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2 1 21h22L12 2Zm0 4.5L19.5 19h-15L12 6.5ZM11 10v4h2v-4h-2Zm0 6v2h2v-2h-2Z"/></svg>');
+  --md-admonition-icon--verificato: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 1 3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4Zm-1.2 15.4L7 12.6l1.4-1.4 2.4 2.4 5.4-5.4L17.6 9l-6.8 7.4Z"/></svg>');
+}
+
+.md-typeset .admonition.trappola,
+.md-typeset details.trappola {
+  border-color: var(--nrm-avviso);
+}
+
+.md-typeset .trappola > .admonition-title,
+.md-typeset .trappola > summary {
+  background-color: color-mix(in srgb, var(--nrm-avviso) 12%, transparent);
+}
+
+.md-typeset .trappola > .admonition-title::before,
+.md-typeset .trappola > summary::before {
+  background-color: var(--nrm-avviso);
+  -webkit-mask-image: var(--md-admonition-icon--trappola);
+  mask-image: var(--md-admonition-icon--trappola);
+}
+
+.md-typeset .admonition.verificato,
+.md-typeset details.verificato {
+  border-color: var(--nrm-conferma);
+}
+
+.md-typeset .verificato > .admonition-title,
+.md-typeset .verificato > summary {
+  background-color: color-mix(in srgb, var(--nrm-conferma) 12%, transparent);
+}
+
+.md-typeset .verificato > .admonition-title::before,
+.md-typeset .verificato > summary::before {
+  background-color: var(--nrm-conferma);
+  -webkit-mask-image: var(--md-admonition-icon--verificato);
+  mask-image: var(--md-admonition-icon--verificato);
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: 12px;
+  border-inline-start-width: 3px;
+  font-size: 0.72rem;
+}
+
+/* =========================== riferimento API =============================
+   Le firme sono lunghe e vanno lette a colpo d'occhio. */
+
+.doc-signature > pre > code {
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
+.doc-heading code {
+  background: none;
+  padding: 0;
+  font-weight: 700;
+  font-family: var(--md-code-font-family), monospace;
+  letter-spacing: -0.01em;
+}
+
+h3.doc-heading,
+h4.doc-heading,
+h5.doc-heading {
+  margin-block-start: 1.6em;
+  padding-block-start: 0;
+  border-block-start: none;
+  font-family: var(--md-text-font-family), serif;
+  letter-spacing: normal;
+}
+
+/* Le etichette `attr` e `meth` nell'indice sono il modo più rapido di capire
+   che cosa si sta guardando: vanno lette come marche, non come testo. */
+.doc-symbol {
+  border-radius: 4px;
+  font-size: 0.6rem;
+  letter-spacing: 0.02em;
+}
+
+.doc-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.02em;
+}
+
+/* ======================== l'avvertenza in copertina ======================
+   Si legge una volta e non si dimentica, quindi non è un'ammonizione: è una
+   nota a margine che non chiede di essere aperta. */
+
+.avvertenza {
+  border-inline-start: 3px solid var(--nrm-avviso);
+  padding: 0.4rem 0 0.4rem 1rem;
+  margin: 1.6rem 0;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.76rem;
+}
+
+.avvertenza strong {
+  color: var(--md-default-fg-color);
+}
+
+/* ================================ piede ================================== */
+
+.md-footer-meta {
+  background-color: var(--md-footer-bg-color--dark);
+}
+
+/* Le ammonizioni di serie arrivano con i colori di Material: un blu e un
+   ciano freddi, che su questa carta calda sono l'unica cosa fuori tono.
+   Ritinte con la tavolozza, restando distinguibili fra loro. */
+
+.md-typeset .admonition.note,
+.md-typeset details.note {
+  border-color: var(--raw-blue-600);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.note,
+[data-md-color-scheme="slate"] .md-typeset details.note {
+  border-color: var(--raw-blue-300);
+}
+
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
+  background-color: color-mix(in srgb, var(--raw-blue-600) 12%, transparent);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .note > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset .note > summary {
+  background-color: color-mix(in srgb, var(--raw-blue-300) 12%, transparent);
+}
+
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
+  background-color: var(--raw-blue-600);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .note > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .note > summary::before {
+  background-color: var(--raw-blue-300);
+}
+
+.md-typeset .admonition.tip,
+.md-typeset details.tip {
+  border-color: var(--nrm-conferma);
+}
+
+.md-typeset .tip > .admonition-title,
+.md-typeset .tip > summary {
+  background-color: color-mix(in srgb, var(--nrm-conferma) 12%, transparent);
+}
+
+.md-typeset .tip > .admonition-title::before,
+.md-typeset .tip > summary::before {
+  background-color: var(--nrm-conferma);
+}
+
+.md-typeset .admonition.warning,
+.md-typeset details.warning {
+  border-color: var(--nrm-avviso);
+}
+
+.md-typeset .warning > .admonition-title,
+.md-typeset .warning > summary {
+  background-color: color-mix(in srgb, var(--nrm-avviso) 12%, transparent);
+}
+
+.md-typeset .warning > .admonition-title::before,
+.md-typeset .warning > summary::before {
+  background-color: var(--nrm-avviso);
+}
+
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: var(--raw-rose-600);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.danger,
+[data-md-color-scheme="slate"] .md-typeset details.danger {
+  border-color: var(--raw-rose-300);
+}
+
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary {
+  background-color: color-mix(in srgb, var(--raw-rose-600) 12%, transparent);
+}
+
+.md-typeset .danger > .admonition-title::before,
+.md-typeset .danger > summary::before {
+  background-color: var(--raw-rose-600);
+}
+
+[data-md-color-scheme="slate"] .md-typeset .danger > .admonition-title::before,
+[data-md-color-scheme="slate"] .md-typeset .danger > summary::before {
+  background-color: var(--raw-rose-300);
+}
+
+/* ============================ testata della home =========================
+   L'unico momento di scena del sito: il pannello indaco che continua la banda
+   dell'intestazione, con il nome del progetto in corpo da display e l'esempio
+   di codice già dentro. È scuro in entrambi i temi, come la banda: i token del
+   codice sono rimappati qui sotto perché l'esempio resti leggibile anche
+   quando la pagina intorno è chiara. */
+
+.md-typeset .nrm-testata {
+  background: linear-gradient(165deg, var(--raw-notte-900), var(--raw-notte-950) 55%, var(--raw-notte-990));
+  border: 1px solid color-mix(in srgb, var(--raw-indaco-300) 14%, transparent);
+  border-radius: 16px;
+  padding: 1.8rem 2rem 0.9rem;
+  margin: 0.2rem 0 2.4rem;
+  color: var(--raw-mist-100);
+
+  --md-code-fg-color: var(--raw-mist-100);
+  --md-code-bg-color: color-mix(in srgb, var(--raw-night-0) 32%, transparent);
+  --md-code-hl-keyword-color: var(--raw-purple-300);
+  --md-code-hl-string-color: var(--raw-ochre-300);
+  --md-code-hl-function-color: var(--raw-blue-300);
+  --md-code-hl-number-color: var(--raw-rose-300);
+  --md-code-hl-constant-color: var(--raw-indaco-300);
+  --md-code-hl-name-color: var(--raw-mist-100);
+  --md-code-hl-operator-color: var(--raw-mist-300);
+  --md-code-hl-punctuation-color: var(--raw-mist-300);
+  --md-code-hl-comment-color: var(--raw-mist-400);
+}
+
+.md-typeset .nrm-testata h1 {
+  color: var(--raw-paper-0);
+  font-size: 2.6em;
+  letter-spacing: -0.03em;
+  margin-block-end: 0.3em;
+}
+
+.md-typeset .nrm-testata h1 + p {
+  color: var(--raw-mist-300);
+  font-size: 0.85rem;
+  max-width: 34rem;
+  margin-block-start: 0;
+}
+
+.md-typeset .nrm-testata a {
+  color: var(--raw-indaco-200);
+}
+
+.md-typeset .nrm-testata pre > code {
+  border: 1px solid color-mix(in srgb, var(--raw-mist-100) 10%, transparent);
+}
+
+.md-typeset .nrm-testata .md-code__button,
+.md-typeset .nrm-testata .md-clipboard {
+  color: color-mix(in srgb, var(--raw-mist-100) 55%, transparent);
+}
+
+.md-typeset .nrm-testata .highlight:hover .md-code__button,
+.md-typeset .nrm-testata :hover > .md-clipboard {
+  color: var(--raw-mist-100);
+}
+
+.md-typeset .nrm-testata {
+  --nrm-barra-codice: color-mix(in srgb, var(--raw-mist-100) 12%, transparent);
+}
+
+@media screen and (max-width: 44.9844em) {
+  .md-typeset .nrm-testata {
+    padding: 1.2rem 1rem 0.6rem;
+    border-radius: 12px;
+  }
+
+  .md-typeset .nrm-testata h1 {
+    font-size: 2em;
+  }
+}
+
+/* ================================ card ===================================
+   Le card della home sono porte, non riquadri: l'icona dà il soggetto, il
+   passaggio del puntatore le solleva appena, e il link in fondo si comporta
+   da azione. */
+
+.md-typeset .grid.cards > ul > li {
+  border-radius: 14px;
+  transition:
+    transform var(--nrm-toggle) var(--nrm-ease),
+    border-color var(--nrm-toggle) var(--nrm-ease),
+    box-shadow var(--nrm-toggle) var(--nrm-ease);
+}
+
+.md-typeset .grid.cards > ul > li:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--md-accent-fg-color) 45%, transparent);
+  box-shadow:
+    0 2px 6px color-mix(in srgb, var(--raw-night-0) 7%, transparent),
+    0 8px 22px color-mix(in srgb, var(--raw-night-0) 9%, transparent);
+}
+
+.md-typeset .nrm-icona {
+  color: var(--md-accent-fg-color);
+}
+
+.md-typeset .grid.cards > ul > li > p:last-child > a {
+  font-weight: 600;
+}
+
+.md-typeset .grid.cards > ul > li > p:last-child > a::after {
+  content: " →";
+  display: inline-block;
+  transition: transform var(--nrm-hover) var(--nrm-ease);
+}
+
+.md-typeset .grid.cards > ul > li:hover > p:last-child > a::after {
+  transform: translateX(3px);
+}
+
+/* ================== finiture: titoli, tabelle, avvertenza ================ */
+
+.md-typeset h1 {
+  font-size: 2.2em;
+  letter-spacing: -0.025em;
+}
+
+.md-typeset table:not([class]) tbody tr {
+  transition: background-color var(--nrm-hover) var(--nrm-ease);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: color-mix(in srgb, var(--md-accent-fg-color) 5%, transparent);
+  box-shadow: none;
+}
+
+.avvertenza {
+  border: 1px solid color-mix(in srgb, var(--nrm-avviso) 30%, transparent);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--nrm-avviso) 5%, transparent);
+  padding: 0.7rem 1rem;
+}
+
+/* Nel tema scuro la banda e la pagina sono vicine di tono: una linea sottile
+   sotto le schede tiene separati i due piani. */
+[data-md-color-scheme="slate"] .md-tabs {
+  box-shadow: inset 0 -1px 0 color-mix(in srgb, var(--raw-mist-100) 8%, transparent);
+}
+
+
+/* Figure disegnate a mano (SVG inline): i colori seguono il tema, non sono
+   scritti dentro il disegno. */
+.nrm-grafico {
+  margin: 1.2rem 0;
+  overflow-x: auto;
+}
+
+.nrm-figura {
+  width: 100%;
+  height: auto;
+  color: var(--md-default-fg-color);
+}
+
+.nrm-figura line {
+  stroke: currentColor;
+  stroke-opacity: 0.45;
+}
+
+.nrm-figura .nrm-area {
+  fill: var(--md-accent-fg-color);
+  fill-opacity: 0.18;
+  stroke: var(--md-accent-fg-color);
+  stroke-width: 1.6;
+}
+
+.nrm-figura .nrm-taglio {
+  stroke: var(--md-accent-fg-color);
+  stroke-opacity: 0.35;
+  stroke-width: 1;
+}
+
+.nrm-figura .nrm-griglia {
+  stroke: currentColor;
+  stroke-opacity: 0.12;
+}
+
+.nrm-figura .nrm-asse {
+  fill: currentColor;
+  font-family: var(--md-text-font-family, sans-serif);
+  font-size: 11px;
+  opacity: 0.75;
+}
+
+.nrm-figura .nrm-riquadro {
+  fill: var(--md-code-bg-color);
+  stroke: currentColor;
+  stroke-opacity: 0.25;
+}
+
+.nrm-figura .nrm-mono {
+  fill: currentColor;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 13px;
+}
+
+.nrm-figura .nrm-forte {
+  font-weight: 700;
+}
+
+.nrm-figura .nrm-tenue {
+  opacity: 0.6;
+}
+
+.nrm-figura .nrm-guida {
+  stroke: var(--md-accent-fg-color);
+  stroke-opacity: 0.4;
+  stroke-dasharray: 3 3;
+}
+
+.nrm-figura .nrm-etichetta {
+  fill: var(--md-accent-fg-color);
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 12px;
+}
+
+/* ========================== figure e diagrammi ===========================
+   Un diagramma è un blocco di contenuto come un esempio di codice: gli si dà
+   la stessa superficie, così la pagina alterna due materiali soli invece di
+   far galleggiare i disegni sul fondo. */
+
+.md-typeset .nrm-grafico,
+.md-typeset .mermaid {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 14px;
+  background: var(--md-code-bg-color);
+  padding: 1rem 1.1rem;
+  margin-block: 1.4rem;
+}
+
+.md-typeset .mermaid > svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ============================ blocchi di codice ==========================
+   Sulla carta chiara il fondo del codice è poco più scuro della pagina: senza
+   un filo di contorno il blocco non ha un bordo, e il testo sembra sfrangiarsi
+   ai lati. */
+
+.md-typeset pre > code,
+.md-typeset .highlight > pre > code {
+  border: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.md-typeset .nrm-testata pre > code {
+  border-color: color-mix(in srgb, var(--raw-mist-100) 10%, transparent);
+}
+
+/* ============================== titoli h2 ================================
+   La riga sopra il titolo di sezione porta un segno di accento in testa: dà
+   alla pagina un punto di ancoraggio per l'occhio che scorre in cerca della
+   sezione giusta, senza aggiungere colore al testo. */
+
+.md-typeset h2 {
+  position: relative;
+}
+
+.md-typeset h2::before {
+  content: "";
+  position: absolute;
+  inset-block-start: -1px;
+  inset-inline-start: 0;
+  inline-size: 2.2rem;
+  block-size: 2px;
+  border-radius: 2px;
+  background: var(--md-accent-fg-color);
+}
+
+.md-typeset h1 + h2::before,
+.md-typeset hr + h2::before {
+  content: none;
+}
+
+/* ================================ tabelle ================================
+   L'intestazione si legge come etichetta, non come prima riga di dati. */
+
+.md-typeset table:not([class]) th {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--md-default-fg-color--light);
+}
+
+/* =============================== collegamenti ============================
+   Un filo sotto i link del testo: il colore da solo non basta a chi non lo
+   distingue, e queste pagine sono fitte di rimandi (WCAG 1.4.1). */
+
+.md-typeset p > a,
+.md-typeset li > a,
+.md-typeset td > a {
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 35%, transparent);
+  text-decoration-thickness: 1px;
+}
+
+.md-typeset p > a:hover,
+.md-typeset li > a:hover,
+.md-typeset td > a:hover {
+  text-decoration-color: currentColor;
+}
+
+.md-typeset .grid.cards > ul > li > p:last-child > a,
+.md-typeset .nrm-testata a {
+  text-decoration: none;
+}
+
+/* ============================ testata e piede ============================ */
+
+.md-typeset .nrm-testata {
+  box-shadow:
+    0 1px 2px color-mix(in srgb, var(--raw-night-0) 20%, transparent),
+    0 12px 32px color-mix(in srgb, var(--raw-night-0) 18%, transparent);
+}
+
+.md-footer {
+  border-block-start: 1px solid color-mix(in srgb, var(--raw-mist-100) 8%, transparent);
+}
+
+/* I rimandi al riferimento sono nomi di codice: il filo sotto li appesantisce
+   e il carattere monospaziato li distingue già dal testo intorno. */
+.md-typeset a.autorefs,
+.md-typeset a:has(> code:only-child) {
+  text-decoration: none;
+}
+
+/* Le ammonizioni avevano il fondo della pagina, quindi si leggevano solo dal
+   contorno: una superficie appena staccata le fa vedere come blocchi a sé. */
+.md-typeset .admonition,
+.md-typeset details {
+  background: var(--md-default-bg-color--light);
+}
+
+
+/* ===================== l'interfaccia in sans, la prosa in serif ==========
+   Tutto quello che si guarda invece di leggerlo passa al grotesque: barra in
+   alto, schede, le due barre laterali, ricerca, briciole, piede, e dentro il
+   contenuto le parti che sono etichette e non discorso (titoli delle
+   ammonizioni, intestazioni di tabella, linguette, marche del riferimento).
+   Allo slab resta la prosa: capoversi, elenchi, celle, citazioni. */
+
+.md-header,
+.md-tabs,
+.md-nav,
+.md-search,
+.md-search__input,
+.md-path,
+.md-footer,
+.md-typeset .admonition-title,
+.md-typeset summary,
+.md-typeset table:not([class]) th,
+.md-typeset .tabbed-labels > label,
+.md-typeset .doc-symbol,
+.md-typeset .doc-label,
+.md-typeset .md-button,
+.md-content__button,
+.md-typeset figcaption,
+.md-typeset .footnote-backref,
+.md-version,
+.md-copyright {
+  font-family: var(--nrm-font-titoli);
+  font-feature-settings: "kern" 1;
+}
+
+/* Le voci del menu, a corpo piccolo, guadagnano un filo di peso: il grotesque
+   a 0.7rem sotto i 500 si smaterializza. */
+.md-nav__link,
+.md-tabs__link {
+  font-weight: 500;
+}
+
+.md-nav__link--active,
+.md-nav__item--active > .md-nav__link {
+  font-weight: 700;
+}
+
+/* La prosa resta slab anche dove Material la annida dentro un'ammonizione o
+   una linguetta, che qui sopra sono passate al sans. */
+.md-typeset .admonition > p:not(.admonition-title),
+.md-typeset .admonition > ul,
+.md-typeset .admonition > ol,
+.md-typeset details > p:not(.admonition-title),
+.md-typeset details > ul,
+.md-typeset details > ol,
+.md-typeset .tabbed-content {
+  font-family: var(--md-text-font-family, "Zilla Slab"), serif;
+}
+
+
+/* ======================= la barra dei blocchi di codice ==================
+   I pulsanti «copia», «seleziona» e «a capo» stanno in una barretta in alto a
+   destra del blocco. Material la disegna con --md-code-bg-color--light e
+   --lighter, che il nostro schema non definiva: restava quindi la coppia di
+   serie, un grigio chiaro translucido, che sul codice scuro sembrava una
+   toppa. Le icone prendevano --md-default-fg-color--lightest, che qui è il
+   tono dei bordi e non quello di un'icona, e sul fondo scuro sparivano.
+
+   Qui la barretta segue la carta del blocco e le icone hanno un tono medio,
+   leggibile in entrambi i temi, che si accende all'accento al passaggio. */
+
+.md-typeset .md-code__nav {
+  background-color: transparent;
+}
+
+.md-typeset .highlight:hover .md-code__nav,
+.md-typeset .md-code__nav:focus-within {
+  background-color: var(--nrm-barra-codice);
+}
+
+.md-typeset .md-code__button,
+.md-typeset .md-clipboard {
+  color: var(--nrm-icona-tenue);
+}
+
+.md-typeset .highlight:hover .md-code__button,
+.md-typeset :hover > .md-clipboard {
+  color: var(--nrm-icona-viva);
+}
+
+.md-typeset .md-code__button:hover,
+.md-typeset .md-code__button.focus-visible,
+.md-typeset .md-clipboard:focus,
+.md-typeset .md-clipboard:hover {
+  color: var(--md-accent-fg-color);
+}
+
+.md-typeset .md-code__button--active {
+  color: var(--md-accent-fg-color) !important;
+}
