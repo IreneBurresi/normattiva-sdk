@@ -59,7 +59,7 @@ l'identificatore di ciascun tipo di atto.
 
 <div class="grid cards" markdown>
 
--   :material-school:{ .nrm-icona } **[Tutorial](tutorial/primi-passi.md)**
+-   :material-school:{ .nrm-icona } **[Tutorial](tutorial/index.md)**
 
     Una lezione da fare al terminale. Si parte dal `pip install` e si arriva a
     leggere un articolo, cercarlo per parole e percorrerne la storia.

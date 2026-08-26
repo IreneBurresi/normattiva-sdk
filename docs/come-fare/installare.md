@@ -43,7 +43,7 @@ with Normattiva() as normattiva:
 
 Se stampa il testo dell'articolo 1 della legge sul procedimento amministrativo,
 l'installazione è a posto. Il passo successivo è il
-[tutorial](../tutorial/primi-passi.md).
+[tutorial](../tutorial/index.md).
 
 !!! tip "Il client si riusa"
 

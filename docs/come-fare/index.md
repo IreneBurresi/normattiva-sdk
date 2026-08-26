@@ -6,7 +6,7 @@ hide:
 # Come fare
 
 Una pagina per obiettivo. Se è la prima volta, comincia invece dal
-[tutorial](../tutorial/primi-passi.md).
+[tutorial](../tutorial/index.md).
 
 | Per | Vai a |
 |---|---|

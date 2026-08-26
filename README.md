@@ -101,7 +101,7 @@ sbagliata, `5` il servizio è in avaria.
 
 <https://ireneburresi.github.io/normattiva-sdk/>
 
-Il [tutorial](https://ireneburresi.github.io/normattiva-sdk/tutorial/primi-passi/)
+Il [tutorial](https://ireneburresi.github.io/normattiva-sdk/tutorial/)
 porta dall'installazione al testo di un articolo; le guide di
 [come fare](https://ireneburresi.github.io/normattiva-sdk/come-fare/) sono una
 per obiettivo; [capire](https://ireneburresi.github.io/normattiva-sdk/capire/)
