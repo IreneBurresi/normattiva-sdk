@@ -1,0 +1,10 @@
+{
+ "stato": 500,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "timestamp": "2026-08-24T12:06:08.746+00:00",
+  "status": 500,
+  "error": "Internal Server Error",
+  "path": "/bff-opendata/api/v1/ricerca/semplice"
+ }
+}

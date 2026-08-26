@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-label="normattiva-sdk">
+  <!-- Chiaro sull'intestazione, che è scura in entrambi i temi. `currentColor`
+       qui non servirebbe: dentro un <img> l'SVG non eredita il colore del padre. -->
+  <path d="M9 6h20l10 10v26a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" fill="#f7f4ef" opacity=".16"/>
+  <path d="M9 6h20l10 10v26a2 2 0 0 1-2 2H11a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" stroke="#f7f4ef" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M29 6v10h10" stroke="#f7f4ef" stroke-width="2.6" stroke-linejoin="round"/>
+  <path d="M16 24h16M16 30h16M16 36h9" stroke="#f7f4ef" stroke-width="2.6" stroke-linecap="round"/>
+  <circle cx="34" cy="35" r="7" fill="#9c5221"/>
+  <path d="M31 35.2 33.2 37.4 37.2 33" stroke="#f7f4ef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

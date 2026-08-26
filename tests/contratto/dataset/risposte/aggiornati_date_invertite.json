@@ -1,0 +1,8 @@
+{
+ "stato": 400,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "message": "La data finale è precedente alla data iniziale, correggere i…",
+  "code": "1503"
+ }
+}

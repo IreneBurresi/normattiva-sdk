@@ -1,0 +1,226 @@
+site_name: normattiva-sdk
+site_description: SDK Python non ufficiale per Normattiva, il portale della legge vigente
+site_author: Irene Burresi
+site_url: https://ireneburresi.github.io/normattiva-sdk/
+repo_url: https://github.com/ireneburresi/normattiva-sdk
+repo_name: ireneburresi/normattiva-sdk
+edit_uri: edit/main/docs/
+copyright: >
+  Progetto <strong>indipendente e non ufficiale</strong>, gratuito e in licenza
+  MIT, non affiliato con <a href="https://www.ipzs.it">IPZS</a> né con la
+  Presidenza del Consiglio dei Ministri. Dati di IPZS da
+  <a href="https://dati.normattiva.it">dati.normattiva.it</a> in licenza
+  <a href="https://creativecommons.org/licenses/by/4.0/deed.it">CC BY 4.0</a>:
+  testo non autentico e gratuito, l'unico ufficiale è quello pubblicato sulla
+  Gazzetta Ufficiale a mezzo stampa.
+
+theme:
+  name: material
+  language: it
+  logo: assets/logo.svg
+  favicon: assets/favicon.svg
+  font:
+    # Le stesse famiglie del sistema di design di new-blog2: uno slab per il
+    # corpo, che regge bene i testi lunghi, e JetBrains Mono per il codice.
+    text: Zilla Slab
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Segui il tema del sistema
+    - media: "(prefers-color-scheme: light)"
+      scheme: normattiva
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Passa al tema scuro
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Passa al tema chiaro
+  features:
+    # orizzontale: le sezioni di primo livello diventano schede nell'intestazione
+    - navigation.tabs
+    - navigation.tabs.sticky
+    # verticale: la barra laterale mostra le pagine della scheda in cui sei
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    # Comincia a scaricare la pagina quando il puntatore entra nel link
+    - navigation.instant.prefetch
+    # Le briciole sopra il titolo: con le schede, la barra laterale sparisce
+    # sotto i 1220px e senza quelle non si sa più in che sezione si è
+    - navigation.path
+    - navigation.tracking
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.highlight
+    - search.share
+    - search.suggest
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - content.action.edit
+    - content.action.view
+
+extra_css:
+  - stylesheets/normattiva.css
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/ireneburresi/normattiva-sdk
+      name: Il codice su GitHub
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/normattiva-sdk/
+      name: Il pacchetto su PyPI
+
+watch:
+  - src/normattiva
+
+plugins:
+  - search:
+      lang: it
+  # Interna i font di Google nel sito costruito: chi legge la documentazione
+  # non deve fare una richiesta a Google per averla.
+  - privacy:
+      # Mermaid resta escluso. Internandolo, il plugin lo referenzia dentro il
+      # bundle JavaScript di Material, dove non può usare un percorso relativo e
+      # ricade su `site_url`: il sito costruito funzionerebbe solo servito da
+      # quell'esatto dominio, e in locale i diagrammi resterebbero testo grezzo.
+      assets_exclude:
+        - unpkg.com/*
+  - mkdocstrings:
+      # Le etichette generate ("Parametri", "Solleva", "Codice sorgente in")
+      # in italiano: il gestore non porta la traduzione, la porta il progetto.
+      custom_templates: docs/templates
+      handlers:
+        python:
+          paths: [src]
+          # I tipi della libreria standard nelle firme diventano cliccabili
+          # verso la documentazione ufficiale, invece che testo morto.
+          inventories:
+            - https://docs.python.org/3/objects.inv
+          options:
+            docstring_style: google
+            show_source: true
+            show_root_heading: true
+            show_root_full_path: false
+            show_symbol_type_heading: true
+            show_symbol_type_toc: true
+            show_if_no_docstring: false
+            members_order: source
+            separate_signature: true
+            show_signature_annotations: true
+            signature_crossrefs: true
+            merge_init_into_class: true
+            filters: ["!^_"]
+            heading_level: 3
+
+  # Ogni pagina viene ripubblicata anche in Markdown, ricavata dall'HTML
+  # costruito e non dal sorgente: così il riferimento generato da mkdocstrings
+  # c'è per intero, mentre nel sorgente ci sono solo le direttive `:::`.
+  # Serve a chi vuole leggere la documentazione fuori dal sito, e ai modelli
+  # linguistici, che con llms.txt trovano l'indice di che cosa esiste.
+  - llmstxt:
+      markdown_description: >
+        SDK Python non ufficiale per Normattiva, il portale della legge vigente
+        dello Stato italiano. Copre i quindici endpoint dell'API open data in
+        versione sincrona e asincrona, legge il testo di un atto a qualunque
+        data e ne esporta la storia completa.
+      full_output: llms-full.txt
+      preprocess: docs/scripts/llmstxt.py
+      sections:
+        Da dove cominciare:
+          - index.md
+          - tutorial/primi-passi.md
+        Come fare:
+          - come-fare/*.md
+        Capire:
+          - capire/*.md
+        Riferimento:
+          - riferimento/*.md
+        Il progetto:
+          - progetto/*.md
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      permalink_title: Collegamento a questa sezione
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: [.]
+      check_paths: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.smartsymbols
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+
+nav:
+  - Home: index.md
+  - Tutorial: tutorial/primi-passi.md
+  - Come fare:
+      - come-fare/index.md
+      - come-fare/installare.md
+      - come-fare/identificare-un-atto.md
+      - come-fare/cercare-un-atto.md
+      - come-fare/leggere-il-testo-a-una-data.md
+      - come-fare/esportare-un-atto.md
+      - come-fare/lavorare-in-asincrono.md
+      - come-fare/usare-la-riga-di-comando.md
+  - Capire:
+      - capire/index.md
+      - capire/la-normativa-italiana.md
+      - capire/come-e-fatto-un-atto.md
+      - capire/il-servizio.md
+      - capire/trappole.md
+      - capire/errori.md
+      - capire/affidabilita.md
+      - capire/scelte.md
+  - Riferimento:
+      - riferimento/index.md
+      - riferimento/client.md
+      - riferimento/client-asincrono.md
+      - riferimento/modelli.md
+      - riferimento/urn.md
+      - riferimento/esportazione.md
+      - riferimento/errori.md
+      - riferimento/codici.md
+      - riferimento/cli.md
+      - riferimento/endpoint.md
+  - Il progetto:
+      - progetto/index.md
+      - progetto/licenza.md
+      - progetto/sviluppo.md
+      - progetto/monitoraggio.md
+      - progetto/changelog.md

@@ -1,0 +1,57 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "code": null,
+  "message": null,
+  "data": {
+   "atto": null,
+   "lista": [
+    {
+     "titolo": "LEGGE 28 dicembre 2001, n. 448",
+     "sottoTitolo": "  Disposizioni per la formazione del bilancio annuale e plur…",
+     "articoloHtml": "<div class=\"bodyTesto\"> <h2 class=\"preamble-title-akn\"></h2> <h2 class=\"preamble-end-akn\"></h2> <h2 class=\"article-num-akn\" id=\"art_2\"> Art. 2</h2> <div class=\"article-heading-akn\"> (Modificazioni alla disciplina dell'IRPEF per le famiglie, d<br> detraibilit&agrave; delle spese sostenute dai soggetti sordomuti e della deducib&agrave; delle spese per le imprese del settore farmaceutico)</div> <div class=\"art-commi-div-akn\"> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 1.</span><span class=\"art_text_in_comma\"> All'articolo 12, comma 1, del testo unico delle imposte sui <a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917\" target=\"_blank\"> decreto del Presidente della Repubblica 22 dicembre 1986, n.</a> , in materia di detrazioni per carichi di famiglia, la lette&egrave; sostituita dalla seguente:<br> \"b) per ciascun figlio, compresi i figli naturali riconosciu&egrave; ogni altra persona indicata nell'<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:codice.civile:1942-03-16;262~art433\" target=\"_blank\"> articolo 433 del codice civile</a> che conviva con il contribuente o percepisca assegni aliment&agrave; giudiziaria, complessivamente lire 408.000 per l'anno 2000, &egrave; aumentato di lire 240.000 per ciascun figlio di et&agrave; inferiore a tre anni. Per l'anno 2001 l'importo di lire 516.&egrave; aumentato a lire 552.000, ovvero a lire 616.000 quando la de&egrave; comunque aumentato a 303,68 euro, ovvero a 336,73 euro quand&egrave; stabilita in 516,46 euro per ciascun figlio a carico, nei se<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104~art3\" target=\"_blank\"> articolo 3 della legge 5 febbraio 1992, n. 104</a> , la detrazione di cui ai periodi precedenti&egrave; aumentata a 774,69 euro\".<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 2.</span><span class=\"art_text_in_comma\"> All'articolo 12, comma 2, del citato testo unico delle impos<br> \"la detrazione prevista alla lettera a) del comma 1 si appli&ugrave; conveniente, per il primo figlio\".<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 3.</span><span class=\"art_text_in_comma\"> All'articolo 13-bis, comma 1, del citato testo unico delle i&egrave; inserita la seguente:<br> \"c-ter) le spese sostenute per i servizi di interpretariato <a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1970-05-26;381\" target=\"_blank\"> legge 26 maggio 1970, n. 381</a> ;\".<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 4.</span><span class=\"art_text_in_comma\"> L'<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-03-11;67~art19-com14\" target=\"_blank\"> articolo 19, comma 14, della legge 11 marzo 1988, n. 67</a> , e successive modificazioni, concernente la deducibilit&agrave; delle spese sostenute da imprese produttrici di medicinali p&egrave; abrogato.<br> </span> </div> <div class=\"a…[1098 caratteri omessi]",
+     "tipoProvvedimentoDescrizione": "LEGGE",
+     "tipoProvvedimentoCodice": "PLE",
+     "annoProvvedimento": 2001,
+     "meseProvvedimento": 12,
+     "giornoProvvedimento": 28,
+     "numeroProvvedimento": 448,
+     "tipoSupplementoCode": "SO",
+     "numeroSupplemento": 285,
+     "annoGU": 2001,
+     "meseGU": 12,
+     "giornoGU": 29,
+     "numeroGU": 301,
+     "dataPubblicazioneInGazzetta": null,
+     "articoloDataInizioVigenza": "20020101",
+     "articoloDataFineVigenza": "99999999",
+     "testoInVigore": null
+    },
+    {
+     "titolo": "LEGGE 28 dicembre 2001, n. 448",
+     "sottoTitolo": "  Ripubblicazione  del  testo  della  legge 28 dicembre 2001…",
+     "articoloHtml": "<div class=\"bodyTesto\"> <h2 class=\"preamble-title-akn\"></h2> <h2 class=\"preamble-end-akn\"></h2> <h2 class=\"article-num-akn\" id=\"art_2\"> Art. 2</h2> <div class=\"article-pre-comma-text-akn\"> (Modificazioni alla disciplina dell'IRPEF per le famiglie, d&agrave; delle spese sostenute dai soggetti sordomuti e della deducib&agrave; delle spese per le imprese del settore farmaceutico)<br> <br> </div> <div class=\"art-commi-div-akn\"> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 1.</span><span class=\"art_text_in_comma\"> All'articolo 12, comma 1, del testo unico delle imposte sui <a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:1986-12-22;917\" target=\"_blank\"> decreto del Presidente della Repubblica 22 dicembre 1986, n.</a> , in materia di detrazioni per carichi di famiglia, la lette&egrave; sostituita dalla seguente:<br> \"b) per ciascun figlio, compresi i figli naturali riconosciu&egrave; ogni altra persona indicata nell'<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:codice.civile:1942-03-16;262~art433\" target=\"_blank\"> articolo 433 del codice civile</a> che conviva con il contribuente o percepisca assegni aliment&agrave; giudiziaria, complessivamente lire 408.000 per l'anno 2000, &egrave; aumentato di lire 240.000 per ciascun figlio di et&agrave; inferiore a tre anni. Per l'anno 2001 l'importo di lire 516.&egrave; aumentato a lire 552.000, ovvero a lire 616.000 quando la de&egrave; comunque aumentato a 303,68 euro, ovvero a 336,73 euro quand&egrave; stabilita in 516,46 euro per ciascun figlio a carico, nei se<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1992-02-05;104~art3\" target=\"_blank\"> articolo 3 della legge 5 febbraio 1992, n. 104</a> , la detrazione di cui ai periodi precedenti&egrave; aumentata a 774,69 euro\".<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 2.</span><span class=\"art_text_in_comma\"> All'articolo 12, comma 2, del citato testo unico delle impos<br> \"la detrazione prevista alla lettera a) del comma 1 si appli&ugrave; conveniente, per il primo figlio\".<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 3.</span><span class=\"art_text_in_comma\"> All'articolo 13-bis, comma 1, del citato testo unico delle i&egrave; inserita la seguente:<br> \"c-ter) le spese sostenute per i servizi di interpretariato <a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1970-05-26;381\" target=\"_blank\"> legge 26 maggio 1970, n. 381</a> ;\".<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 4.</span><span class=\"art_text_in_comma\"> L'<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-03-11;67~art19-com14\" target=\"_blank\"> articolo 19, comma 14, della legge 11 marzo 1988, n. 67</a> , e successive modificazioni, concernente la deducibilit&agrave; delle spese sostenute da imprese produttrici di medicinali p&egrave; abrogato.<br> </span> </div> <div class=\"…[32043 caratteri omessi]",
+     "tipoProvvedimentoDescrizione": "LEGGE",
+     "tipoProvvedimentoCodice": "PLE",
+     "annoProvvedimento": 2001,
+     "meseProvvedimento": 12,
+     "giornoProvvedimento": 28,
+     "numeroProvvedimento": 448,
+     "tipoSupplementoCode": "SO",
+     "numeroSupplemento": 20,
+     "annoGU": 2002,
+     "meseGU": 1,
+     "giornoGU": 30,
+     "numeroGU": 25,
+     "dataPubblicazioneInGazzetta": null,
+     "articoloDataInizioVigenza": "0",
+     "articoloDataFineVigenza": "99999999",
+     "testoInVigore": null
+    }
+   ],
+   "message": "ricerca effettuata con successo"
+  },
+  "success": true
+ }
+}

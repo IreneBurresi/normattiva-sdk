@@ -1,0 +1,34 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "code": null,
+  "message": null,
+  "data": {
+   "atto": {
+    "titolo": "LEGGE 7 agosto 1990, n. 241",
+    "sottoTitolo": "  Nuove norme in materia di procedimento amministrativo e di…",
+    "articoloHtml": "<div class=\"bodyTesto\"> <h2 class=\"preamble-title-akn\"></h2> <h2 class=\"preamble-end-akn\"></h2> <h2 class=\"article-num-akn\" id=\"art_19\"> Art. 19</h2> <div class=\"article-heading-akn\"> (Segnalazione certificata di inizio attivit&agrave; - Scia)</div> <div class=\"art-commi-div-akn\"> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 1.</span><span class=\"art_text_in_comma\"> Ogni atto di autorizzazione, licenza, concessione non costit&agrave; imprenditoriale, commerciale o artigianale il cui rilascio d&egrave; sostituito da una segnalazione dell'interessato, con la sola&egrave; di quelli previsti dalla normativa per le costruzioni in zon&egrave; corredata dalle dichiarazioni sostitutive di certificazioni &agrave; per quanto riguarda tutti gli stati, le qualit&agrave; personali e i fatti previsti negli articoli 46 e 47 del test<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2000-12-28;445\" target=\"_blank\"> decreto del Presidente della Repubblica 28 dicembre 2000, n.</a> , nonch&egrave; , ove espressamente previsto dalla normativa vigente, dalle &agrave; da parte dell'Agenzia delle imprese di cui all'<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2008-06-25;112~art38-com4\" target=\"_blank\"> articolo 38, comma 4, del decreto-legge 25 giugno 2008, n. 1</a> , convertito, con modificazioni, dalla<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2008-08-06;133\" target=\"_blank\"> legge 6 agosto 2008, n. 133</a> , relative alla sussistenza dei requisiti e dei presupposti &egrave; dei relativi elaborati tecnici, pu&ograve; essere presentata mediante posta raccomandata con avviso di &egrave; previsto l'utilizzo esclusivo della modalit&agrave; telematica; in tal caso la segnalazione si considera present<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 2.</span><span class=\"art_text_in_comma\"> L'attivit&agrave; oggetto della segnalazione pu&ograve; essere iniziata, anche nei casi di cui all'articolo 19-bis, <br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 3.</span><span class=\"art_text_in_comma\"> L'amministrazione competente, in caso di accertata carenza d&agrave; e di rimozione degli eventuali effetti dannosi di essa. Qual&agrave; intrapresa e i suoi effetti alla normativa vigente, l'ammini&agrave; si intende vietata. Con lo stesso atto motivato, in presenza&agrave; intrapresa.<br> L'atto motivato interrompe il termine di cui al primo period<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 4.</span><span class=\"art_text_in_comma\"> Decorso il termine per l'adozione dei provvedimenti di cui a<div class=\"ins-akn\" eid=\"ins_1\"> ((, fatta salva, in ogni caso, la sanzione di cui all'<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:presidente.repubblica:decreto:2000-12-28;445~art75\" target=\"_blank\"> articolo 75 del testo unico delle disposizioni legislative e</a> , di cui al<a href=…[5873 caratteri omessi]",
+    "tipoProvvedimentoDescrizione": "LEGGE",
+    "tipoProvvedimentoCodice": "PLE",
+    "annoProvvedimento": 1990,
+    "meseProvvedimento": 8,
+    "giornoProvvedimento": 7,
+    "numeroProvvedimento": 241,
+    "tipoSupplementoCode": "NO",
+    "numeroSupplemento": 0,
+    "annoGU": 1990,
+    "meseGU": 8,
+    "giornoGU": 18,
+    "numeroGU": 192,
+    "dataPubblicazioneInGazzetta": null,
+    "articoloDataInizioVigenza": "20260220",
+    "articoloDataFineVigenza": "99999999",
+    "testoInVigore": null
+   },
+   "lista": null,
+   "message": "ricerca effettuata con successo"
+  },
+  "success": true
+ }
+}

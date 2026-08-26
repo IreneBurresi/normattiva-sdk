@@ -1,0 +1,493 @@
+{
+ "listaAtti": [
+  {
+   "numeroAtto": "199",
+   "numeroAttoAlfanumerico": "199",
+   "dataGU": "2025-12-30",
+   "numeroGU": "301",
+   "codiceRedazionale": "25G00212",
+   "titoloAtto": "[Bilancio di previsione dello Stato  per  l'anno  finanziario  2026  e bilancio pluriennale per il triennio 2026-2028. (25G00212)  ]",
+   "giornoProvvedimento": "30",
+   "meseProvvedimento": "12",
+   "meseProvvedimentoIta": "dicembre",
+   "meseProvvedimentoEng": "December",
+   "annoProvvedimento": "2025",
+   "numeroProvvedimento": "199",
+   "denominazioneAtto": "LEGGE",
+   "numeroSupplemento": "42",
+   "tipoSupplemento": "SO",
+   "suffissoArticoloSelezionato": 1,
+   "subArt1ArticoloSelezionato": 0,
+   "hlTitoli": null,
+   "hlArticoli": null,
+   "annoDataGU": "2025",
+   "dataGUStr": "30-12-2025",
+   "tipoSupplementoIt": " - Suppl. Ordinario n. 42",
+   "tipoSupplementoEn": " - Ordinary Suppl. n. 42",
+   "dataEmanazione": "2025-12-30T00:00:00Z",
+   "descrizioneAtto": "LEGGE 30 dicembre 2025, n. 199",
+   "dataUltimaModifica": null,
+   "ultimiAttiModificanti": null
+  },
+  {
+   "numeroAtto": "181",
+   "numeroAttoAlfanumerico": "181",
+   "dataGU": "2025-12-02",
+   "numeroGU": "280",
+   "codiceRedazionale": "25G00187",
+   "titoloAtto": "[Introduzione del delitto di femminicidio e altri interventi normativi per il contrasto alla violenza nei confronti delle  donne  e  per  la tutela delle vittime. (25G00187)  ]",
+   "giornoProvvedimento": "2",
+   "meseProvvedimento": "12",
+   "meseProvvedimentoIta": "dicembre",
+   "meseProvvedimentoEng": "December",
+   "annoProvvedimento": "2025",
+   "numeroProvvedimento": "181",
+   "denominazioneAtto": "LEGGE",
+   "numeroSupplemento": "0",
+   "tipoSupplemento": "NO",
+   "suffissoArticoloSelezionato": 1,
+   "subArt1ArticoloSelezionato": 0,
+   "hlTitoli": null,
+   "hlArticoli": null,
+   "annoDataGU": "2025",
+   "dataGUStr": "02-12-2025",
+   "tipoSupplementoIt": "",
+   "tipoSupplementoEn": "",
+   "dataEmanazione": "2025-12-02T00:00:00Z",
+   "descrizioneAtto": "LEGGE 2 dicembre 2025, n. 181",
+   "dataUltimaModifica": null,
+   "ultimiAttiModificanti": null
+  },
+  {
+   "numeroAtto": "123",
+   "numeroAttoAlfanumerico": "123",
+   "dataGU": "2025-08-12",
+   "numeroGU": "186",
+   "codiceRedazionale": "25G00124",
+   "titoloAtto": "[Testo unico delle disposizioni legislative in materia di  imposta  di registro e di altri tributi indiretti. (25G00124)  ]",
+   "giornoProvvedimento": "1",
+   "meseProvvedimento": "8",
+   "meseProvvedimentoIta": "agosto",
+   "meseProvvedimentoEng": "August",
+   "annoProvvedimento": "2025",
+   "numeroProvvedimento": "123",
+   "denominazioneAtto": "DECRETO LEGISLATIVO",
+   "numeroSupplemento": "29",
+   "tipoSupplemento": "SO",
+   "suffissoArticoloSelezionato": 1,
+   "subArt1ArticoloSelezionato": 0,
+   "hlTitoli": null,
+   "hlArticoli": null,
+   "annoDataGU": "2025",
+   "dataGUStr": "12-08-2025",
+   "tipoSupplementoIt": " - Suppl. Ordinario n. 29",
+   "tipoSupplementoEn": " - Ordinary Suppl. n. 29",
+   "dataEmanazione": "2025-08-01T00:00:00Z",
+   "descrizioneAtto": "DECRETO LEGISLATIVO 1 agosto 2025, n. 123",
+   "dataUltimaModifica": null,
+   "ultimiAttiModificanti": null
+  },
+  {
+   "numeroAtto": "33",
+   "numeroAttoAlfanumerico": "33",
+   "dataGU": "2025-03-26",
+   "numeroGU": "71",
+   "codiceRedazionale": "25G00044",
+   "titoloAtto": "[Testo unico in materia di versamenti e di riscossione. (25G00044)  ]",
+   "giornoProvvedimento": "24",
+   "meseProvvedimento": "3",
+   "meseProvvedimentoIta": "marzo",
+   "meseProvvedimentoEng": "March",
+   "annoProvvedimento": "2025",
+   "numeroProvvedimento": "33",
+   "denominazioneAtto": "DECRETO LEGISLATIVO",
+   "numeroSupplemento": "8",
+   "tipoSupplemento": "SO",
+   "suffissoArticoloSelezionato": 1,
+   "subArt1ArticoloSelezionato": 0,
+   "hlTitoli": null,
+   "hlArticoli": null,
+   "annoDataGU": "2025",
+   "dataGUStr": "26-03-2025",
+   "tipoSupplementoIt": " - Suppl. Ordinario n. 8",
+   "tipoSupplementoEn": " - Ordinary Suppl. n. 8",
+   "dataEmanazione": "2025-03-24T00:00:00Z",
+   "descrizioneAtto": "DECRETO LEGISLATIVO 24 marzo 2025, n. 33",
+   "dataUltimaModifica": null,
+   "ultimiAttiModificanti": null
+  },
+  {
+   "numeroAtto": "168",
+   "numeroAttoAlfanumerico": "168",
+   "dataGU": "2023-11-24",
+   "numeroGU": "275",
+   "codiceRedazionale": "23G00178",
+   "titoloAtto": "[Disposizioni per il contrasto della  violenza  sulle  donne  e  della violenza domestica. (23G00178)  ]",
+   "giornoProvvedimento": "24",
+   "meseProvvedimento": "11",
+   "meseProvvedimentoIta": "novembre",
+   "meseProvvedimentoEng": "November",
+   "annoProvvedimento": "2023",
+   "numeroProvvedimento": "168",
+   "denominazioneAtto": "LEGGE",
+   "numeroSupplemento": "0",
+   "tipoSupplemento": "NO",
+   "suffissoArticoloSelezionato": 1,
+   "subArt1ArticoloSelezionato": 0,
+   "hlTitoli": null,
+   "hlArticoli": null,
+   "annoDataGU": "2023",
+   "dataGUStr": "24-11-2023",
+   "tipoSupplementoIt": "",
+   "tipoSupplementoEn": "",
+   "dataEmanazione": "2023-11-24T00:00:00Z",
+   "descrizioneAtto": "LEGGE 24 novembre 2023, n. 168",
+   "dataUltimaModifica": null,
+   "ultimiAttiModificanti": null
+  }
+ ],
+ "facetMap": {
+  "anno_provvedimento": [
+   {
+    "codice": "2021",
+    "valore": 6,
+    "descrizione": "2021"
+   },
+   {
+    "codice": "2014",
+    "valore": 4,
+    "descrizione": "2014"
+   },
+   {
+    "codice": "2025",
+    "valore": 4,
+    "descrizione": "2025"
+   },
+   {
+    "codice": "1988",
+    "valore": 3,
+    "descrizione": "1988"
+   },
+   {
+    "codice": "2004",
+    "valore": 3,
+    "descrizione": "2004"
+   },
+   {
+    "codice": "2013",
+    "valore": 3,
+    "descrizione": "2013"
+   },
+   {
+    "codice": "2016",
+    "valore": 3,
+    "descrizione": "2016"
+   },
+   {
+    "codice": "2019",
+    "valore": 3,
+    "descrizione": "2019"
+   },
+   {
+    "codice": "2020",
+    "valore": 3,
+    "descrizione": "2020"
+   },
+   {
+    "codice": "2023",
+    "valore": 3,
+    "descrizione": "2023"
+   },
+   {
+    "codice": "1905",
+    "valore": 2,
+    "descrizione": "1905"
+   },
+   {
+    "codice": "1976",
+    "valore": 2,
+    "descrizione": "1976"
+   },
+   {
+    "codice": "1980",
+    "valore": 2,
+    "descrizione": "1980"
+   },
+   {
+    "codice": "1985",
+    "valore": 2,
+    "descrizione": "1985"
+   },
+   {
+    "codice": "1995",
+    "valore": 2,
+    "descrizione": "1995"
+   },
+   {
+    "codice": "1999",
+    "valore": 2,
+    "descrizione": "1999"
+   },
+   {
+    "codice": "2009",
+    "valore": 2,
+    "descrizione": "2009"
+   },
+   {
+    "codice": "2010",
+    "valore": 2,
+    "descrizione": "2010"
+   },
+   {
+    "codice": "2012",
+    "valore": 2,
+    "descrizione": "2012"
+   },
+   {
+    "codice": "2018",
+    "valore": 2,
+    "descrizione": "2018"
+   },
+   {
+    "codice": "1906",
+    "valore": 1,
+    "descrizione": "1906"
+   },
+   {
+    "codice": "1924",
+    "valore": 1,
+    "descrizione": "1924"
+   },
+   {
+    "codice": "1930",
+    "valore": 1,
+    "descrizione": "1930"
+   },
+   {
+    "codice": "1952",
+    "valore": 1,
+    "descrizione": "1952"
+   },
+   {
+    "codice": "1962",
+    "valore": 1,
+    "descrizione": "1962"
+   },
+   {
+    "codice": "1967",
+    "valore": 1,
+    "descrizione": "1967"
+   },
+   {
+    "codice": "1970",
+    "valore": 1,
+    "descrizione": "1970"
+   },
+   {
+    "codice": "1973",
+    "valore": 1,
+    "descrizione": "1973"
+   },
+   {
+    "codice": "1975",
+    "valore": 1,
+    "descrizione": "1975"
+   },
+   {
+    "codice": "1977",
+    "valore": 1,
+    "descrizione": "1977"
+   },
+   {
+    "codice": "1978",
+    "valore": 1,
+    "descrizione": "1978"
+   },
+   {
+    "codice": "1983",
+    "valore": 1,
+    "descrizione": "1983"
+   },
+   {
+    "codice": "1984",
+    "valore": 1,
+    "descrizione": "1984"
+   },
+   {
+    "codice": "1986",
+    "valore": 1,
+    "descrizione": "1986"
+   },
+   {
+    "codice": "1987",
+    "valore": 1,
+    "descrizione": "1987"
+   },
+   {
+    "codice": "1989",
+    "valore": 1,
+    "descrizione": "1989"
+   },
+   {
+    "codice": "1991",
+    "valore": 1,
+    "descrizione": "1991"
+   },
+   {
+    "codice": "1992",
+    "valore": 1,
+    "descrizione": "1992"
+   },
+   {
+    "codice": "1993",
+    "valore": 1,
+    "descrizione": "1993"
+   },
+   {
+    "codice": "1996",
+    "valore": 1,
+    "descrizione": "1996"
+   },
+   {
+    "codice": "1997",
+    "valore": 1,
+    "descrizione": "1997"
+   },
+   {
+    "codice": "1998",
+    "valore": 1,
+    "descrizione": "1998"
+   },
+   {
+    "codice": "2000",
+    "valore": 1,
+    "descrizione": "2000"
+   },
+   {
+    "codice": "2002",
+    "valore": 1,
+    "descrizione": "2002"
+   },
+   {
+    "codice": "2003",
+    "valore": 1,
+    "descrizione": "2003"
+   },
+   {
+    "codice": "2005",
+    "valore": 1,
+    "descrizione": "2005"
+   },
+   {
+    "codice": "2006",
+    "valore": 1,
+    "descrizione": "2006"
+   },
+   {
+    "codice": "2007",
+    "valore": 1,
+    "descrizione": "2007"
+   },
+   {
+    "codice": "2011",
+    "valore": 1,
+    "descrizione": "2011"
+   },
+   {
+    "codice": "2015",
+    "valore": 1,
+    "descrizione": "2015"
+   },
+   {
+    "codice": "2017",
+    "valore": 1,
+    "descrizione": "2017"
+   },
+   {
+    "codice": "2022",
+    "valore": 1,
+    "descrizione": "2022"
+   }
+  ],
+  "codice_tipo_provvedimento": [
+   {
+    "codice": "PLE",
+    "valore": 46,
+    "descrizione": "LEGGE"
+   },
+   {
+    "codice": "PLL",
+    "valore": 11,
+    "descrizione": "DECRETO LEGISLATIVO"
+   },
+   {
+    "codice": "PDL",
+    "valore": 9,
+    "descrizione": "DECRETO-LEGGE"
+   },
+   {
+    "codice": "PPR",
+    "valore": 8,
+    "descrizione": "DECRETO DEL PRESIDENTE DELLA REPUBBLICA"
+   },
+   {
+    "codice": "DCT",
+    "valore": 7,
+    "descrizione": "DECRETO"
+   },
+   {
+    "codice": "PRD",
+    "valore": 4,
+    "descrizione": "REGIO DECRETO"
+   },
+   {
+    "codice": "PCM_DPC",
+    "valore": 2,
+    "descrizione": null
+   }
+  ],
+  "descrizione_emettitore": [
+   {
+    "codice": "---",
+    "valore": 80,
+    "descrizione": "STATO"
+   },
+   {
+    "codice": "MINISTERO DELLA GIUSTIZIA",
+    "valore": 2,
+    "descrizione": "MINISTERO DELLA GIUSTIZIA"
+   },
+   {
+    "codice": "MINISTERO DEL LAVORO E DELLA PREVIDENZA SOCIALE",
+    "valore": 1,
+    "descrizione": "MINISTERO DEL LAVORO E DELLA PREVIDENZA SOCIALE"
+   },
+   {
+    "codice": "MINISTERO DELL'ECONOMIA E DELLE FINANZE",
+    "valore": 1,
+    "descrizione": "MINISTERO DELL'ECONOMIA E DELLE FINANZE"
+   },
+   {
+    "codice": "MINISTERO DELL'INTERNO",
+    "valore": 1,
+    "descrizione": "MINISTERO DELL'INTERNO"
+   },
+   {
+    "codice": "MINISTERO DELLA DIFESA",
+    "valore": 1,
+    "descrizione": "MINISTERO DELLA DIFESA"
+   },
+   {
+    "codice": "MINISTERO DI GRAZIA E GIUSTIZIA",
+    "valore": 1,
+    "descrizione": "MINISTERO DI GRAZIA E GIUSTIZIA"
+   }
+  ]
+ },
+ "numeroPagine": 18,
+ "numeroAttiTrovati": 87,
+ "paginaCorrente": 1,
+ "numeroElementiPerPagina": 0,
+ "message": null,
+ "numeroFileRicerca": 0
+}

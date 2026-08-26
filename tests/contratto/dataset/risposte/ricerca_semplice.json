@@ -1,0 +1,154 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "listaAtti": [
+   {
+    "numeroAtto": "199",
+    "numeroAttoAlfanumerico": "199",
+    "dataGU": "2025-12-30",
+    "numeroGU": "301",
+    "codiceRedazionale": "25G00212",
+    "titoloAtto": "[Bilancio di previsione dello Stato  per  l'anno  finanziari…",
+    "giornoProvvedimento": "30",
+    "meseProvvedimento": "12",
+    "meseProvvedimentoIta": "dicembre",
+    "meseProvvedimentoEng": "December",
+    "annoProvvedimento": "2025",
+    "numeroProvvedimento": "199",
+    "denominazioneAtto": "LEGGE",
+    "numeroSupplemento": "42",
+    "tipoSupplemento": "SO",
+    "suffissoArticoloSelezionato": 1,
+    "subArt1ArticoloSelezionato": 0,
+    "hlTitoli": null,
+    "hlArticoli": null,
+    "annoDataGU": "2025",
+    "dataGUStr": "30-12-2025",
+    "tipoSupplementoIt": " - Suppl. Ordinario n. 42",
+    "tipoSupplementoEn": " - Ordinary Suppl. n. 42",
+    "dataEmanazione": "2025-12-30T00:00:00Z",
+    "descrizioneAtto": "LEGGE 30 dicembre 2025, n. 199",
+    "dataUltimaModifica": null,
+    "ultimiAttiModificanti": null
+   },
+   {
+    "numeroAtto": "181",
+    "numeroAttoAlfanumerico": "181",
+    "dataGU": "2025-12-02",
+    "numeroGU": "280",
+    "codiceRedazionale": "25G00187",
+    "titoloAtto": "[Introduzione del delitto di femminicidio e altri interventi…",
+    "giornoProvvedimento": "2",
+    "meseProvvedimento": "12",
+    "meseProvvedimentoIta": "dicembre",
+    "meseProvvedimentoEng": "December",
+    "annoProvvedimento": "2025",
+    "numeroProvvedimento": "181",
+    "denominazioneAtto": "LEGGE",
+    "numeroSupplemento": "0",
+    "tipoSupplemento": "NO",
+    "suffissoArticoloSelezionato": 1,
+    "subArt1ArticoloSelezionato": 0,
+    "hlTitoli": null,
+    "hlArticoli": null,
+    "annoDataGU": "2025",
+    "dataGUStr": "02-12-2025",
+    "tipoSupplementoIt": "",
+    "tipoSupplementoEn": "",
+    "dataEmanazione": "2025-12-02T00:00:00Z",
+    "descrizioneAtto": "LEGGE 2 dicembre 2025, n. 181",
+    "dataUltimaModifica": null,
+    "ultimiAttiModificanti": null
+   },
+   {
+    "numeroAtto": "123",
+    "numeroAttoAlfanumerico": "123",
+    "dataGU": "2025-08-12",
+    "numeroGU": "186",
+    "codiceRedazionale": "25G00124",
+    "titoloAtto": "[Testo unico delle disposizioni legislative in materia di  i…",
+    "giornoProvvedimento": "1",
+    "meseProvvedimento": "8",
+    "meseProvvedimentoIta": "agosto",
+    "meseProvvedimentoEng": "August",
+    "annoProvvedimento": "2025",
+    "numeroProvvedimento": "123",
+    "denominazioneAtto": "DECRETO LEGISLATIVO",
+    "numeroSupplemento": "29",
+    "tipoSupplemento": "SO",
+    "suffissoArticoloSelezionato": 1,
+    "subArt1ArticoloSelezionato": 0,
+    "hlTitoli": null,
+    "hlArticoli": null,
+    "annoDataGU": "2025",
+    "dataGUStr": "12-08-2025",
+    "tipoSupplementoIt": " - Suppl. Ordinario n. 29",
+    "tipoSupplementoEn": " - Ordinary Suppl. n. 29",
+    "dataEmanazione": "2025-08-01T00:00:00Z",
+    "descrizioneAtto": "DECRETO LEGISLATIVO 1 agosto 2025, n. 123",
+    "dataUltimaModifica": null,
+    "ultimiAttiModificanti": null
+   }
+  ],
+  "facetMap": {
+   "anno_provvedimento": [
+    {
+     "codice": "2021",
+     "valore": 6,
+     "descrizione": "2021"
+    },
+    {
+     "codice": "2014",
+     "valore": 4,
+     "descrizione": "2014"
+    },
+    {
+     "codice": "2025",
+     "valore": 4,
+     "descrizione": "2025"
+    }
+   ],
+   "codice_tipo_provvedimento": [
+    {
+     "codice": "PLE",
+     "valore": 46,
+     "descrizione": "LEGGE"
+    },
+    {
+     "codice": "PLL",
+     "valore": 11,
+     "descrizione": "DECRETO LEGISLATIVO"
+    },
+    {
+     "codice": "PDL",
+     "valore": 9,
+     "descrizione": "DECRETO-LEGGE"
+    }
+   ],
+   "descrizione_emettitore": [
+    {
+     "codice": "---",
+     "valore": 80,
+     "descrizione": "STATO"
+    },
+    {
+     "codice": "MINISTERO DELLA GIUSTIZIA",
+     "valore": 2,
+     "descrizione": "MINISTERO DELLA GIUSTIZIA"
+    },
+    {
+     "codice": "MINISTERO DEL LAVORO E DELLA PREVIDENZA SOCIALE",
+     "valore": 1,
+     "descrizione": "MINISTERO DEL LAVORO E DELLA PREVIDENZA SOCIALE"
+    }
+   ]
+  },
+  "numeroPagine": 18,
+  "numeroAttiTrovati": 87,
+  "paginaCorrente": 1,
+  "numeroElementiPerPagina": 0,
+  "message": null,
+  "numeroFileRicerca": 0
+ }
+}

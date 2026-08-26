@@ -1,0 +1,27 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": [
+  {
+   "nomeCollezione": "Atti di attuazione Regolamenti UE",
+   "formatoCollezione": "O",
+   "descrizioneFormatoCollezione": "ORIGINALE",
+   "dataCreazione": "2026-08-24",
+   "numeroAtti": 39
+  },
+  {
+   "nomeCollezione": "Atti di attuazione Regolamenti UE",
+   "formatoCollezione": "M",
+   "descrizioneFormatoCollezione": "MULTIVIGENTE",
+   "dataCreazione": "2026-08-24",
+   "numeroAtti": 39
+  },
+  {
+   "nomeCollezione": "Atti di attuazione Regolamenti UE",
+   "formatoCollezione": "V",
+   "descrizioneFormatoCollezione": "VIGENTE",
+   "dataCreazione": "2026-08-08",
+   "numeroAtti": 39
+  }
+ ]
+}

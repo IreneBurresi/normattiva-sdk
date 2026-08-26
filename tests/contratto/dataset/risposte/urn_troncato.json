@@ -1,0 +1,34 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "code": null,
+  "message": null,
+  "data": {
+   "atto": {
+    "titolo": "LEGGE 11 dicembre 2016, n. 232",
+    "sottoTitolo": "Bilancio di previsione dello Stato  per  l'anno  finanziario…",
+    "articoloHtml": "<div class=\"bodyTesto\"> <div class=\"preamble-before-title-akn\"> La Camera dei deputati ed il Senato della Repubblica hanno a</div> <h2 class=\"preamble-title-akn\"> IL PRESIDENTE DELLA REPUBBLICA</h2> <h2 class=\"preamble-end-akn\"> Promulga</h2> <p class=\"formula-introduttiva\"> la seguente legge:</p> <h2 class=\"article-num-akn\" id=\"art_1\"> Art. 1</h2> <div class=\"article-heading-akn\"> Risultati differenziali. Norme in materia di entrata e di sp</div> <div class=\"art-commi-div-akn\"> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 1.</span><span class=\"art_text_in_comma\"> I livelli massimi del saldo netto da finanziare e del ricors<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2009-12-31;196~art21-com1ter-leta\" target=\"_blank\"> articolo 21, comma 1-ter, lettera a), della legge 31 dicembr</a> , per gli anni 2017, 2018 e 2019, sono indicati nell'allegat&agrave; preesistenti con ammortamento a carico dello Stato.<br> </span> </div> <div class=\"art-comma-div-akn\"> <div> <div class=\"pointedList-first-akn\"> <span class=\"comma-num-akn\"> 2.</span> Al<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legge:2013-06-04;63\" target=\"_blank\"> decreto-legge 4 giugno 2013, n. 63</a> , convertito, con modificazioni, dalla<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:2013-08-03;90\" target=\"_blank\"> legge 3 agosto 2013, n. 90</a> , sono apportate le seguenti modificazioni:<br> </div> <div class=\"pointedList-rest-akn\"> a) all'articolo 14, concernente detrazioni fiscali per inter<br> 1) le parole:&laquo; 31 dicembre 2016&raquo; , ovunque ricorrono, salvo quanto previsto dal numero 2) del&laquo; 31 dicembre 2017&raquo; ;<br> 2) al comma 2, lettera a), le parole:&laquo; 31 dicembre 2016&raquo; sono sostituite dalle seguenti:&laquo; 31 dicembre 2021&raquo; ;<br> 3) dopo il comma 2-ter sono inseriti i seguenti:<br> &laquo; 2-quater. Per le spese sostenute dal 1&ordm; gennaio 2017 al 31 dicembre 2021 per interventi di riqualifi&agrave; media di cui al decreto del Ministro dello sviluppo economic<a href=\"http://www.gazzettaufficiale.it/gazzetta/serie_generale/caricaDettaglio?dataPubblicazioneGazzetta=2015-07-15&numeroGazzetta=162\"> Gazzetta Ufficiale n. 162 del 15 luglio 2015</a> . Le detrazioni di cui al presente articolo sono calcolate s&agrave; immobiliari che compongono l'edificio.<br> 2-quinquies. La sussistenza delle condizioni di cui al primo&egrave; asseverata da professionisti abilitati mediante l'attestazio&agrave; dell'attestazione comporta la decadenza dal beneficio, ferma&agrave; del professionista ai sensi delle disposizioni vigenti.<br> 2-sexies. Per gli interventi di cui al comma 2-quater, a dec&ordm; gennaio 2017, in luogo della detrazione, i soggetti benefici&agrave; di successiva cessione del credito.<br> Rimane esclusa la cessione ad istituti di credito e ad inter&agrave; di attuazione del presente comma sono definite con provvedim<br> 2-septies. Le detrazioni di cui al comma 2-quater so…[88872 caratteri omessi]",
+    "tipoProvvedimentoDescrizione": "LEGGE",
+    "tipoProvvedimentoCodice": "PLE",
+    "annoProvvedimento": 2016,
+    "meseProvvedimento": 12,
+    "giornoProvvedimento": 11,
+    "numeroProvvedimento": 232,
+    "tipoSupplementoCode": "SO",
+    "numeroSupplemento": 57,
+    "annoGU": 2016,
+    "meseGU": 12,
+    "giornoGU": 21,
+    "numeroGU": 297,
+    "dataPubblicazioneInGazzetta": null,
+    "articoloDataInizioVigenza": "20270101",
+    "articoloDataFineVigenza": "99999999",
+    "testoInVigore": null
+   },
+   "lista": null,
+   "message": "ricerca effettuata con successo"
+  },
+  "success": true
+ }
+}
