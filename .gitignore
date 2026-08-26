@@ -1,2 +1,27 @@
 .DS_Store
 .env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+dist/
+*.egg-info/
+
+# Tooling
+.hypothesis/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+site/
+.cache/
+
+# Gli archivi che il taccuino scarica mentre lo si esegue
+esempi/*.zip
+
+# Probe locali, mai committati
+scratch/
+
+# Configurazione locale dell'editor
+.claude/
