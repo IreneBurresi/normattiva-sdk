@@ -10,9 +10,9 @@ corto, e un conteggio di commi fermo a cento sembra un conteggio corretto.
 
 ## Gli articoli lunghi sono troncati
 
-Il servizio memorizza gli articoli lunghi a **blocchi di cento commi**, e il
-percorso interattivo restituisce solo il primo blocco, senza segnalarlo: nella
-risposta non c'è nessun campo che indichi la presenza di altri commi.
+Il percorso interattivo restituisce al massimo **cento commi** per articolo, e
+si ferma senza segnalarlo: nella risposta non c'è nessun campo che indichi la
+presenza di altri commi.
 
 L'articolo 1 della legge di bilancio 2017 ha oltre seicento commi:
 

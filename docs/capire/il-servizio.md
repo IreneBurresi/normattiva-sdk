@@ -1,10 +1,8 @@
 # Com'è fatto il servizio
 
-Il servizio ha una forma sua, e da quella forma discendono diverse scelte della
-libreria: i modelli sono due famiglie separate invece che una, le date passano
-tutte da un unico punto di lettura, un URN da solo non basta a identificare un
-atto. Qui c'è com'è fatto il servizio, e accanto a ogni sua particolarità che
-cosa ne è seguito.
+Diverse scelte della libreria discendono dalla forma del servizio: dalle due
+famiglie di modelli fino al fatto che un URN da solo non basti a identificare un
+atto.
 
 ## Chi lo gestisce, e con che licenza
 
@@ -61,8 +59,7 @@ una issue sul repository. Il meccanismo è descritto in
 
 ## Due modelli di risposta
 
-Il servizio non ha un modello di dati unico: ne ha due, e la libreria li tiene
-distinti.
+Il servizio ha due modelli di dati, e la libreria li tiene distinti.
 
 **Il percorso interattivo** (`dettaglio`, `cronologia`) restituisce il testo di
 **un atto o un articolo** in **una finestra di vigenza**. Arriva come HTML
@@ -137,9 +134,9 @@ altro modulo deve conoscere questi formati.
 
 ## Alcuni atti non dichiarano le proprie coordinate
 
-La Costituzione ha anno, mese, giorno e numero tutti a **zero**, perché non è
-un provvedimento numerato ed è datata solo dalla propria pubblicazione. La
-libreria legge quello zero come un'assenza e usa la data di Gazzetta.
+La Costituzione ha anno, mese, giorno e numero tutti a **zero**: non è un
+provvedimento numerato. La libreria legge quello zero come un'assenza e usa la
+data di Gazzetta.
 
 Sono valori che una `date` di Python non può rappresentare: senza questa
 lettura, la Costituzione sarebbe l'unico atto del corpus che la libreria non

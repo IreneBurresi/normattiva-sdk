@@ -174,9 +174,8 @@ obbliga colui che ha commesso il fatto a risarcire il danno.
 
 Il `:2` prima dell'articolo è l'allegato. Il codice civile è l'allegato 2 del
 R.D. 262/1942, il codice penale è l'allegato 1 del R.D. 1398/1930, il codice di
-procedura penale non ha allegato. Non c'è una regola da applicare: sono scelte
-redazionali fatte quando i codici sono stati pubblicati, e dedurre l'allegato
-per analogia porta a un `404`.
+procedura penale non ha allegato. Non c'è una regola da applicare, e dedurre
+l'allegato per analogia porta a un `404`.
 
 `codici` conosce l'allegato di dodici atti fra i più citati. L'elenco, con la
 citazione di ciascuno, sta nel [riferimento](../riferimento/codici.md); per
@@ -251,9 +250,10 @@ L. 7 agosto 1990, n. 241
 R.D.L. 13 gennaio 1935, n. 1
 ```
 
-Le abbreviazioni conosciute sono undici, e coprono **più** tipi di atto di
-quelli per cui si sa comporre un URN: abbreviare è una convenzione editoriale e
-vale anche per un atto che non sappiamo indirizzare. La tabella completa sta in
+Le abbreviazioni conosciute sono undici e le forme URN diciotto, e i due insiemi
+non coincidono: il regio decreto-legge si abbrevia ma non si indirizza, mentre
+otto tipi si indirizzano senza avere un'abbreviazione. Un tipo senza
+abbreviazione si cita per esteso. La tabella completa sta in
 [Come è fatto un atto](../capire/come-e-fatto-un-atto.md#le-abbreviazioni).
 
 Nella pratica si scrive poi «art. 2, comma 1, l. 241/1990». La libreria si ferma

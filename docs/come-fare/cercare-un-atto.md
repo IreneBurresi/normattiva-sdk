@@ -59,7 +59,7 @@ L'oggetto è iterabile, e itera sugli atti di questa pagina.
 !!! trappola "`len(esito)` non esiste"
 
     Non è definito apposta: `len` di una pagina di 20 risultati su 65 trovati
-    sarebbe una risposta ambigua a una domanda ambigua. Usa `len(esito.atti)`
+    non direbbe quale dei due numeri. Usa `len(esito.atti)`
     per questa pagina e `esito.totale` per la ricerca.
 
 Ogni elemento di `atti` è un [`AttoTrovato`][normattiva.AttoTrovato], che porta

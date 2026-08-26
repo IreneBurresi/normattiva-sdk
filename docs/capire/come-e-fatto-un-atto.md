@@ -1,8 +1,8 @@
 # Come è fatto un atto
 
 I nomi che la libreria usa sono quelli del diritto italiano: atto, articolo,
-comma, rubrica, allegato, vigenza. Questa pagina li spiega, e spiega perché
-dello stesso testo esistono più versioni.
+comma, rubrica, allegato, vigenza. Dello stesso testo, poi, esistono più
+versioni.
 
 !!! note "Serve a leggere i dati, non a decidere una questione giuridica"
 

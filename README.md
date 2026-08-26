@@ -15,10 +15,9 @@
 SDK non ufficiale per Normattiva, il portale della legge vigente dello Stato italiano
 
 [Normattiva](https://www.normattiva.it) conserva di ogni atto tutte le versioni
-che si sono succedute: il testo vigente oggi e quello in vigore in ciascuna data
-del passato, perché ogni modifica apre una versione nuova senza cancellare la
+che si sono succedute: ogni modifica ne apre una nuova senza cancellare la
 precedente. Si chiama multivigenza. La legge 241 del 1990 ha sessantuno
-versioni, e per leggerne una si indica la data che interessa.
+versioni, e per leggerne una si indica una data.
 
 Lo stesso corpus è pubblicato come open data su
 [dati.normattiva.it](https://dati.normattiva.it), con un'API HTTP gratuita che
@@ -74,8 +73,7 @@ with Normattiva() as normattiva:
     print(divorzio.finestra)  # 1987-03-12 → 2023-02-27
 ```
 
-Ogni `DettaglioAtto` porta il testo e ciò che serve a citarlo e a verificarlo
-alla fonte:
+Ogni `DettaglioAtto` porta il testo e i dati per citarlo e verificarlo:
 
 ```python
 atto.testo  # il testo piano, senza le note redazionali
@@ -127,7 +125,7 @@ iteratori asincroni.
 | `Corpus.from_zip()`, `save()` | rileggere e salvare un archivio senza rete |
 | `Urn.legge()`, `Urn.decreto_legislativo()` | comporre gli identificatori NIR |
 | `codici` | gli atti notissimi, con l'allegato attraverso cui rispondono |
-| `NormattivaError` e discendenti | una classe per percorso di gestione |
+| `NormattivaError` e discendenti | un'eccezione per ciascun caso da gestire |
 
 Gli errori che indicano una richiesta sbagliata sono tutti `ValueError` oltre
 che `NormattivaError`, così si prendono insieme senza sapere quale strato li ha
@@ -144,8 +142,7 @@ percorre la libreria su dati reali, con gli output salvati.
 
 Le domande e le segnalazioni vanno negli
 [issue](https://github.com/ireneburresi/normattiva-sdk/issues). Le pull request
-sono benvenute: per un cambiamento sostanziale conviene aprire prima un issue,
-così si discute l'impostazione prima che sia scritta.
+sono benvenute; per un cambiamento sostanziale conviene aprire prima un issue.
 
 ```bash
 uv sync --all-groups
@@ -180,6 +177,4 @@ dello Stato, in licenza CC BY 4.0. Testo non autentico e gratuito: l'unico
 testo ufficiale è quello pubblicato sulla Gazzetta Ufficiale a mezzo stampa.
 ```
 
-L'obbligo passa a chi ridistribuisce: se pubblichi qualcosa costruito su questi
-dati, quella riga va inclusa. Non è accorciabile restando conformi, perché le
-tre menzioni devono esserci tutte.
+Chi ridistribuisce i dati include quella riga.
