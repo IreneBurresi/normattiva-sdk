@@ -1,6 +1,7 @@
 """SDK non ufficiale per Normattiva, il portale della legge vigente."""
 
 from normattiva import codici
+from normattiva.client import AsyncNormattiva, Normattiva
 from normattiva.codici import AttoNoto
 from normattiva.errori import (
     AmbiguityError,
@@ -69,6 +70,7 @@ __all__ = [
     "Aggiornamento",
     "AmbiguityError",
     "AsyncExport",
+    "AsyncNormattiva",
     "AttoNoto",
     "AttoStorico",
     "AttoTrovato",
@@ -91,6 +93,7 @@ __all__ = [
     "Format",
     "InvalidArgumentError",
     "InvalidUrnError",
+    "Normattiva",
     "NormattivaError",
     "NotFoundError",
     "NotYetInForceError",
