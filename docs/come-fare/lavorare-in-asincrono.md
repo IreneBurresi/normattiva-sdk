@@ -56,7 +56,7 @@ async with AsyncNormattiva() as normattiva:
 ```
 
 Le richieste partono insieme e il client le serve a due al secondo, una alla
-volta: il semaforo è già dentro.
+volta: il limitatore è nel client, non serve aggiungerne uno.
 
 !!! trappola "Un client per processo"
 

@@ -2,8 +2,7 @@
 
 Alcune scelte di questa libreria sorprendono chi la usa per la prima volta:
 un limite che rifiuta invece di troncare, un identificatore che solleva
-un'eccezione invece di provarci, metà dei nomi in italiano e metà in inglese.
-Qui c'è il ragionamento dietro ciascuna.
+un'eccezione anziché tentare, metà dei nomi in italiano e metà in inglese.
 
 ## Limitare o rifiutare
 
@@ -14,9 +13,9 @@ prima di partire e, se sono più del limite, l'esportazione non parte affatto.
 
 La differenza sta in chi fa il lavoro. Scorrere una ricerca è lavoro di chi la
 chiede: fermarsi a metà risparmia qualche richiesta e non riguarda nessun
-altro. Un'esportazione è lavoro del servizio: dura minuti, occupa una coda
-condivisa con tutti gli altri utenti, e una volta partita non si annulla. Un
-filtro che per sbaglio prende mezzo corpus, lì, ricade sugli altri.
+altro. Un'esportazione è lavoro del servizio: dura minuti e una volta partita
+non si annulla, quindi un filtro che per sbaglio prende mezzo corpus impegna il
+servizio fino in fondo.
 
 Contare prima costa una richiesta, e con `massimo_atti=None` si può saltare.
 
@@ -31,8 +30,7 @@ plausibile.
 Un identificatore inventato non fallisce in modo visibile: ottiene un `404`,
 che è la stessa risposta che il servizio dà a un atto inesistente. Chi lo
 riceve conclude che l'atto non c'è, e va a cercare altrove un testo che invece
-esiste. L'eccezione dice la verità: non è l'atto a mancare, è l'indirizzo che
-non si sa scrivere.
+esiste. Sollevare distingue i due casi.
 
 Lo stesso vale per gli allegati dei codici, che la libreria non deduce ma
 elenca uno per uno in [`codici`](../riferimento/codici.md), e per la `vigenza`

@@ -3,10 +3,6 @@
 Il testo di una legge cambia nel tempo. Normattiva conserva ogni versione, e
 `dettaglio` restituisce quella in vigore in un giorno preciso.
 
-Questa pagina mostra come chiedere una data, come leggere la finestra di vigenza
-che arriva insieme al testo, come percorrere tutte le versioni di un articolo e
-che cosa succede quando la data richiesta cade fuori dalla vita dell'articolo.
-
 ## Chiedere il testo di un giorno preciso
 
 L'esempio è completo: si incolla in un file e si esegue.

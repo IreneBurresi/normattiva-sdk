@@ -8,7 +8,7 @@ comparire in qualunque momento.
 
 Ogni notte, alle 05:17 UTC, una suite interroga la produzione su tutti e
 quindici gli endpoint e confronta le risposte con un riferimento registrato.
-Questa pagina spiega come è fatta; per il solo riassunto basta
+Per il solo riassunto basta
 [L'affidabilità](../capire/affidabilita.md#il-monitoraggio).
 
 ## Le impronte
@@ -36,8 +36,7 @@ fallire.
 
 **I percorsi.** Le sequenze d'uso reali: cercare e poi leggere, esportare e poi
 riaprire da disco, riagganciarsi a un export dal token, percorrere tutta la
-storia di un articolo. Le librerie si rompono soprattutto nei punti di
-integrazione fra le parti.
+storia di un articolo.
 
 **I comportamenti.** Che l'articolo lungo sia ancora troncato, che l'URN
 ambiguo restituisca ancora due candidati, che gli articoli dei codici

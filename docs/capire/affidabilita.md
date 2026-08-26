@@ -1,9 +1,7 @@
 # L'affidabilità
 
 Il servizio è di terzi, gratuito, senza livelli di servizio garantiti e senza
-quote pubblicate. Può rallentare, rispondere male o non rispondere affatto. Le
-sezioni che seguono dicono che cosa fa la libreria in ciascuno di questi casi,
-e quali parametri regolare quando le sue scelte predefinite non vanno bene.
+quote pubblicate. Può rallentare, rispondere male o non rispondere affatto.
 
 ## Verso il servizio
 

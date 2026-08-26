@@ -1,9 +1,9 @@
 # Come funziona la normativa italiana
 
-Questa pagina spiega il sistema che Normattiva rappresenta: chi produce le
-norme, che forma hanno, come cambiano nel tempo e come si citano. Serve a
-leggere i dati con cognizione di causa; per le conseguenze giuridiche di un
-testo la fonte è la Gazzetta Ufficiale e l'interlocutore è un giurista.
+Il sistema che Normattiva rappresenta: chi produce le norme, che forma hanno,
+come cambiano nel tempo e come si citano. Conoscerlo serve a leggere i dati con
+cognizione di causa; per le conseguenze giuridiche di un testo la fonte è la
+Gazzetta Ufficiale e l'interlocutore è un giurista.
 
 ## Che cosa c'è dentro Normattiva
 

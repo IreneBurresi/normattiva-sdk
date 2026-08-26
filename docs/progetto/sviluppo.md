@@ -69,7 +69,7 @@ for (const [, url] of sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)) {
 Nessun errore in console vuol dire che tutti i diagrammi del sito si disegnano.
 
 Il [riferimento](../riferimento/index.md) è generato dalle docstring con
-mkdocstrings: le firme non si scrivono nelle pagine, si scrivono nel codice.
+mkdocstrings, quindi le firme si aggiornano dal codice.
 Un test compila ogni blocco Python di queste pagine, esegue quelli
 autosufficienti e verifica che ogni riferimento incrociato punti a qualcosa che
 esiste.

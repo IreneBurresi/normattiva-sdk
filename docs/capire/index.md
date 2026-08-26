@@ -9,7 +9,7 @@ Che cosa sono gli oggetti che la libreria restituisce, com'è fatto il servizio
 che li produce e come la libreria si comporta quando quel servizio risponde
 male. Per scrivere le prime righe di codice bastano il
 [tutorial](../tutorial/primi-passi.md) e le guide di
-[Come fare](../come-fare/index.md); queste pagine servono quando serve capire.
+[Come fare](../come-fare/index.md).
 
 | Pagina | A che domanda risponde |
 |---|---|
