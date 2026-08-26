@@ -1,0 +1,34 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "code": null,
+  "message": null,
+  "data": {
+   "atto": {
+    "titolo": "LEGGE 1 dicembre 1970, n. 898",
+    "sottoTitolo": "Disciplina dei casi di scioglimento del matrimonio.\n",
+    "articoloHtml": "<div class=\"bodyTesto\"> <h2 class=\"preamble-title-akn\"></h2> <h2 class=\"preamble-end-akn\"></h2> <h2 class=\"article-num-akn\" id=\"art_5\"> Art. 5</h2> <span class=\"art-just-text-akn\"> <br> <br> Il tribunale adito, in contraddittorio delle parti e con l'i<br> <div class=\"ins-akn\" eid=\"ins_1\"> ((La donna perde il cognome che aveva aggiunto al proprio a <br> Il tribunale, con la sentenza con cui pronuncia lo scioglime&ograve; autorizzare la donna che ne faccia richiesta a conservare il<br> La decisione di cui al comma precedente pu&ograve; essere modificata con successiva sentenza, per motivi di par&agrave; , su istanza di una delle parti))</div> .<br> La sentenza&egrave; impugnabile da ciascuna delle parti. Il pubblico ministero p&ograve; , ai sensi dell'<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:codice.procedura.civile:1940-10-28;1443~art72\" target=\"_blank\"> articolo 72 del codice di procedura civile</a> , proporre impugnazione limitatamente agli interessi patrimo<br> <div class=\"ins-akn\" eid=\"ins_2\"> ((Con la sentenza che pronuncia lo scioglimento o la cessazi&ograve; procurarseli per ragioni oggettive.<br> La sentenza deve stabilire anche un criterio di adeguamento &ograve; , in caso di palese iniquit&agrave; , escludere la previsione con motivata decisione.<br> Su accordo delle parti la corresponsione pu&ograve; avvenire in unica soluzione ove questa sia ritenuta equa dal&ograve; essere proposta alcuna successiva domanda di contenuto econo<br> I coniugi devono presentare all'udienza di comparizione avan</div> .<br> L'obbligo di corresponsione dell'assegno cessa se il coniuge<br> Il coniuge, al quale non spetti l'assistenza sanitaria per n<br> </span> </div>",
+    "tipoProvvedimentoDescrizione": "LEGGE",
+    "tipoProvvedimentoCodice": "PLE",
+    "annoProvvedimento": 1970,
+    "meseProvvedimento": 12,
+    "giornoProvvedimento": 1,
+    "numeroProvvedimento": 898,
+    "tipoSupplementoCode": "NO",
+    "numeroSupplemento": 0,
+    "annoGU": 1970,
+    "meseGU": 12,
+    "giornoGU": 3,
+    "numeroGU": 306,
+    "dataPubblicazioneInGazzetta": null,
+    "articoloDataInizioVigenza": "19870312",
+    "articoloDataFineVigenza": "20230227",
+    "testoInVigore": null
+   },
+   "lista": null,
+   "message": "ricerca effettuata con successo"
+  },
+  "success": true
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "code": null,
+  "message": null,
+  "data": {
+   "atto": {
+    "titolo": "LEGGE 7 agosto 1990, n. 241",
+    "sottoTitolo": "  Nuove norme in materia di procedimento amministrativo e di…",
+    "articoloHtml": "<div class=\"bodyTesto\"> <h2 class=\"preamble-title-akn\"></h2> <h2 class=\"preamble-end-akn\"></h2> <h2 class=\"article-num-akn\" id=\"art_2\"> Art. 2</h2> <div class=\"art-commi-div-akn\"> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 1.</span><span class=\"art_text_in_comma\"> Ove il procedimento consegua obbligatoriamente ad una istanz<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 2.</span><span class=\"art_text_in_comma\"> Le pubbliche amministrazioni determinano per ciascun tipo di&agrave; direttamente disposto per legge o per regolamento, il termin&egrave; ad iniziativa di parte.<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 3.</span><span class=\"art_text_in_comma\"> Qualora le pubbliche amministrazioni non provvedano ai sensi&egrave; di trenta giorni.<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 4.</span><span class=\"art_text_in_comma\"> Le determinazioni adottate ai sensi del comma 2 sono rese pu<br> </span> </div> </div> </div>",
+    "tipoProvvedimentoDescrizione": "LEGGE",
+    "tipoProvvedimentoCodice": "PLE",
+    "annoProvvedimento": 1990,
+    "meseProvvedimento": 8,
+    "giornoProvvedimento": 7,
+    "numeroProvvedimento": 241,
+    "tipoSupplementoCode": "NO",
+    "numeroSupplemento": 0,
+    "annoGU": 1990,
+    "meseGU": 8,
+    "giornoGU": 18,
+    "numeroGU": 192,
+    "dataPubblicazioneInGazzetta": null,
+    "articoloDataInizioVigenza": "19900902",
+    "articoloDataFineVigenza": "20050307",
+    "testoInVigore": null
+   },
+   "message": null
+  },
+  "success": true
+ }
+}

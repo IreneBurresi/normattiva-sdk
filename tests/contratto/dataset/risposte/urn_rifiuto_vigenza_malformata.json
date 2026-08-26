@@ -1,0 +1,8 @@
+{
+ "stato": 400,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "message": " urn assente o non valido, il formato minimo deve essere urn:<emettitore> :<tipo> :<data> ;<numero>",
+  "code": "1003"
+ }
+}

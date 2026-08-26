@@ -1,0 +1,50 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "ricerchePredefinite": [
+   {
+    "nome": "Atti Repubblica",
+    "dettagli": [
+     {
+      "nomeCampo": "EmanazioneFrom",
+      "valoreCampo": "1946-06-20"
+     },
+     {
+      "nomeCampo": "EmanazioneTo",
+      "valoreCampo": "2024-12-19"
+     }
+    ],
+    "dataCreazione": "2024-12-17T20:23:02"
+   },
+   {
+    "nome": "Atti Regno d'Italia aggiornati vigenti",
+    "dettagli": [
+     {
+      "nomeCampo": "EmanazioneFrom",
+      "valoreCampo": "1861-01-01"
+     },
+     {
+      "nomeCampo": "EmanazioneTo",
+      "valoreCampo": "1946-06-10"
+     },
+     {
+      "nomeCampo": "classeProvvedimento",
+      "valoreCampo": "2"
+     }
+    ],
+    "dataCreazione": "2024-12-17T20:23:02"
+   },
+   {
+    "nome": "Atti abrogati",
+    "dettagli": [
+     {
+      "nomeCampo": "classeProvvedimento",
+      "valoreCampo": "3"
+     }
+    ],
+    "dataCreazione": "2024-12-17T20:23:03"
+   }
+  ]
+ }
+}

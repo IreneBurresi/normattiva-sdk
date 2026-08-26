@@ -1,0 +1,18 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": [
+  {
+   "label": "COS",
+   "value": "COSTITUZIONE"
+  },
+  {
+   "label": "DCT",
+   "value": "DECRETO"
+  },
+  {
+   "label": "PCG",
+   "value": "DECRETO DEL CAPO DEL GOVERNO"
+  }
+ ]
+}

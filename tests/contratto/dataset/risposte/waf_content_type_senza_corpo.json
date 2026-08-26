@@ -1,0 +1,9 @@
+{
+ "stato": 409,
+ "tipo_contenuto": "text/html; charset=utf-8",
+ "corpo": {
+  "status": "KO",
+  "supportId": "6159029531090193995",
+  "message": "La pagina richiesta è stata bloccata dai sistemi di protezio…"
+ }
+}

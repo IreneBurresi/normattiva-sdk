@@ -1,0 +1,18 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": [
+  {
+   "label": "AKN",
+   "value": "Esporta AKN"
+  },
+  {
+   "label": "XML",
+   "value": "Esporta XML"
+  },
+  {
+   "label": "PDF",
+   "value": "Esporta PDF"
+  }
+ ]
+}

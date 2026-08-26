@@ -1,0 +1,2306 @@
+{
+ "registrato": "2026-08-25",
+ "campioni": {
+  "aggiornati_date_invertite": {
+   "@stato": [
+    "400"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "str"
+   ],
+   ".message": [
+    "str"
+   ]
+  },
+  "aggiornati_finestra_breve": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".facetMap": [
+    "oggetto"
+   ],
+   ".listaAtti": [
+    "lista"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".numeroAttiTrovati": [
+    "int"
+   ],
+   ".numeroElementiPerPagina": [
+    "int"
+   ],
+   ".numeroFileRicerca": [
+    "int"
+   ],
+   ".numeroPagine": [
+    "int"
+   ],
+   ".paginaCorrente": [
+    "int"
+   ]
+  },
+  "aggiornati_oltre_dodici_mesi": {
+   "@stato": [
+    "400"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "str"
+   ],
+   ".message": [
+    "str"
+   ]
+  },
+  "collezione_preconfezionata": {
+   "@stato": [
+    "302"
+   ],
+   "@tipo-contenuto": [
+    "assente"
+   ],
+   "@testo": [
+    "vuoto"
+   ]
+  },
+  "collezioni_catalogo": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "lista"
+   ],
+   "[]": [
+    "oggetto"
+   ],
+   "[].dataCreazione": [
+    "str"
+   ],
+   "[].descrizioneFormatoCollezione": [
+    "str"
+   ],
+   "[].formatoCollezione": [
+    "str"
+   ],
+   "[].nomeCollezione": [
+    "str"
+   ],
+   "[].numeroAtti": [
+    "int"
+   ]
+  },
+  "dettaglio_atto_coordinate": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.message": [
+    "null"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "dettaglio_atto_originario": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.message": [
+    "null"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "ricerca_avanzata": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".facetMap": [
+    "oggetto"
+   ],
+   ".facetMap.anno_provvedimento": [
+    "lista"
+   ],
+   ".facetMap.anno_provvedimento[]": [
+    "oggetto"
+   ],
+   ".facetMap.anno_provvedimento[].codice": [
+    "str"
+   ],
+   ".facetMap.anno_provvedimento[].descrizione": [
+    "str"
+   ],
+   ".facetMap.anno_provvedimento[].valore": [
+    "int"
+   ],
+   ".facetMap.codice_tipo_provvedimento": [
+    "lista"
+   ],
+   ".facetMap.codice_tipo_provvedimento[]": [
+    "oggetto"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].codice": [
+    "str"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].descrizione": [
+    "str"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].valore": [
+    "int"
+   ],
+   ".facetMap.descrizione_emettitore": [
+    "lista"
+   ],
+   ".facetMap.descrizione_emettitore[]": [
+    "oggetto"
+   ],
+   ".facetMap.descrizione_emettitore[].codice": [
+    "str"
+   ],
+   ".facetMap.descrizione_emettitore[].descrizione": [
+    "str"
+   ],
+   ".facetMap.descrizione_emettitore[].valore": [
+    "int"
+   ],
+   ".listaAtti": [
+    "lista"
+   ],
+   ".listaAtti[]": [
+    "oggetto"
+   ],
+   ".listaAtti[].annoDataGU": [
+    "str"
+   ],
+   ".listaAtti[].annoProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].codiceRedazionale": [
+    "str"
+   ],
+   ".listaAtti[].dataEmanazione": [
+    "str"
+   ],
+   ".listaAtti[].dataGU": [
+    "str"
+   ],
+   ".listaAtti[].dataGUStr": [
+    "str"
+   ],
+   ".listaAtti[].dataUltimaModifica": [
+    "null"
+   ],
+   ".listaAtti[].denominazioneAtto": [
+    "str"
+   ],
+   ".listaAtti[].descrizioneAtto": [
+    "str"
+   ],
+   ".listaAtti[].giornoProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].hlArticoli": [
+    "null"
+   ],
+   ".listaAtti[].hlTitoli": [
+    "null"
+   ],
+   ".listaAtti[].meseProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].meseProvvedimentoEng": [
+    "str"
+   ],
+   ".listaAtti[].meseProvvedimentoIta": [
+    "str"
+   ],
+   ".listaAtti[].numeroAtto": [
+    "str"
+   ],
+   ".listaAtti[].numeroAttoAlfanumerico": [
+    "str"
+   ],
+   ".listaAtti[].numeroGU": [
+    "str"
+   ],
+   ".listaAtti[].numeroProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].numeroSupplemento": [
+    "str"
+   ],
+   ".listaAtti[].subArt1ArticoloSelezionato": [
+    "int"
+   ],
+   ".listaAtti[].suffissoArticoloSelezionato": [
+    "int"
+   ],
+   ".listaAtti[].tipoSupplemento": [
+    "str"
+   ],
+   ".listaAtti[].tipoSupplementoEn": [
+    "str"
+   ],
+   ".listaAtti[].tipoSupplementoIt": [
+    "str"
+   ],
+   ".listaAtti[].titoloAtto": [
+    "str"
+   ],
+   ".listaAtti[].ultimiAttiModificanti": [
+    "null"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".numeroAttiTrovati": [
+    "int"
+   ],
+   ".numeroElementiPerPagina": [
+    "int"
+   ],
+   ".numeroFileRicerca": [
+    "int"
+   ],
+   ".numeroPagine": [
+    "int"
+   ],
+   ".paginaCorrente": [
+    "int"
+   ]
+  },
+  "ricerca_avanzata_con_vigenza": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".facetMap": [
+    "oggetto"
+   ],
+   ".facetMap.anno_provvedimento": [
+    "lista"
+   ],
+   ".facetMap.anno_provvedimento[]": [
+    "oggetto"
+   ],
+   ".facetMap.anno_provvedimento[].codice": [
+    "str"
+   ],
+   ".facetMap.anno_provvedimento[].descrizione": [
+    "str"
+   ],
+   ".facetMap.anno_provvedimento[].valore": [
+    "int"
+   ],
+   ".facetMap.codice_tipo_provvedimento": [
+    "lista"
+   ],
+   ".facetMap.codice_tipo_provvedimento[]": [
+    "oggetto"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].codice": [
+    "str"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].descrizione": [
+    "str"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].valore": [
+    "int"
+   ],
+   ".facetMap.descrizione_emettitore": [
+    "lista"
+   ],
+   ".facetMap.descrizione_emettitore[]": [
+    "oggetto"
+   ],
+   ".facetMap.descrizione_emettitore[].codice": [
+    "str"
+   ],
+   ".facetMap.descrizione_emettitore[].descrizione": [
+    "str"
+   ],
+   ".facetMap.descrizione_emettitore[].valore": [
+    "int"
+   ],
+   ".listaAtti": [
+    "lista"
+   ],
+   ".listaAtti[]": [
+    "oggetto"
+   ],
+   ".listaAtti[].annoDataGU": [
+    "str"
+   ],
+   ".listaAtti[].annoProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].codiceRedazionale": [
+    "str"
+   ],
+   ".listaAtti[].dataEmanazione": [
+    "str"
+   ],
+   ".listaAtti[].dataGU": [
+    "str"
+   ],
+   ".listaAtti[].dataGUStr": [
+    "str"
+   ],
+   ".listaAtti[].dataUltimaModifica": [
+    "null"
+   ],
+   ".listaAtti[].denominazioneAtto": [
+    "str"
+   ],
+   ".listaAtti[].descrizioneAtto": [
+    "str"
+   ],
+   ".listaAtti[].giornoProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].hlArticoli": [
+    "null"
+   ],
+   ".listaAtti[].hlTitoli": [
+    "null"
+   ],
+   ".listaAtti[].meseProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].meseProvvedimentoEng": [
+    "str"
+   ],
+   ".listaAtti[].meseProvvedimentoIta": [
+    "str"
+   ],
+   ".listaAtti[].numeroAtto": [
+    "str"
+   ],
+   ".listaAtti[].numeroAttoAlfanumerico": [
+    "str"
+   ],
+   ".listaAtti[].numeroGU": [
+    "str"
+   ],
+   ".listaAtti[].numeroProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].numeroSupplemento": [
+    "str"
+   ],
+   ".listaAtti[].subArt1ArticoloSelezionato": [
+    "int"
+   ],
+   ".listaAtti[].suffissoArticoloSelezionato": [
+    "int"
+   ],
+   ".listaAtti[].tipoSupplemento": [
+    "str"
+   ],
+   ".listaAtti[].tipoSupplementoEn": [
+    "str"
+   ],
+   ".listaAtti[].tipoSupplementoIt": [
+    "str"
+   ],
+   ".listaAtti[].titoloAtto": [
+    "str"
+   ],
+   ".listaAtti[].ultimiAttiModificanti": [
+    "null"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".numeroAttiTrovati": [
+    "int"
+   ],
+   ".numeroElementiPerPagina": [
+    "int"
+   ],
+   ".numeroFileRicerca": [
+    "int"
+   ],
+   ".numeroPagine": [
+    "int"
+   ],
+   ".paginaCorrente": [
+    "int"
+   ]
+  },
+  "ricerca_semplice": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".facetMap": [
+    "oggetto"
+   ],
+   ".facetMap.anno_provvedimento": [
+    "lista"
+   ],
+   ".facetMap.anno_provvedimento[]": [
+    "oggetto"
+   ],
+   ".facetMap.anno_provvedimento[].codice": [
+    "str"
+   ],
+   ".facetMap.anno_provvedimento[].descrizione": [
+    "str"
+   ],
+   ".facetMap.anno_provvedimento[].valore": [
+    "int"
+   ],
+   ".facetMap.codice_tipo_provvedimento": [
+    "lista"
+   ],
+   ".facetMap.codice_tipo_provvedimento[]": [
+    "oggetto"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].codice": [
+    "str"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].descrizione": [
+    "null",
+    "str"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].valore": [
+    "int"
+   ],
+   ".facetMap.descrizione_emettitore": [
+    "lista"
+   ],
+   ".facetMap.descrizione_emettitore[]": [
+    "oggetto"
+   ],
+   ".facetMap.descrizione_emettitore[].codice": [
+    "str"
+   ],
+   ".facetMap.descrizione_emettitore[].descrizione": [
+    "str"
+   ],
+   ".facetMap.descrizione_emettitore[].valore": [
+    "int"
+   ],
+   ".listaAtti": [
+    "lista"
+   ],
+   ".listaAtti[]": [
+    "oggetto"
+   ],
+   ".listaAtti[].annoDataGU": [
+    "str"
+   ],
+   ".listaAtti[].annoProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].codiceRedazionale": [
+    "str"
+   ],
+   ".listaAtti[].dataEmanazione": [
+    "str"
+   ],
+   ".listaAtti[].dataGU": [
+    "str"
+   ],
+   ".listaAtti[].dataGUStr": [
+    "str"
+   ],
+   ".listaAtti[].dataUltimaModifica": [
+    "null"
+   ],
+   ".listaAtti[].denominazioneAtto": [
+    "str"
+   ],
+   ".listaAtti[].descrizioneAtto": [
+    "str"
+   ],
+   ".listaAtti[].giornoProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].hlArticoli": [
+    "null"
+   ],
+   ".listaAtti[].hlTitoli": [
+    "null"
+   ],
+   ".listaAtti[].meseProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].meseProvvedimentoEng": [
+    "str"
+   ],
+   ".listaAtti[].meseProvvedimentoIta": [
+    "str"
+   ],
+   ".listaAtti[].numeroAtto": [
+    "str"
+   ],
+   ".listaAtti[].numeroAttoAlfanumerico": [
+    "str"
+   ],
+   ".listaAtti[].numeroGU": [
+    "str"
+   ],
+   ".listaAtti[].numeroProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].numeroSupplemento": [
+    "str"
+   ],
+   ".listaAtti[].subArt1ArticoloSelezionato": [
+    "int"
+   ],
+   ".listaAtti[].suffissoArticoloSelezionato": [
+    "int"
+   ],
+   ".listaAtti[].tipoSupplemento": [
+    "str"
+   ],
+   ".listaAtti[].tipoSupplementoEn": [
+    "str"
+   ],
+   ".listaAtti[].tipoSupplementoIt": [
+    "str"
+   ],
+   ".listaAtti[].titoloAtto": [
+    "str"
+   ],
+   ".listaAtti[].ultimiAttiModificanti": [
+    "null"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".numeroAttiTrovati": [
+    "int"
+   ],
+   ".numeroElementiPerPagina": [
+    "int"
+   ],
+   ".numeroFileRicerca": [
+    "int"
+   ],
+   ".numeroPagine": [
+    "int"
+   ],
+   ".paginaCorrente": [
+    "int"
+   ]
+  },
+  "ricerca_semplice_filtrata": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".facetMap": [
+    "oggetto"
+   ],
+   ".facetMap.anno_provvedimento": [
+    "lista"
+   ],
+   ".facetMap.anno_provvedimento[]": [
+    "oggetto"
+   ],
+   ".facetMap.anno_provvedimento[].codice": [
+    "str"
+   ],
+   ".facetMap.anno_provvedimento[].descrizione": [
+    "str"
+   ],
+   ".facetMap.anno_provvedimento[].valore": [
+    "int"
+   ],
+   ".facetMap.codice_tipo_provvedimento": [
+    "lista"
+   ],
+   ".facetMap.codice_tipo_provvedimento[]": [
+    "oggetto"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].codice": [
+    "str"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].descrizione": [
+    "str"
+   ],
+   ".facetMap.codice_tipo_provvedimento[].valore": [
+    "int"
+   ],
+   ".facetMap.descrizione_emettitore": [
+    "lista"
+   ],
+   ".facetMap.descrizione_emettitore[]": [
+    "oggetto"
+   ],
+   ".facetMap.descrizione_emettitore[].codice": [
+    "str"
+   ],
+   ".facetMap.descrizione_emettitore[].descrizione": [
+    "str"
+   ],
+   ".facetMap.descrizione_emettitore[].valore": [
+    "int"
+   ],
+   ".listaAtti": [
+    "lista"
+   ],
+   ".listaAtti[]": [
+    "oggetto"
+   ],
+   ".listaAtti[].annoDataGU": [
+    "str"
+   ],
+   ".listaAtti[].annoProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].codiceRedazionale": [
+    "str"
+   ],
+   ".listaAtti[].dataEmanazione": [
+    "str"
+   ],
+   ".listaAtti[].dataGU": [
+    "str"
+   ],
+   ".listaAtti[].dataGUStr": [
+    "str"
+   ],
+   ".listaAtti[].dataUltimaModifica": [
+    "null"
+   ],
+   ".listaAtti[].denominazioneAtto": [
+    "str"
+   ],
+   ".listaAtti[].descrizioneAtto": [
+    "str"
+   ],
+   ".listaAtti[].giornoProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].hlArticoli": [
+    "null"
+   ],
+   ".listaAtti[].hlTitoli": [
+    "null"
+   ],
+   ".listaAtti[].meseProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].meseProvvedimentoEng": [
+    "str"
+   ],
+   ".listaAtti[].meseProvvedimentoIta": [
+    "str"
+   ],
+   ".listaAtti[].numeroAtto": [
+    "str"
+   ],
+   ".listaAtti[].numeroAttoAlfanumerico": [
+    "str"
+   ],
+   ".listaAtti[].numeroGU": [
+    "str"
+   ],
+   ".listaAtti[].numeroProvvedimento": [
+    "str"
+   ],
+   ".listaAtti[].numeroSupplemento": [
+    "str"
+   ],
+   ".listaAtti[].subArt1ArticoloSelezionato": [
+    "int"
+   ],
+   ".listaAtti[].suffissoArticoloSelezionato": [
+    "int"
+   ],
+   ".listaAtti[].tipoSupplemento": [
+    "str"
+   ],
+   ".listaAtti[].tipoSupplementoEn": [
+    "str"
+   ],
+   ".listaAtti[].tipoSupplementoIt": [
+    "str"
+   ],
+   ".listaAtti[].titoloAtto": [
+    "str"
+   ],
+   ".listaAtti[].ultimiAttiModificanti": [
+    "null"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".numeroAttiTrovati": [
+    "int"
+   ],
+   ".numeroElementiPerPagina": [
+    "int"
+   ],
+   ".numeroFileRicerca": [
+    "int"
+   ],
+   ".numeroPagine": [
+    "int"
+   ],
+   ".paginaCorrente": [
+    "int"
+   ]
+  },
+  "ricerca_senza_paginazione": {
+   "@stato": [
+    "500"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".error": [
+    "str"
+   ],
+   ".path": [
+    "str"
+   ],
+   ".status": [
+    "int"
+   ],
+   ".timestamp": [
+    "str"
+   ]
+  },
+  "ricerca_senza_risultati": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".facetMap": [
+    "oggetto"
+   ],
+   ".facetMap.anno_provvedimento": [
+    "lista"
+   ],
+   ".facetMap.codice_tipo_provvedimento": [
+    "lista"
+   ],
+   ".facetMap.descrizione_emettitore": [
+    "lista"
+   ],
+   ".listaAtti": [
+    "lista"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".numeroAttiTrovati": [
+    "int"
+   ],
+   ".numeroElementiPerPagina": [
+    "int"
+   ],
+   ".numeroFileRicerca": [
+    "int"
+   ],
+   ".numeroPagine": [
+    "int"
+   ],
+   ".paginaCorrente": [
+    "int"
+   ]
+  },
+  "ricerche_predefinite": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".ricerchePredefinite": [
+    "lista"
+   ],
+   ".ricerchePredefinite[]": [
+    "oggetto"
+   ],
+   ".ricerchePredefinite[].dataCreazione": [
+    "str"
+   ],
+   ".ricerchePredefinite[].dettagli": [
+    "lista"
+   ],
+   ".ricerchePredefinite[].dettagli[]": [
+    "oggetto"
+   ],
+   ".ricerchePredefinite[].dettagli[].nomeCampo": [
+    "str"
+   ],
+   ".ricerchePredefinite[].dettagli[].valoreCampo": [
+    "str"
+   ],
+   ".ricerchePredefinite[].nome": [
+    "str"
+   ]
+  },
+  "tipologiche_classi": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "lista"
+   ],
+   "[]": [
+    "oggetto"
+   ],
+   "[].label": [
+    "str"
+   ],
+   "[].value": [
+    "str"
+   ]
+  },
+  "tipologiche_denominazioni": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "lista"
+   ],
+   "[]": [
+    "oggetto"
+   ],
+   "[].label": [
+    "str"
+   ],
+   "[].value": [
+    "str"
+   ]
+  },
+  "tipologiche_estensioni": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "lista"
+   ],
+   "[]": [
+    "oggetto"
+   ],
+   "[].label": [
+    "str"
+   ],
+   "[].value": [
+    "str"
+   ]
+  },
+  "urn_ambiguo": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "null"
+   ],
+   ".data.lista": [
+    "lista"
+   ],
+   ".data.lista[]": [
+    "oggetto"
+   ],
+   ".data.lista[].annoGU": [
+    "int"
+   ],
+   ".data.lista[].annoProvvedimento": [
+    "int"
+   ],
+   ".data.lista[].articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.lista[].articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.lista[].articoloHtml": [
+    "str"
+   ],
+   ".data.lista[].dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.lista[].giornoGU": [
+    "int"
+   ],
+   ".data.lista[].giornoProvvedimento": [
+    "int"
+   ],
+   ".data.lista[].meseGU": [
+    "int"
+   ],
+   ".data.lista[].meseProvvedimento": [
+    "int"
+   ],
+   ".data.lista[].numeroGU": [
+    "int"
+   ],
+   ".data.lista[].numeroProvvedimento": [
+    "int"
+   ],
+   ".data.lista[].numeroSupplemento": [
+    "int"
+   ],
+   ".data.lista[].sottoTitolo": [
+    "str"
+   ],
+   ".data.lista[].testoInVigore": [
+    "null"
+   ],
+   ".data.lista[].tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.lista[].tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.lista[].tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.lista[].titolo": [
+    "str"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_articolo": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_articolo_con_aggiornamento": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_articolo_inesistente": {
+   "@stato": [
+    "404"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".message": [
+    "str"
+   ]
+  },
+  "urn_atto_inesistente": {
+   "@stato": [
+    "404"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "str"
+   ],
+   ".message": [
+    "str"
+   ]
+  },
+  "urn_atto_intero": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_codice_senza_allegato": {
+   "@stato": [
+    "404"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".message": [
+    "str"
+   ]
+  },
+  "urn_costituzione": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_da_allegato": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_data_impossibile": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_non_ancora_vigente": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_ordinale_contratto": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_rifiuto_comma": {
+   "@stato": [
+    "400"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "str"
+   ],
+   ".message": [
+    "str"
+   ]
+  },
+  "urn_rifiuto_numero_romano": {
+   "@stato": [
+    "400"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "str"
+   ],
+   ".message": [
+    "str"
+   ]
+  },
+  "urn_rifiuto_ordinale_con_trattino": {
+   "@stato": [
+    "400"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "str"
+   ],
+   ".message": [
+    "str"
+   ]
+  },
+  "urn_rifiuto_vigenza_malformata": {
+   "@stato": [
+    "400"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "str"
+   ],
+   ".message": [
+    "str"
+   ]
+  },
+  "urn_troncato": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_versione_originale": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "urn_vigenza_esplicita": {
+   "@stato": [
+    "200"
+   ],
+   "@tipo-contenuto": [
+    "application/json"
+   ],
+   ".": [
+    "oggetto"
+   ],
+   ".code": [
+    "null"
+   ],
+   ".data": [
+    "oggetto"
+   ],
+   ".data.atto": [
+    "oggetto"
+   ],
+   ".data.atto.annoGU": [
+    "int"
+   ],
+   ".data.atto.annoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.articoloDataFineVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloDataInizioVigenza": [
+    "str"
+   ],
+   ".data.atto.articoloHtml": [
+    "str"
+   ],
+   ".data.atto.dataPubblicazioneInGazzetta": [
+    "null"
+   ],
+   ".data.atto.giornoGU": [
+    "int"
+   ],
+   ".data.atto.giornoProvvedimento": [
+    "int"
+   ],
+   ".data.atto.meseGU": [
+    "int"
+   ],
+   ".data.atto.meseProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroGU": [
+    "int"
+   ],
+   ".data.atto.numeroProvvedimento": [
+    "int"
+   ],
+   ".data.atto.numeroSupplemento": [
+    "int"
+   ],
+   ".data.atto.sottoTitolo": [
+    "str"
+   ],
+   ".data.atto.testoInVigore": [
+    "null"
+   ],
+   ".data.atto.tipoProvvedimentoCodice": [
+    "str"
+   ],
+   ".data.atto.tipoProvvedimentoDescrizione": [
+    "str"
+   ],
+   ".data.atto.tipoSupplementoCode": [
+    "str"
+   ],
+   ".data.atto.titolo": [
+    "str"
+   ],
+   ".data.lista": [
+    "null"
+   ],
+   ".data.message": [
+    "str"
+   ],
+   ".message": [
+    "null"
+   ],
+   ".success": [
+    "bool"
+   ]
+  },
+  "waf_content_type_senza_corpo": {
+   "@stato": [
+    "409"
+   ],
+   "@tipo-contenuto": [
+    "text/html"
+   ],
+   "@testo": [
+    "presente"
+   ]
+  }
+ }
+}
