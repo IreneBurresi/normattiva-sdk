@@ -70,6 +70,14 @@ path = "src/normattiva/__init__.py"
 src = ["src", "tests"]
 line-length = 100
 
+[tool.ruff.format]
+# Dalla 0.16 il valore predefinito di `include` contiene `*.md`, quindi il
+# formattatore riscrive anche i blocchi Python dentro le pagine. Lì i commenti
+# sono allineati a colonna di proposito, perché gli elenchi «espressione →
+# valore» si leggono a colpo d'occhio, e ruff li collasserebbe a due spazi.
+# Il linter non guarda comunque il Markdown, quindi qui non si perde nulla.
+exclude = ["*.md"]
+
 [tool.ruff.lint]
 select = [
     "E",   # pycodestyle errors
