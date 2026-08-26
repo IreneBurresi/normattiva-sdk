@@ -34,7 +34,7 @@ tabella serve a chi confronta le risposte con la specifica.
 | `dataFinePubProvvedimento` | `dataFinePubblicazione` | `pubblicazione[1]` |
 
 Perché questa differenza sia pericolosa lo spiega
-[Com'è fatto il servizio](../capire/il-servizio.md#i-criteri-con-due-nomi).
+[com'è fatto il servizio](../capire/il-servizio.md#i-criteri-con-due-nomi).
 
 ## I campi non esposti
 

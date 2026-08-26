@@ -103,11 +103,11 @@ sbagliata, `5` il servizio è in avaria.
 
 Il [tutorial](https://ireneburresi.github.io/normattiva-sdk/tutorial/primi-passi/)
 porta dall'installazione al testo di un articolo; le guide di
-[Come fare](https://ireneburresi.github.io/normattiva-sdk/come-fare/) sono una
-per obiettivo; [Capire](https://ireneburresi.github.io/normattiva-sdk/capire/)
+[come fare](https://ireneburresi.github.io/normattiva-sdk/come-fare/) sono una
+per obiettivo; [capire](https://ireneburresi.github.io/normattiva-sdk/capire/)
 spiega com'è fatto il servizio e come si comporta la libreria quando il servizio
 risponde male; il
-[Riferimento](https://ireneburresi.github.io/normattiva-sdk/riferimento/) elenca
+[riferimento](https://ireneburresi.github.io/normattiva-sdk/riferimento/) elenca
 classi, metodi ed eccezioni.
 
 ## API

@@ -47,7 +47,7 @@ verificata non ce l'hanno.
 
 Che cosa distingue una legge da un decreto-legge, da un decreto legislativo e da
 un regolamento, e come si ordinano fra loro, sta in
-[Come funziona la normativa italiana](la-normativa-italiana.md#chi-produce-le-norme).
+[come funziona la normativa italiana](la-normativa-italiana.md#chi-produce-le-norme).
 Qui basta sapere che il **tipo** fa parte dell'identità dell'atto: entra nella
 citazione, nell'URN e nei criteri di ricerca.
 
@@ -74,7 +74,7 @@ Il corpus di Normattiva contiene **trenta** denominazioni, molte delle quali
 storiche («decreto luogotenenziale», «decreto del capo provvisorio dello
 Stato»). Diciotto hanno una forma URN verificata, undici hanno
 un'abbreviazione, e le due liste non coincidono: vedi
-[Identificare un atto](../come-fare/identificare-un-atto.md#citare-un-atto).
+[identificare un atto](../come-fare/identificare-un-atto.md#citare-un-atto).
 
 ## Come è fatto dentro
 
@@ -231,7 +231,7 @@ modifica; nella libreria si chiede con `vigenza="originale"`.
 
 La conseguenza pratica è che la domanda «cosa dice questo articolo» non ha
 risposta senza un «quando». Come si indica la data lo mostra
-[Leggere il testo a una data](../come-fare/leggere-il-testo-a-una-data.md).
+[leggere il testo a una data](../come-fare/leggere-il-testo-a-una-data.md).
 
 ## Come si cita
 

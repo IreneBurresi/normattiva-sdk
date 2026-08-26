@@ -248,4 +248,4 @@ esportazione costa meno di centinaia di richieste, produce un archivio che si
 salva su disco e non tronca gli articoli lunghi, che sul percorso interattivo
 arrivano tagliati a cento commi.
 
-Vedi [Esportare un atto intero](esportare-un-atto.md).
+Vedi [esportare un atto intero](esportare-un-atto.md).

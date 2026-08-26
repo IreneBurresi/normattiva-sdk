@@ -116,7 +116,7 @@ tecnici, e mantenerle resta a carico di chi usa la libreria:
 Normattiva(user_agent="il-mio-servizio/1.2 (+https://esempio.it/contatti)")
 ```
 
-Vedi [L'affidabilità](../capire/affidabilita.md).
+Vedi [l'affidabilità](../capire/affidabilita.md).
 
 ## Dove leggere le fonti
 

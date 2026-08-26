@@ -9,7 +9,7 @@ comparire in qualunque momento.
 Ogni notte, alle 05:17 UTC, una suite interroga la produzione su tutti e
 quindici gli endpoint e confronta le risposte con un riferimento registrato.
 Per il solo riassunto basta
-[L'affidabilità](../capire/affidabilita.md#il-monitoraggio).
+[l'affidabilità](../capire/affidabilita.md#il-monitoraggio).
 
 ## Le impronte
 

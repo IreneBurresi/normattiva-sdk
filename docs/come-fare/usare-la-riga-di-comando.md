@@ -54,7 +54,7 @@ ufficiale è quello pubblicato sulla Gazzetta Ufficiale a mezzo stampa.
 
 L'elenco completo dei nomi è `normattiva codici`, e la stessa tabella con la
 spiegazione degli allegati sta in
-[Identificare un atto](identificare-un-atto.md).
+[identificare un atto](identificare-un-atto.md).
 
 ### Il testo com'era a una certa data
 

@@ -2,7 +2,7 @@
 
 Come si prepara l'ambiente, si eseguono le prove e si costruisce la
 documentazione di questo repository. Per installare il pacchetto in un
-progetto, vedi [Installare la libreria](../come-fare/installare.md).
+progetto, vedi [installare la libreria](../come-fare/installare.md).
 
 ## Preparare l'ambiente
 

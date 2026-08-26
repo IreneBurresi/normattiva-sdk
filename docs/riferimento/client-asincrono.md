@@ -6,6 +6,6 @@ gli stessi, salvo `http_client`, che qui vuole un `httpx.AsyncClient`.
 
 Più corutine che condividono lo stesso client condividono anche la sua
 autolimitazione, quindi si mettono in fila da sole. Quando conviene usarlo lo
-spiega [Lavorare in asincrono](../come-fare/lavorare-in-asincrono.md).
+spiega [lavorare in asincrono](../come-fare/lavorare-in-asincrono.md).
 
 ::: normattiva.AsyncNormattiva

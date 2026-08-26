@@ -252,7 +252,7 @@ Le abbreviazioni conosciute sono undici e le forme URN diciotto, e i due insiemi
 non coincidono: il regio decreto-legge si abbrevia ma non si indirizza, mentre
 otto tipi si indirizzano senza avere un'abbreviazione. Un tipo senza
 abbreviazione si cita per esteso. La tabella completa sta in
-[Come è fatto un atto](../capire/come-e-fatto-un-atto.md#le-abbreviazioni).
+[come è fatto un atto](../capire/come-e-fatto-un-atto.md#le-abbreviazioni).
 
 Nella pratica si scrive poi «art. 2, comma 1, l. 241/1990». La libreria si ferma
 alla citazione dell'atto, l'unica parte per cui esiste una convenzione davvero

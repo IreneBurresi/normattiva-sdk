@@ -84,7 +84,7 @@ anche l'articolo 1 di questa legge è stato riscritto, l'ultima volta nel 2020.
 Il testo di oggi è solo l'ultima di molte versioni.
 
 Se articolo, comma e rubrica non ti sono familiari, il vocabolario è spiegato in
-[Come è fatto un atto](../capire/come-e-fatto-un-atto.md). Per la lezione basta
+[come è fatto un atto](../capire/come-e-fatto-un-atto.md). Per la lezione basta
 quello che abbiamo appena visto.
 
 ## Chiediamo il testo di vent'anni fa
