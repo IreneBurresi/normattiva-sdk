@@ -19,6 +19,7 @@ from normattiva.errori import (
     ValidityMismatchError,
     VersionNotFoundError,
 )
+from normattiva.testo import normalize_accents
 
 __version__ = "0.1.0"
 
@@ -41,4 +42,5 @@ __all__ = [
     "ValidityMismatchError",
     "VersionNotFoundError",
     "__version__",
+    "normalize_accents",
 ]
