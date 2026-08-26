@@ -1,0 +1,100 @@
+name: Contratto
+
+on:
+  schedule:
+    - cron: "17 5 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: contratto
+  cancel-in-progress: false
+
+jobs:
+  monitoraggio:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - name: Interroga il servizio
+        id: prove
+        run: |
+          set +e
+          uv run pytest -m rete -p no:cacheprovider --tb=short -q \
+            --no-cov -W "default::UserWarning" 2>&1 | tee referto.txt
+          echo "esito=${PIPESTATUS[0]}" >> "$GITHUB_OUTPUT"
+
+      - name: Riassumi
+        if: always()
+        run: |
+          {
+            echo "## Monitoraggio del contratto Normattiva"
+            echo
+            echo '```'
+            tail -n 60 referto.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: referto
+          path: referto.txt
+          retention-days: 30
+
+      - name: Segnala lo scostamento
+        if: steps.prove.outputs.esito != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ESECUZIONE: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          {
+            echo "Il monitoraggio del $(date -u +%Y-%m-%d) ha trovato scostamenti."
+            echo
+            echo "[Esecuzione completa]($ESECUZIONE)"
+            echo
+            echo '```'
+            tail -n 50 referto.txt
+            echo '```'
+            echo
+            echo "Se lo scostamento è la nuova normalità, si accetta rigenerando il dataset:"
+            echo '```bash'
+            echo "uv run python -m tests.contratto.registra"
+            echo '```'
+          } > corpo.md
+
+          aperta=$(gh issue list --label contratto --state open \
+            --json number --jq '.[0].number' || true)
+          if [ -n "$aperta" ]; then
+            gh issue comment "$aperta" --body-file corpo.md
+          else
+            gh label create contratto --color d93f0b \
+              --description "Scostamenti dell'API Normattiva" 2>/dev/null || true
+            gh issue create --label contratto \
+              --title "L'API Normattiva è cambiata ($(date -u +%Y-%m-%d))" \
+              --body-file corpo.md
+          fi
+
+      - name: Chiudi la segnalazione rientrata
+        if: steps.prove.outputs.esito == '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          aperta=$(gh issue list --label contratto --state open \
+            --json number --jq '.[0].number' || true)
+          if [ -n "$aperta" ]; then
+            gh issue comment "$aperta" --body "Il monitoraggio del $(date -u +%Y-%m-%d) è tornato verde."
+            gh issue close "$aperta"
+          fi
+
+      - name: Fallisci se il contratto si è spostato
+        if: steps.prove.outputs.esito != '0'
+        run: exit 1
