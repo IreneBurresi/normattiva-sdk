@@ -20,6 +20,7 @@ from normattiva.errori import (
     VersionNotFoundError,
 )
 from normattiva.testo import normalize_accents
+from normattiva.urn import Urn
 
 __version__ = "0.1.0"
 
@@ -39,6 +40,7 @@ __all__ = [
     "TooManyResultsError",
     "TruncationError",
     "UnexpectedResponseError",
+    "Urn",
     "ValidityMismatchError",
     "VersionNotFoundError",
     "__version__",
