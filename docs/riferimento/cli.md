@@ -17,7 +17,7 @@ Le due forme sono equivalenti. La seconda serve dove lo script non è sul
 `PATH`, per esempio dentro un container in cui si invoca sempre l'interprete.
 
 Per i percorsi d'uso, con gli esempi e gli output reali, vedi
-[Usare la riga di comando](../come-fare/usare-la-riga-di-comando.md).
+[usare la riga di comando](../come-fare/usare-la-riga-di-comando.md).
 
 ## I comandi
 

@@ -122,7 +122,7 @@ I due percorsi producono modelli diversi perché le due risposte del servizio
 sono strutturalmente diverse: `DettaglioAtto` porta testo e commi di **una**
 versione, `AttoStorico` porta l'albero dell'articolato di **tutte**. Il
 confronto sta in
-[Com'è fatto il servizio](../capire/il-servizio.md#due-modelli-di-risposta).
+[com'è fatto il servizio](../capire/il-servizio.md#due-modelli-di-risposta).
 
 ## Il testo di un atto o di un articolo
 

@@ -21,5 +21,5 @@ richiedono un client aperto né una connessione.
 | [Gli endpoint](endpoint.md) | quale metodo copre quale endpoint dell'API |
 | [La riga di comando](cli.md) | i comandi, i codici di uscita, la forma del JSON |
 
-Ogni errore è descritto per esteso in [Gli errori](../capire/errori.md), che
+Ogni errore è descritto per esteso in [gli errori](../capire/errori.md), che
 spiega anche la regola per catturarli tutti.

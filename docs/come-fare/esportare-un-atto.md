@@ -128,7 +128,7 @@ normattiva.start_export(anno=2020, massimo_atti=None)  # parte senza contare
 
 È il contrario di `massimo` nella ricerca, che invece limita i risultati senza
 rifiutare la richiesta: il perché sta in
-[Perché la libreria fa così](../capire/scelte.md#limitare-o-rifiutare).
+[perché la libreria fa così](../capire/scelte.md#limitare-o-rifiutare).
 
 !!! note "Il conteggio non conosce le esclusioni"
 

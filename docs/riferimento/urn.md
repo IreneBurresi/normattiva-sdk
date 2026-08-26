@@ -6,7 +6,7 @@ con i metodi `con_*`, che restituiscono sempre un URN nuovo. Nessuna di queste
 operazioni tocca la rete: un identificatore malformato viene rifiutato subito.
 
 Come si usa, con gli esempi, sta in
-[Identificare un atto](../come-fare/identificare-un-atto.md).
+[identificare un atto](../come-fare/identificare-un-atto.md).
 
 ## Le parti di un URN
 

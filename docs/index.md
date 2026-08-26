@@ -51,7 +51,7 @@ Python: copre tutti e quindici gli endpoint, in versione sincrona e asincrona, e
 traduce le risposte in oggetti tipizzati.
 
 Se il diritto italiano non è il tuo mestiere,
-[Come funziona la normativa italiana](capire/la-normativa-italiana.md) spiega
+[come funziona la normativa italiana](capire/la-normativa-italiana.md) spiega
 chi fa le leggi, che rango hanno, come cambiano nel tempo e come si scrive
 l'identificatore di ciascun tipo di atto.
 
@@ -59,7 +59,7 @@ l'identificatore di ciascun tipo di atto.
 
 <div class="grid cards" markdown>
 
--   :material-school:{ .nrm-icona } **[Tutorial](tutorial/primi-passi.md)**
+-   :material-school:{ .nrm-icona } **[Tutorial](tutorial/index.md)**
 
     Una lezione da fare al terminale. Si parte dal `pip install` e si arriva a
     leggere un articolo, cercarlo per parole e percorrerne la storia.
@@ -115,10 +115,10 @@ normattiva esporta --denominazione LEGGE --anno 1990 --numero 241 --archivio 241
 
 Il servizio ha comportamenti che danno un risultato plausibile e sbagliato senza
 sollevare nessun errore: un articolo troncato sembra un articolo corto. Le
-guide di [Come fare](come-fare/index.md) segnalano ciascun caso nel punto in cui
+guide di [come fare](come-fare/index.md) segnalano ciascun caso nel punto in cui
 può capitare.
 
 Il testo che ottieni non è autentico e in caso di discordanza prevale la
 Gazzetta Ufficiale; se lo ripubblichi, l'obbligo di attribuzione passa a te.
 Che cosa comporta, in pratica, sta in
-[Licenza e attribuzione](progetto/licenza.md).
+[licenza e attribuzione](progetto/licenza.md).

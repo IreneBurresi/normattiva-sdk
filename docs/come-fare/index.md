@@ -6,7 +6,7 @@ hide:
 # Come fare
 
 Una pagina per obiettivo. Se è la prima volta, comincia invece dal
-[tutorial](../tutorial/primi-passi.md).
+[tutorial](../tutorial/index.md).
 
 | Per | Vai a |
 |---|---|
@@ -19,4 +19,4 @@ Una pagina per obiettivo. Se è la prima volta, comincia invece dal
 | interrogare Normattiva dal terminale, senza scrivere Python | [Usare la riga di comando](usare-la-riga-di-comando.md) |
 
 Per la firma esatta di un metodo, il [riferimento](../riferimento/index.md).
-Per il quadro d'insieme, [Capire](../capire/index.md).
+Per il quadro d'insieme, [capire](../capire/index.md).

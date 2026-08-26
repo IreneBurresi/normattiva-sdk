@@ -35,7 +35,7 @@ redazionale: le modifiche successive sono state applicate al testo originale da
 una redazione, che può sbagliare. In caso di divergenza prevale il testo
 stampato sulla Gazzetta Ufficiale. Deve saperlo anche chi legge quello che
 costruisci con questi dati: vedi
-[Licenza e attribuzione](../progetto/licenza.md).
+[licenza e attribuzione](../progetto/licenza.md).
 
 ## L'API può cambiare
 
@@ -55,7 +55,7 @@ Perché un cambiamento non si scopra da un programma che smette di funzionare,
 ogni notte una suite interroga tutti e quindici gli endpoint e confronta la
 forma delle risposte con un riferimento registrato; a uno scostamento si apre
 una issue sul repository. Il meccanismo è descritto in
-[L'affidabilità](affidabilita.md#il-monitoraggio).
+[l'affidabilità](affidabilita.md#il-monitoraggio).
 
 ## Due modelli di risposta
 
@@ -144,7 +144,7 @@ riesce a costruire.
 
 L'API open data espone quindici endpoint, e la libreria li copre tutti. La
 corrispondenza fra metodi ed endpoint sta in
-[Gli endpoint](../riferimento/endpoint.md).
+[gli endpoint](../riferimento/endpoint.md).
 
 ### I criteri con due nomi
 
@@ -163,4 +163,4 @@ Alcuni campi presenti nella specifica non hanno un parametro nella libreria:
 parametri che non hanno effetto, valori ammessi non documentati, un campo che
 manderebbe l'archivio per posta elettronica. L'elenco sta fra
 [gli endpoint](../riferimento/endpoint.md#i-campi-non-esposti), il criterio con
-cui è stato compilato in [Perché la libreria fa così](scelte.md#che-cosa-non-viene-esposto).
+cui è stato compilato in [perché la libreria fa così](scelte.md#che-cosa-non-viene-esposto).

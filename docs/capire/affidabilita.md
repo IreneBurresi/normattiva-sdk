@@ -143,4 +143,4 @@ presentino ancora nello stesso modo, perché la libreria le gira intorno
 contando su quel comportamento.
 
 Il funzionamento del meccanismo è descritto in
-[Il monitoraggio del contratto](../progetto/monitoraggio.md).
+[il monitoraggio del contratto](../progetto/monitoraggio.md).

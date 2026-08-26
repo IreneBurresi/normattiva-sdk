@@ -7,7 +7,7 @@ in piedi da solo, identificato dal suo token, e sopravvive al processo che
 l'ha avviato.
 
 Il percorso completo, dai criteri all'archivio riaperto da disco, sta in
-[Esportare un atto intero](../come-fare/esportare-un-atto.md).
+[esportare un atto intero](../come-fare/esportare-un-atto.md).
 
 ## Gli stati di un'esportazione
 

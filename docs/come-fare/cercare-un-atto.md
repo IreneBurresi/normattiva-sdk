@@ -82,7 +82,7 @@ trovato.urn                    # urn:nir:stato:legge:2026-04-20;50
 Il **codice redazionale** è l'identificativo che IPZS assegna al singolo
 documento pubblicato in Gazzetta. Non è leggibile e non è un URN, ma è l'unico
 identificatore che hanno gli atti per cui una forma URN non esiste: vedi
-[Identificare un atto](identificare-un-atto.md#dal-risultato-di-una-ricerca-allurn).
+[identificare un atto](identificare-un-atto.md#dal-risultato-di-una-ricerca-allurn).
 
 ### Dal risultato al testo
 
@@ -169,7 +169,7 @@ Tre cose da sapere prima di scrivere i criteri:
 `"DECRETO LEGISLATIVO"`, non l'abbreviazione. I valori ammessi li elenca
 `denominazioni()`, ed è l'unico modo di conoscerli: non c'è una regola per
 ricavarli. Che differenza ci sia fra i tipi di atto lo spiega
-[Come è fatto un atto](../capire/come-e-fatto-un-atto.md#i-tipi-di-atto).
+[come è fatto un atto](../capire/come-e-fatto-un-atto.md#i-tipi-di-atto).
 
 **Gli intervalli sono coppie, e un estremo può mancare:**
 
@@ -216,7 +216,7 @@ primi_dieci = list(normattiva.ricerca_completa("appalti", massimo=10))
 Qui `massimo` **limita** senza rifiutare: se gli atti sono di più, gli altri
 semplicemente non vengono prodotti. Nell'esportazione lo stesso concetto si
 comporta all'opposto, e il perché sta in
-[Perché la libreria fa così](../capire/scelte.md#limitare-o-rifiutare).
+[perché la libreria fa così](../capire/scelte.md#limitare-o-rifiutare).
 
 Per sapere quanti sono prima di scorrerli basta una `ricerca` con una pagina
 minima:

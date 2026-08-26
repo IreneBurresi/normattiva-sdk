@@ -29,7 +29,7 @@ dipendenza a runtime è [httpx](https://www.python-httpx.org/) da 0.28 in su. Il
 pacchetto porta `py.typed`, quindi mypy, pyright e ty leggono i tipi senza stub.
 
 L'installazione porta anche il comando `normattiva`, descritto in
-[Usare la riga di comando](usare-la-riga-di-comando.md).
+[usare la riga di comando](usare-la-riga-di-comando.md).
 
 ## Verificare che funzioni
 
@@ -43,7 +43,7 @@ with Normattiva() as normattiva:
 
 Se stampa il testo dell'articolo 1 della legge sul procedimento amministrativo,
 l'installazione è a posto. Il passo successivo è il
-[tutorial](../tutorial/primi-passi.md).
+[tutorial](../tutorial/index.md).
 
 !!! tip "Il client si riusa"
 
@@ -56,4 +56,4 @@ l'installazione è a posto. Il passo successivo è il
 ## Lavorare sulla libreria stessa
 
 Per clonare il repository, far girare le prove e costruire la documentazione,
-vedi [Sviluppo](../progetto/sviluppo.md).
+vedi [sviluppo](../progetto/sviluppo.md).

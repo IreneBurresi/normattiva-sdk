@@ -258,7 +258,7 @@ for versione in normattiva.cronologia("urn:nir:stato:legge:1990-08-07;241~art19"
 
 Da qui la **multivigenza**, e la ragione per cui in questa libreria quasi ogni
 lettura accetta una data: vedi
-[Leggere il testo a una data](../come-fare/leggere-il-testo-a-una-data.md).
+[leggere il testo a una data](../come-fare/leggere-il-testo-a-una-data.md).
 
 ## Testi unici e codici
 
@@ -330,6 +330,6 @@ servizio.
     solleva [`AmbiguityError`][normattiva.AmbiguityError] con i due candidati.
 
 Come si compone un URN pezzo per pezzo sta in
-[Identificare un atto](../come-fare/identificare-un-atto.md); la struttura
+[identificare un atto](../come-fare/identificare-un-atto.md); la struttura
 interna di un singolo atto in
-[Come è fatto un atto](come-e-fatto-un-atto.md).
+[come è fatto un atto](come-e-fatto-un-atto.md).

@@ -1,7 +1,7 @@
 # Gli errori
 
 La regola generale e i modi di catturarli sono in
-[Gli errori](../capire/errori.md). Qui c'è la firma di ciascuno.
+[gli errori](../capire/errori.md). Qui c'è la firma di ciascuno.
 
 ::: normattiva.NormattivaError
 

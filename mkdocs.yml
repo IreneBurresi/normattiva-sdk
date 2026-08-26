@@ -188,7 +188,12 @@ markdown_extensions:
 
 nav:
   - Home: index.md
-  - Tutorial: tutorial/primi-passi.md
+  - Tutorial:
+      - tutorial/index.md
+      - tutorial/primi-passi.md
+      - tutorial/il-testo-a-una-data.md
+      - tutorial/trovare-un-atto.md
+      - tutorial/un-atto-intero.md
   - Come fare:
       - come-fare/index.md
       - come-fare/installare.md
