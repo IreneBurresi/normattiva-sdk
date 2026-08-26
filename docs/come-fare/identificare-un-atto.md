@@ -50,9 +50,8 @@ Numeri e articoli si passano come interi o come stringhe, indifferentemente:
 
 Entrambe le forme rispondono. Quella con la data è più precisa, e serve quando
 in uno stesso anno esistono due atti con lo stesso numero, cosa che succede più
-spesso di quanto sembri: senza data quell'URN
-[corrisponde a due atti distinti](../capire/trappole.md#un-urn-due-atti) e la
-libreria solleva `AmbiguityError` invece di sceglierne uno.
+spesso di quanto sembri: senza data quell'URN corrisponde a due atti distinti e
+la libreria solleva `AmbiguityError` invece di sceglierne uno.
 
 ### Gli articoli con l'ordinale
 
@@ -206,8 +205,7 @@ Sono dodici denominazioni su trenta, quasi tutte storiche: «regolamento»,
 «decreto del Duce», «regio decreto-legge». Per quelle `urn` solleva
 [`InvalidUrnError`][normattiva.InvalidUrnError] invece di comporre un
 identificatore che il servizio rifiuterebbe, e `ha_urn` permette di saperlo
-prima. Quali sono, e perché la libreria non tira a indovinare, in
-[Le trappole](../capire/trappole.md#dodici-tipi-di-atto-non-hanno-una-forma-urn-verificata).
+prima.
 
 Restano comunque leggibili: `dettaglio` accetta l'`AttoTrovato` e per quegli
 atti passa dalle coordinate di Gazzetta, che il servizio accetta altrettanto

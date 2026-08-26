@@ -28,7 +28,7 @@ Il rate limiter è thread-safe, e la sua controparte asincrona usa un
 `asyncio.Lock`. Un client condiviso corrisponde a un solo budget di richieste
 verso il servizio.
 
-!!! trappola "Il limite vale per client, non per programma"
+!!! warning "Il limite vale per client, non per programma"
 
     Creando un client per chiamata, il rate limiting non limita più nulla: ogni
     client applica il proprio budget senza sapere degli altri.
@@ -138,9 +138,9 @@ risposte senza che nessuno lo sappia prima di chi la usa. Ogni notte una suite
 interroga tutti e quindici gli endpoint e confronta la forma delle risposte con
 un riferimento registrato; a uno scostamento si apre una issue sul repository.
 
-La stessa suite ricontrolla le [trappole](trappole.md): non che siano state
-risolte, ma che si presentino ancora nello stesso modo, perché la libreria le
-gira intorno contando su quel comportamento.
+La stessa suite ricontrolla le anomalie note del servizio: verifica che si
+presentino ancora nello stesso modo, perché la libreria le gira intorno
+contando su quel comportamento.
 
 Il funzionamento del meccanismo è descritto in
 [Il monitoraggio del contratto](../progetto/monitoraggio.md).

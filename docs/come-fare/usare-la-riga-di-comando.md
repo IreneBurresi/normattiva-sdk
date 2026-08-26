@@ -188,7 +188,7 @@ La data che apre ogni finestra è quella da passare a `normattiva testo
 --vigenza` per rileggere quella versione. In JSON l'URN completo è già pronto in
 ogni voce, con il suffisso di vigenza attaccato.
 
-!!! trappola "Non tutti gli articoli hanno un originale"
+!!! warning "Non tutti gli articoli hanno un originale"
 
     `cronologia` parte dalla prima pubblicazione. Un articolo inserito da una
     novella, come il 416-bis del codice penale, nel testo originale non c'era: il

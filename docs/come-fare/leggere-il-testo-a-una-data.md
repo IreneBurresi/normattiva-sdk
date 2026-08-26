@@ -191,7 +191,7 @@ molto di più: per quello c'è l'esportazione.
 prime_cinque = list(normattiva.cronologia(URN, massimo=5))
 ```
 
-!!! trappola "Senza `massimo` la catena si ferma dopo cinquecento passi"
+!!! warning "Senza `massimo` la catena si ferma dopo cinquecento passi"
 
     Oltre quel numero `cronologia` solleva
     [`UnexpectedResponseError`][normattiva.UnexpectedResponseError]. Nessun
@@ -238,8 +238,7 @@ Il servizio accetta date inesistenti, il 30 febbraio compreso, e invece di
 rifiutarle risponde qualcosa. Lavorando con oggetti `date` il problema non si
 pone, perché il 30 febbraio non è rappresentabile, e `Urn.parse` scarta le date
 impossibili prima di fare la richiesta. Restano scoperte solo le stringhe URN
-costruite a mano e usate altrove. Il dettaglio in
-[Le trappole](../capire/trappole.md#il-servizio-accetta-date-che-non-esistono).
+costruite a mano e usate altrove.
 
 ## Quando conviene l'esportazione
 
@@ -247,6 +246,6 @@ costruite a mano e usate altrove. Il dettaglio in
 intero, con tutti i suoi articoli e tutte le loro versioni, una singola
 esportazione costa meno di centinaia di richieste, produce un archivio che si
 salva su disco e non tronca gli articoli lunghi, che sul percorso interattivo
-[arrivano tagliati a cento commi](../capire/trappole.md#gli-articoli-lunghi-sono-troncati).
+arrivano tagliati a cento commi.
 
 Vedi [Esportare un atto intero](esportare-un-atto.md).

@@ -146,7 +146,7 @@ noti stanno in [`RuleCode`][normattiva.RuleCode].
 
     Se il codice arriva insieme a un `5xx`, la libreria solleva
     `ConnectionError`: un `5xx` indica un problema del servizio, non della
-    richiesta. Vedi [le trappole](trappole.md#un-500-arriva-anche-a-richieste-valide).
+    richiesta, e arriva anche a richieste perfettamente valide.
 
 ## Gli errori restituiti dal servizio
 
@@ -158,8 +158,7 @@ intercetta, come succede agli articoli dei codici richiesti senza allegato.
 
 ### `AmbiguityError`
 
-L'URN corrisponde a più atti. `errore.candidati` li contiene, già letti. Vedi
-[Un URN, due atti](trappole.md#un-urn-due-atti).
+L'URN corrisponde a più atti. `errore.candidati` li contiene, già letti.
 
 ### `NotYetInForceError`
 

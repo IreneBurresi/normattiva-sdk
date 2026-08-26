@@ -41,8 +41,8 @@ storia di un articolo.
 **I comportamenti.** Che l'articolo lungo sia ancora troncato, che l'URN
 ambiguo restituisca ancora due candidati, che gli articoli dei codici
 rispondano solo dal loro allegato, che i nomi dei file dell'export dichiarino
-ancora la vigenza. Sono le [trappole](../capire/trappole.md), e il test serve
-ad accorgersi del giorno in cui smettono di essere vere.
+ancora la vigenza. Sono i comportamenti su cui la libreria fa affidamento, e il
+test serve ad accorgersi del giorno in cui smettono di essere veri.
 
 **I valori cablati.** Le enum, le abbreviazioni delle citazioni, la mappa degli
 allegati: decisioni prese osservando il servizio una volta sola, che qui

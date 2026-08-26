@@ -114,9 +114,9 @@ normattiva esporta --denominazione LEGGE --anno 1990 --numero 241 --archivio 241
 ## Prima di metterla in produzione
 
 Il servizio ha comportamenti che danno un risultato plausibile e sbagliato senza
-sollevare nessun errore: un articolo troncato sembra un articolo corto. Sono
-raccolti, con l'esempio che li riproduce e il modo di riconoscerli nel codice,
-in [Le trappole](capire/trappole.md).
+sollevare nessun errore: un articolo troncato sembra un articolo corto. Le
+guide di [Come fare](come-fare/index.md) segnalano ciascun caso nel punto in cui
+può capitare.
 
 Il testo che ottieni non è autentico e in caso di discordanza prevale la
 Gazzetta Ufficiale; se lo ripubblichi, l'obbligo di attribuzione passa a te.

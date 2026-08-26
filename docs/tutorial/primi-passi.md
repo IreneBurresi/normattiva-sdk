@@ -243,7 +243,5 @@ Da qui:
 - [Come fare](../come-fare/index.md), una guida per ciascun obiettivo:
   identificare un atto, cercarlo, leggerlo a una data, esportarlo intero,
   lavorare in asincrono, usarlo dal terminale.
-- [Le trappole](../capire/trappole.md), da leggere prima di costruirci sopra
-  qualcosa di serio.
 - [Il notebook Jupyter](https://github.com/ireneburresi/normattiva-sdk/blob/main/esempi/normattiva-in-pratica.ipynb),
   che percorre la libreria su dati reali con gli output già dentro.

@@ -44,8 +44,7 @@ data da cui la versione vale e il suo numero progressivo. Nessun campo del
 documento riporta quella data: se i nomi non dichiarano la versione, `Corpus`
 rifiuta l'archivio con
 [`UnexpectedResponseError`][normattiva.UnexpectedResponseError] invece di
-leggerli tutti come «originale». Il perché sta in
-[Le trappole](../capire/trappole.md#la-data-di-vigenza-sta-nel-nome-del-file).
+leggerli tutti come «originale».
 
 ::: normattiva.Export
 
