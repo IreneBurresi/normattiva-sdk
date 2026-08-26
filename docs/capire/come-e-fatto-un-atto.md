@@ -40,8 +40,8 @@ atto.gazzetta.codice_redazionale  # '090G0294'
 
 Il **codice redazionale** è l'identificativo che l'IPZS assegna al singolo
 documento pubblicato. Non è un URN e non è leggibile, ma è l'unico
-identificatore disponibile per gli atti che
-[una forma URN non ce l'hanno](trappole.md#dodici-tipi-di-atto-non-hanno-una-forma-urn-verificata).
+identificatore disponibile per i dodici tipi di atto che una forma URN
+verificata non ce l'hanno.
 
 ## I tipi di atto
 

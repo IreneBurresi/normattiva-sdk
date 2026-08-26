@@ -100,8 +100,6 @@ In quel caso il servizio restituisce l'elenco dei candidati al posto dell'atto,
 e la libreria lo trasforma in [`AmbiguityError`][normattiva.AmbiguityError],
 che contiene i candidati.
 
-Per il dettaglio, vedi [Un URN, due atti](trappole.md#un-urn-due-atti).
-
 ## Il testo è HTML, e le classi sono stabili
 
 Il campo `articoloHtml` è markup generato da Akoma Ntoso. I nomi di classe sono

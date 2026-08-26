@@ -73,7 +73,7 @@ dello Stato, in licenza CC BY 4.0. Testo non autentico e gratuito: l'unico
 testo ufficiale è quello pubblicato sulla Gazzetta Ufficiale a mezzo stampa.
 ```
 
-!!! trappola "L'attribuzione passa a chi ripubblica"
+!!! warning "L'attribuzione passa a chi ripubblica"
 
     L'obbligo passa a te nel momento in cui ridistribuisci. Non basta che la
     libreria conosca l'attribuzione: deve arrivare a chi legge il tuo prodotto.

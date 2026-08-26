@@ -56,7 +56,7 @@ tutti i risultati:
 
 L'oggetto è iterabile, e itera sugli atti di questa pagina.
 
-!!! trappola "`len(esito)` non esiste"
+!!! warning "`len(esito)` non esiste"
 
     Non è definito apposta: `len` di una pagina di 20 risultati su 65 trovati
     non direbbe quale dei due numeri. Usa `len(esito.atti)`
@@ -258,7 +258,7 @@ hanno prodotto la modifica. Non sono URN e non sono titoli: per risalire al
 testo di quegli atti servirebbe anche la loro data di pubblicazione, che il
 servizio qui non manda.
 
-!!! trappola "«Aggiornato» vuol dire modificato, non pubblicato"
+!!! warning "«Aggiornato» vuol dire modificato, non pubblicato"
 
     Un atto pubblicato dentro la finestra e mai più toccato non compare in
     questo elenco. Le pubblicazioni si chiedono con

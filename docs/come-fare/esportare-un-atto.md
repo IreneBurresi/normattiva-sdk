@@ -180,7 +180,7 @@ lento da un lavoro bloccato.
 Gli stati possibili, e quali di questi concludono l'attesa, stanno in
 [`ExportStatus`][normattiva.ExportStatus].
 
-!!! trappola "Il ritardo dichiarato vale una proroga sola"
+!!! warning "Il ritardo dichiarato vale una proroga sola"
 
     Il servizio può rispondere `CONFIRMED_WITH_DELAY`, cioè «ci metterò più del
     previsto». La libreria concede una proroga pari alla scadenza, **una
@@ -295,7 +295,7 @@ for articolo in atto.vigente.articoli():
 Il `numero` è una stringa, non un intero: `2 bis` è un numero di articolo del
 tutto normale. La `rubrica` è il titolo dell'articolo.
 
-!!! trappola "La rubrica manca quasi sempre nelle versioni vecchie"
+!!! warning "La rubrica manca quasi sempre nelle versioni vecchie"
 
     Nella legge 241 la versione vigente ha la rubrica su 50 articoli su 51.
     Quella in vigore nel 2005 ne ha **zero** su 34: il numero c'è sempre, il
@@ -305,7 +305,7 @@ tutto normale. La `rubrica` è il titolo dell'articolo.
 Gli **allegati** stanno in un ramo separato, `versione.annessi`, perché non
 fanno parte dell'articolato e contarli insieme darebbe conteggi sbagliati. È
 anche il ramo che contiene i codici: nell'export del codice civile, `articoli()`
-[trova due articoli e non 3280](../capire/trappole.md#nellexport-di-un-codice-articoli-non-trova-gli-articoli).
+trova due articoli e non 3280.
 
 !!! tip "Nell'export gli accenti sono vocale più apostrofo"
 
@@ -320,9 +320,6 @@ anche il ramo che contiene i codici: nell'export del codice civile, `articoli()`
     normalize_accents("l'attivita' e' liberta'")
     # "l'attività è libertà"
     ```
-
-    Che cosa lascia intatto, e perché, in
-    [Le trappole](../capire/trappole.md#nellexport-gli-accenti-sono-vocale-piu-apostrofo).
 
 ## Salvare e riaprire
 
@@ -376,8 +373,7 @@ for collezione in normattiva.collections():
 normattiva.save_collection("Leggi di delegazione europea", "delega.zip")
 ```
 
-!!! trappola "`download_collection` restituisce un archivio vuoto"
+!!! warning "`download_collection` restituisce un archivio vuoto"
 
     È un difetto del servizio, non della libreria: finché dura, quelle
     collezioni si prendono con `save_collection`, che scrive il file su disco.
-    Vedi [Le trappole](../capire/trappole.md#lo-scarico-sincrono-delle-collezioni-e-rotto).

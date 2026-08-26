@@ -58,7 +58,7 @@ async with AsyncNormattiva() as normattiva:
 Le richieste partono insieme e il client le serve a due al secondo, una alla
 volta: il limitatore è nel client, non serve aggiungerne uno.
 
-!!! trappola "Un client per processo"
+!!! warning "Un client per processo"
 
     L'autolimitazione conta le richieste di un client. Creandone uno per ogni
     corutina, ciascuno conta le proprie e nessuno conta il totale: cento

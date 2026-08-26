@@ -321,14 +321,13 @@ servizio.
 | Articolo con ordinale | art. 416-bis c.p. | `urn:nir:stato:regio.decreto:1930-10-19;1398:1~art416bis` |
 | Articolo a una data | art. 19 l. 241/1990 nel 2000 | `urn:nir:stato:legge:1990-08-07;241~art19!vig=2000-01-01` |
 
-!!! trappola "Il D.P.R. 380/2001 è un caso di URN ambiguo"
+!!! warning "Il D.P.R. 380/2001 è un caso di URN ambiguo"
 
     Il testo unico dell'edilizia risponde a
     `urn:nir:stato:decreto.del.presidente.della.repubblica:2001-06-06;380`, ma
     quell'URN corrisponde a **due** atti pubblicati su Gazzette diverse: la
     G.U. 245 del 20 ottobre 2001 e la G.U. 266 del 15 novembre 2001. La libreria
     solleva [`AmbiguityError`][normattiva.AmbiguityError] con i due candidati.
-    Vedi [Un URN, due atti](trappole.md#un-urn-due-atti).
 
 Come si compone un URN pezzo per pezzo sta in
 [Identificare un atto](../come-fare/identificare-un-atto.md); la struttura
