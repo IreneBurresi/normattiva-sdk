@@ -53,7 +53,7 @@ def test_il_servizio_risponde(grezzo) -> None:
     risposte = 0
     for campione in TUTTI[:4]:
         try:
-            rete.interroga(campione, grezzo, retries=1)
+            rete.interroga(campione, grezzo, retries=0)
         except rete.Indisponibile:
             continue
         risposte += 1

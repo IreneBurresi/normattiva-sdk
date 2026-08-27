@@ -43,7 +43,7 @@ def api():
 def trasporto(orologio: Orologio) -> Trasporto:
     return Trasporto(
         base_url=BASE,
-        retries=3,
+        retries=2,
         requests_per_second=0,
         sleep=orologio.attendi,
         clock=orologio.tempo,

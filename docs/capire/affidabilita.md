@@ -35,8 +35,8 @@ verso il servizio.
 
 ## I retry
 
-`retries` è il numero di tentativi in tutto, il primo compreso: il predefinito
-3 vuol dire due nuovi tentativi dopo quello iniziale. Fra un tentativo e il
+`retries` è il numero di ritentativi dopo il primo tentativo: il predefinito
+2 vuol dire al più tre richieste in tutto. Fra un tentativo e il
 successivo la libreria attende, e l'attesa raddoppia ogni volta a partire da
 mezzo secondo, più un po' di scarto casuale e con un tetto a otto secondi.
 
@@ -71,7 +71,7 @@ Tutte le chiamate che la libreria fa sono **letture**, quindi ripeterle è
 sicuro: non ci sono scritture che rischino di essere duplicate.
 
 ```python
-Normattiva(retries=1)  # un tentativo solo, nessun ritentativo
+Normattiva(retries=0)  # un tentativo solo, nessun ritentativo
 Normattiva(timeout=60.0)  # per gli export lenti
 ```
 

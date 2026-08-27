@@ -141,7 +141,7 @@ class Trasporto:
         base_url: str = PRODUZIONE,
         user_agent: str | None = None,
         timeout: float = 30.0,
-        retries: int = 3,
+        retries: int = 2,
         requests_per_second: float = 2.0,
         http_client: httpx.Client | None = None,
         politica: PoliticaRitentativi | None = None,
@@ -149,7 +149,7 @@ class Trasporto:
         clock: Callable[[], float] = time.monotonic,
     ) -> None:
         self.base_url = base_url.rstrip("/")
-        self.retries = max(1, retries)
+        self.retries = max(0, retries)
         self.politica = politica or PoliticaRitentativi()
         self._sleep = sleep
         self._limitatore = Limitatore(requests_per_second, sleep=sleep, clock=clock)
@@ -204,7 +204,7 @@ class Trasporto:
         ultimo_errore: Exception | None = None
         ultima_risposta: httpx.Response | None = None
 
-        for tentativo in range(self.retries):
+        for tentativo in range(1 + self.retries):
             if tentativo:
                 pausa = self.politica.attesa(tentativo - 1)
                 logger.debug("nuovo tentativo fra %.2fs su %s %s", pausa, metodo, indirizzo)
@@ -280,7 +280,7 @@ class TrasportoAsync:
         base_url: str = PRODUZIONE,
         user_agent: str | None = None,
         timeout: float = 30.0,
-        retries: int = 3,
+        retries: int = 2,
         requests_per_second: float = 2.0,
         http_client: httpx.AsyncClient | None = None,
         politica: PoliticaRitentativi | None = None,
@@ -288,7 +288,7 @@ class TrasportoAsync:
         clock: Callable[[], float] = time.monotonic,
     ) -> None:
         self.base_url = base_url.rstrip("/")
-        self.retries = max(1, retries)
+        self.retries = max(0, retries)
         self.politica = politica or PoliticaRitentativi()
         self._sleep = sleep
         self._limitatore = LimitatoreAsync(requests_per_second, sleep=sleep, clock=clock)
@@ -343,7 +343,7 @@ class TrasportoAsync:
         ultimo_errore: Exception | None = None
         ultima_risposta: httpx.Response | None = None
 
-        for tentativo in range(self.retries):
+        for tentativo in range(1 + self.retries):
             if tentativo:
                 pausa = self.politica.attesa(tentativo - 1)
                 logger.debug("nuovo tentativo fra %.2fs su %s %s", pausa, metodo, indirizzo)

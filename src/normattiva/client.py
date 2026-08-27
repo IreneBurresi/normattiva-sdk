@@ -363,8 +363,8 @@ class Normattiva:
             servizio e un recapito è una cortesia verso chi riceve il traffico.
         timeout: quanti secondi attendere una singola risposta. Le esportazioni
             lente vogliono un valore più alto.
-        retries: quanti tentativi in tutto per ogni richiesta, il primo
-            compreso. Con `1` non si ritenta; valori più bassi valgono `1`.
+        retries: quanti ritentativi dopo il primo tentativo, per ogni
+            richiesta. Con `0` non si ritenta; valori negativi valgono `0`.
         requests_per_second: il tetto che il client si impone. Il servizio non
             pubblica quote: due al secondo è una scelta prudente di questa
             libreria, non un limite imposto da Normattiva. Con `0` non limita.
@@ -388,7 +388,7 @@ class Normattiva:
         *,
         user_agent: str | None = None,
         timeout: float = 30.0,
-        retries: int = 3,
+        retries: int = 2,
         requests_per_second: float = 2.0,
         base_url: str = PRODUZIONE,
         http_client: httpx.Client | None = None,
@@ -991,7 +991,7 @@ class AsyncNormattiva:
         *,
         user_agent: str | None = None,
         timeout: float = 30.0,
-        retries: int = 3,
+        retries: int = 2,
         requests_per_second: float = 2.0,
         base_url: str = PRODUZIONE,
         http_client: httpx.AsyncClient | None = None,

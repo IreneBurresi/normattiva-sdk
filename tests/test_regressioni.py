@@ -342,7 +342,7 @@ class TestTrasportoSenzaTentativi:
     def test_nessun_tentativo_da_un_errore_del_dominio(self, api) -> None:
         api.get("/prova").respond(200, json={})
         with Trasporto(base_url=BASE, requests_per_second=0) as trasporto:
-            trasporto.retries = 0
+            trasporto.retries = -1
             with pytest.raises(UnexpectedResponseError):
                 trasporto.get("/prova")
 

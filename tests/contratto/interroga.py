@@ -56,13 +56,13 @@ def nuovo_client(timeout: float = 60.0) -> httpx.Client:
 
 
 def interroga(
-    campione: Campione, client: httpx.Client, *, base_url: str = PRODUZIONE, retries: int = 3
+    campione: Campione, client: httpx.Client, *, base_url: str = PRODUZIONE, retries: int = 2
 ) -> Esito:
     """Esegue un campione, ritentando quel tanto che basta a non gridare al lupo."""
     indirizzo = f"{base_url}/{campione.percorso.lstrip('/')}"
     intestazioni = dict(campione.intestazioni)
     ultimo: Exception | None = None
-    for tentativo in range(retries):
+    for tentativo in range(1 + retries):
         if tentativo:
             time.sleep(PAUSA * 2**tentativo)
         time.sleep(PAUSA)
