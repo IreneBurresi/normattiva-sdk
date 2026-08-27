@@ -3,12 +3,13 @@
 Il formato segue [Keep a Changelog](https://keepachangelog.com/it/1.1.0/), e le
 versioni il [versionamento semantico](https://semver.org/lang/it/).
 
-## Non ancora rilasciato
+## [Unreleased]
 
-Prima versione. Finché non esce la 0.1.0 l'API pubblica può ancora cambiare
-senza preavviso.
+## [0.1.0] - 2026-08-27
 
-### Aggiunto
+Prima versione.
+
+### Added
 
 - `Normattiva` e `AsyncNormattiva`: dettaglio a una data, cronologia di un
   articolo, ricerca semplice e per coordinate, atti aggiornati, dizionari,
@@ -26,3 +27,6 @@ senza preavviso.
 - Un notebook Jupyter in `esempi/`, eseguito su dati reali e con gli output
   salvati.
 - Monitoraggio giornaliero del contratto dell'API su GitHub Actions.
+
+[unreleased]: https://github.com/ireneburresi/normattiva-sdk/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/ireneburresi/normattiva-sdk/releases/tag/v0.1.0
