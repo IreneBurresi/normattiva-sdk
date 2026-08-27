@@ -1,0 +1,42 @@
+name: Rilascio
+
+on:
+  push:
+    tags: ["v*"]
+
+jobs:
+  costruisci:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv run pytest -m "not rete"
+      # Il tag deve corrispondere a __version__, altrimenti il rilascio si ferma qui
+      - run: |
+          versione=$(uv run python -c "import normattiva; print(normattiva.__version__)")
+          test "v${versione}" = "${GITHUB_REF_NAME}" || {
+            echo "il tag ${GITHUB_REF_NAME} non corrisponde a __version__ ${versione}" >&2
+            exit 1
+          }
+      - run: uv build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: distribuzione
+          path: dist/
+
+  pubblica:
+    needs: costruisci
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/project/normattiva-sdk/
+    # Il trusted publishing di PyPI autentica con il token OIDC del workflow:
+    # nessun segreto da conservare nel repository
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: distribuzione
+          path: dist/
+      - uses: pypa/gh-action-pypi-publish@release/v1
