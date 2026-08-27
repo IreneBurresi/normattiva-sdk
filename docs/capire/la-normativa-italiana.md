@@ -55,8 +55,9 @@ flowchart TD
     C -.-> C1["Governo e ministri"]
 ```
 
-Il **rango** non dipende dal contenuto ma dalla forma dell'atto e da chi lo
-adotta. Un decreto legislativo del Governo ha lo stesso rango di una legge del
+Il **rango** non dipende dal contenuto dell'atto: dipende dal tipo di fonte e
+dal fondamento su cui l'atto è adottato. Un decreto legislativo del Governo ha
+lo stesso rango di una legge del
 Parlamento; un regolamento adottato con lo stesso strumento formale, il decreto
 del Presidente della Repubblica, ha rango inferiore.
 
@@ -80,7 +81,8 @@ flowchart LR
 ```
 
 Il passaggio avanti e indietro fra le due Camere si chiama *navetta*, e non ha
-un limite: finché il testo non è identico, la legge non c'è.
+un limite: la legge nasce solo quando le due Camere approvano un testo
+identico.
 
 La legge 241 del 1990 mostra le date reali di questo percorso:
 
@@ -88,7 +90,7 @@ La legge 241 del 1990 mostra le date reali di questo percorso:
 |---|---|---|
 | emanazione | 7 agosto 1990 | `atto.estremi.data` |
 | pubblicazione in G.U. n. 192 | 18 agosto 1990 | `atto.gazzetta.data` |
-| entrata in vigore | 2 settembre 1990 | `atto.finestra.inizio` della prima versione |
+| entrata in vigore | 2 settembre 1990 | `atto.finestra.inizio`, chiesto con `vigenza="originale"` |
 
 Fra pubblicazione ed entrata in vigore passano quindici giorni: è la **vacatio
 legis** dell'art. 73 Cost., il tempo in cui la legge esiste ma non si applica
@@ -136,20 +138,23 @@ confermativo.
 
 ## Le fonti secondarie
 
-I **regolamenti** non possono contraddire la legge: la attuano, la specificano,
-ne organizzano l'esecuzione. La legge 400 del 1988, all'articolo 17, ne fissa i
-tipi e la forma:
+I **regolamenti** non possono contraddire la legge: ne disciplinano
+l'attuazione e l'esecuzione. La legge 400 del 1988, all'articolo 17, disciplina
+i regolamenti **governativi** e quelli **ministeriali**:
 
 | Atto | Chi lo adotta | Sigla |
 |---|---|---|
 | regolamento governativo | Governo, emanato dal Presidente della Repubblica | `D.P.R.` |
-| decreto del Presidente del Consiglio | Presidente del Consiglio | `D.P.C.M.` |
 | regolamento ministeriale | un ministro | `D.M.` |
+
+Il decreto del Presidente del Consiglio (`D.P.C.M.`) non è fra i tipi
+dell'articolo 17: è la forma con cui il Presidente del Consiglio adotta atti
+propri, di regola amministrativi e in alcuni casi a contenuto normativo.
 
 La stessa sigla `D.P.R.` copre quindi atti di rango diverso: un D.P.R. può
 contenere un regolamento oppure, come nel caso di un testo unico, norme di rango
-primario adottate su delega. Quello che conta non è la sigla ma il fondamento su
-cui l'atto è stato adottato.
+primario adottate su delega. Il rango dipende dal fondamento su cui l'atto è
+stato adottato, non dalla sigla.
 
 ## Come cambiano le norme
 
@@ -267,11 +272,13 @@ raccoglie in un **testo unico**. Se il testo unico si limita a riordinare norme
 esistenti è *compilativo*; se le riscrive è *innovativo*, e in quel caso è esso
 stesso una fonte.
 
-I **codici** sono la forma più estesa di questa operazione. I quattro codici
-classici (civile, penale, di procedura civile, di procedura penale) sono stati
-approvati negli anni Trenta e Quaranta con un regio decreto che li porta
-**in allegato**: il regio decreto contiene due o tre articoli di approvazione, e
-il codice vero e proprio è l'allegato.
+I **codici** sono la forma più estesa di questa operazione. Codice civile,
+codice penale e codice di procedura civile sono stati approvati fra il 1930 e
+il 1942 con un regio decreto che li porta **in allegato**: il regio decreto
+contiene due o tre articoli di approvazione, e il codice vero e proprio è
+l'allegato. Il codice di procedura penale vigente è invece del 1988, adottato
+su delega nella forma del D.P.R. (D.P.R. 22 settembre 1988, n. 447): niente
+allegato, e i suoi articoli rispondono direttamente sotto quell'URN.
 
 Questa struttura è visibile nell'identificatore: l'articolo 2043 del codice
 civile non risponde sotto l'URN del R.D. 262/1942, ma sotto il suo allegato 2.
@@ -303,9 +310,6 @@ allegati: il codice dell'amministrazione digitale è il D.Lgs. 82/2005, e i suoi
 articoli rispondono direttamente sotto quell'URN.
 
 ## Un atto per tipo, con il suo URN
-
-Tutti gli identificatori di questa tabella sono stati verificati contro il
-servizio.
 
 | Tipo | Atto | URN |
 |---|---|---|
