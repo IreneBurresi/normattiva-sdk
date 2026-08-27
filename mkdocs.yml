@@ -1,7 +1,7 @@
 site_name: normattiva-sdk
 site_description: SDK Python non ufficiale per Normattiva, il portale della legge vigente
 site_author: Irene Burresi
-site_url: https://ireneburresi.github.io/normattiva-sdk/
+site_url: https://normattiva-sdk.ireneburresi.dev/
 repo_url: https://github.com/ireneburresi/normattiva-sdk
 repo_name: ireneburresi/normattiva-sdk
 edit_uri: edit/main/docs/

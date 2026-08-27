@@ -104,15 +104,15 @@ sbagliata, `5` il servizio è in avaria.
 
 ## Documentazione
 
-<https://ireneburresi.github.io/normattiva-sdk/>
+<https://normattiva-sdk.ireneburresi.dev/>
 
-Il [tutorial](https://ireneburresi.github.io/normattiva-sdk/tutorial/)
+Il [tutorial](https://normattiva-sdk.ireneburresi.dev/tutorial/)
 porta dall'installazione al testo di un articolo; le guide di
-[come fare](https://ireneburresi.github.io/normattiva-sdk/come-fare/) sono una
-per obiettivo; [capire](https://ireneburresi.github.io/normattiva-sdk/capire/)
+[come fare](https://normattiva-sdk.ireneburresi.dev/come-fare/) sono una
+per obiettivo; [capire](https://normattiva-sdk.ireneburresi.dev/capire/)
 spiega com'è fatto il servizio e come si comporta la libreria quando il servizio
 risponde male; il
-[riferimento](https://ireneburresi.github.io/normattiva-sdk/riferimento/) elenca
+[riferimento](https://normattiva-sdk.ireneburresi.dev/riferimento/) elenca
 classi, metodi ed eccezioni.
 
 ## API

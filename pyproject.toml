@@ -29,7 +29,7 @@ classifiers = [
 normattiva = "normattiva.cli:main"
 
 [project.urls]
-Documentation = "https://ireneburresi.github.io/normattiva-sdk/"
+Documentation = "https://normattiva-sdk.ireneburresi.dev/"
 Repository = "https://github.com/ireneburresi/normattiva-sdk"
 Issues = "https://github.com/ireneburresi/normattiva-sdk/issues"
 Changelog = "https://github.com/ireneburresi/normattiva-sdk/blob/main/CHANGELOG.md"
