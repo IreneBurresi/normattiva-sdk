@@ -34,6 +34,10 @@ urn:nir:stato:legge:1990-08-07;241:2~art5-com3!vig=2005-01-01
 | allegato | `allegato` | solo per gli atti che rispondono da un allegato |
 | articolo | `articolo` | no |
 | comma | `comma` | no, e il servizio lo rifiuta in ingresso |
-| vigenza | `vigenza` | no |
+| vigenza | `versione` | no |
+
+Il campo si chiama `versione` perché nella grammatica NIR il suffisso dopo
+l'atto individua la *versione* del documento; `vigenza` è il nome con cui la si
+chiede, in `con_vigenza` e in `dettaglio`.
 
 ::: normattiva.Urn
