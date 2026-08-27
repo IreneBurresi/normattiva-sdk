@@ -1,6 +1,6 @@
 [project]
 name = "normattiva-sdk"
-description = "SDK non ufficiale per Normattiva, il portale della legge vigente dello Stato italiano"
+description = "Client Python non ufficiale per l'API open data di Normattiva, la banca dati della legge vigente dello Stato italiano"
 readme = "README.md"
 license = "MIT"
 authors = [{ name = "Irene Burresi" }]
@@ -29,6 +29,7 @@ classifiers = [
 normattiva = "normattiva.cli:main"
 
 [project.urls]
+Documentation = "https://ireneburresi.github.io/normattiva-sdk/"
 Repository = "https://github.com/ireneburresi/normattiva-sdk"
 Issues = "https://github.com/ireneburresi/normattiva-sdk/issues"
 Changelog = "https://github.com/ireneburresi/normattiva-sdk/blob/main/CHANGELOG.md"
