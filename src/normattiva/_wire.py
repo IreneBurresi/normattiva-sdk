@@ -188,7 +188,7 @@ def _atto_da_dettaglio(nodo: Mapping[str, Any]) -> DettaglioAtto:
         nodo, "annoProvvedimento", "meseProvvedimento", "giornoProvvedimento"
     )
     return DettaglioAtto(
-        atto=EstremiAtto(
+        estremi=EstremiAtto(
             denominazione=denominazione,
             data=emanazione or pubblicazione,
             numero=_numero_dichiarato(nodo.get("numeroProvvedimento")),

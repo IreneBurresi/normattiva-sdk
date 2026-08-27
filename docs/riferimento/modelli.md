@@ -66,7 +66,7 @@ classDiagram
         +tuple per_emettitore
     }
 
-    DettaglioAtto *-- "1" EstremiAtto : atto
+    DettaglioAtto *-- "1" EstremiAtto : estremi
     DettaglioAtto *-- "1" PubblicazioneGazzetta : gazzetta
     DettaglioAtto *-- "1" FinestraVigenza : finestra
     DettaglioAtto *-- "0..n" Comma : commi

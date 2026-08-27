@@ -85,7 +85,7 @@ class TestDettaglio:
     def test_modello_restituito(self, api, client: Normattiva) -> None:
         api.post(f"/{URN}").respond(200, json=carica("urn_vigenza_finestra"))
         atto = client.dettaglio("urn:nir:stato:legge:1970-12-01;898~art5")
-        assert atto.atto.numero == "898"
+        assert atto.estremi.numero == "898"
         assert atto.testo
 
     def test_ambiguita_propagata(self, api, client: Normattiva) -> None:

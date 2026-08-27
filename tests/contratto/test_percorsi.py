@@ -105,7 +105,7 @@ class TestDallaRicercaAlTesto:
             _ = senza_urn.urn
         atto = client.dettaglio(senza_urn)
         assert atto.testo
-        assert atto.atto.denominazione == senza_urn.estremi.denominazione
+        assert atto.estremi.denominazione == senza_urn.estremi.denominazione
 
         diretto = client.dettaglio_da_gazzetta(
             senza_urn.gazzetta.codice_redazionale or "", senza_urn.gazzetta.data

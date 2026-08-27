@@ -58,7 +58,7 @@ class TestOgniModelloLaEspone:
 
     def test_il_dettaglio(self) -> None:
         atto = DettaglioAtto(
-            atto=EstremiAtto("LEGGE", date(1990, 8, 7), "241"),
+            estremi=EstremiAtto("LEGGE", date(1990, 8, 7), "241"),
             gazzetta=PubblicazioneGazzetta(date(1990, 8, 18)),
             titolo="",
             sottotitolo=None,

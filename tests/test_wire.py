@@ -63,10 +63,10 @@ class TestLeggiFinestra:
 class TestLeggiDettaglio:
     def test_estremi(self) -> None:
         atto = _wire.leggi_dettaglio(carica("urn_vigenza_finestra"))
-        assert atto.atto.denominazione == "LEGGE"
-        assert atto.atto.data == date(1970, 12, 1)
-        assert atto.atto.numero == "898"
-        assert atto.atto.codice_tipo == "PLE"
+        assert atto.estremi.denominazione == "LEGGE"
+        assert atto.estremi.data == date(1970, 12, 1)
+        assert atto.estremi.numero == "898"
+        assert atto.estremi.codice_tipo == "PLE"
 
     def test_gazzetta(self) -> None:
         atto = _wire.leggi_dettaglio(carica("urn_vigenza_finestra"))

@@ -296,7 +296,7 @@ class DettaglioAtto:
     servizio lo fanno alla prima richiesta e tengono il risultato.
     """
 
-    atto: EstremiAtto
+    estremi: EstremiAtto
     gazzetta: PubblicazioneGazzetta
     titolo: str
     sottotitolo: str | None
@@ -366,7 +366,7 @@ class DettaglioAtto:
     @property
     def urn(self) -> Urn:
         """L'URN dell'atto a cui questo testo appartiene."""
-        return self.atto.urn
+        return self.estremi.urn
 
     @property
     def permalink(self) -> str:

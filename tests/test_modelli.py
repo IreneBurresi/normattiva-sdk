@@ -22,7 +22,7 @@ GU = PubblicazioneGazzetta(data=date(1990, 8, 18), numero=192, codice_redazional
 
 def dettaglio(nome: str, **oltre) -> DettaglioAtto:
     parametri = {
-        "atto": L241,
+        "estremi": L241,
         "gazzetta": GU,
         "titolo": "LEGGE 7 agosto 1990, n. 241",
         "sottotitolo": None,

@@ -79,7 +79,7 @@ class TestDettaglio:
     async def test_testo_recuperato(self, api, client: AsyncNormattiva) -> None:
         api.post(f"/{URN}").respond(200, json=carica("urn_vigenza_finestra"))
         atto = await client.dettaglio("urn:nir:stato:legge:1970-12-01;898~art5")
-        assert atto.atto.numero == "898"
+        assert atto.estremi.numero == "898"
         assert atto.testo
 
     async def test_vigenza_nell_urn(self, api, client: AsyncNormattiva) -> None:

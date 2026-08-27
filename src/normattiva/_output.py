@@ -157,14 +157,14 @@ def mostra_atto(stile: Stile, atto: DettaglioAtto, *, richiesto: Urn | None = No
     mandato a capo alla larghezza del terminale: è l'output per chi legge, e
     chi vuole le righe originali del servizio usa il JSON.
     """
-    urn = _urn_di(atto.atto, richiesto)
-    testa = [stile.forte(atto.titolo or atto.atto.citazione)]
+    urn = _urn_di(atto.estremi, richiesto)
+    testa = [stile.forte(atto.titolo or atto.estremi.citazione)]
     if atto.sottotitolo:
         testa.append(a_capo(stile, atto.sottotitolo, rientro=""))
     coordinate = scheda(
         stile,
         [
-            ("Citazione", atto.atto.citazione),
+            ("Citazione", atto.estremi.citazione),
             ("Articolo", urn.articolo if urn else None),
             ("Gazzetta", str(atto.gazzetta)),
             ("Vigenza", str(atto.finestra) if atto.finestra else None),
@@ -187,14 +187,14 @@ def mostra_atto(stile: Stile, atto: DettaglioAtto, *, richiesto: Urn | None = No
 
 def dati_atto(atto: DettaglioAtto, *, richiesto: Urn | None = None) -> dict[str, Any]:
     """Un atto come struttura per il JSON: le stesse informazioni, senza impaginazione."""
-    urn = _urn_di(atto.atto, richiesto)
+    urn = _urn_di(atto.estremi, richiesto)
     return {
-        "citazione": atto.atto.citazione,
+        "citazione": atto.estremi.citazione,
         "titolo": atto.titolo,
         "sottotitolo": atto.sottotitolo,
         "urn": str(urn) if urn else None,
         "permalink": urn.permalink if urn else None,
-        "estremi": dati_estremi(atto.atto),
+        "estremi": dati_estremi(atto.estremi),
         "gazzetta": dati_gazzetta(atto.gazzetta),
         "vigenza": dati_finestra(atto.finestra),
         "preambolo": atto.preambolo,
