@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="normattiva-sdk">
-  <!-- Il fondo pieno serve: la favicon vive su barre chiare e scure. -->
-  <rect width="48" height="48" rx="10" fill="#1f3a4d"/>
-  <path d="M14 10h13l8 8v20a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V12a2 2 0 0 1 2-2Z" fill="none" stroke="#f7f4ef" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M27 10v8h8" fill="none" stroke="#f7f4ef" stroke-width="3" stroke-linejoin="round"/>
-  <path d="M19 25h11M19 31h7" stroke="#9c5221" stroke-width="3" stroke-linecap="round"/>
-</svg>

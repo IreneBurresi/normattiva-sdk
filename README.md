@@ -1,3 +1,6 @@
+<img src="https://raw.githubusercontent.com/ireneburresi/normattiva-sdk/main/docs/assets/logo-esteso.svg"
+     alt="normattiva-sdk" width="360">
+
 # normattiva-sdk
 
 [![PyPI](https://img.shields.io/pypi/v/normattiva-sdk?label=PyPI)](https://pypi.org/project/normattiva-sdk/)
@@ -22,8 +25,8 @@ versioni, e per leggerne una si indica una data.
 Lo stesso corpus è pubblicato come open data su
 [dati.normattiva.it](https://dati.normattiva.it), con un'API HTTP gratuita che
 risponde senza chiave e senza registrazione. Questa libreria la interroga da
-Python, in versione sincrona e asincrona, e traduce le risposte in oggetti
-tipizzati.
+Python, in versione sincrona e asincrona, e
+traduce le risposte in oggetti tipizzati.
 
 > **Progetto indipendente e non ufficiale.** Non è affiliato con l'[Istituto
 > Poligrafico e Zecca dello Stato](https://www.ipzs.it), con

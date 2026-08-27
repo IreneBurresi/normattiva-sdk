@@ -17,8 +17,8 @@ copyright: >
 theme:
   name: material
   language: it
-  logo: assets/logo.svg
-  favicon: assets/favicon.svg
+  logo: assets/logo-quadrato.svg
+  favicon: assets/logo-quadrato.svg
   font:
     # Le stesse famiglie del sistema di design di new-blog2: uno slab per il
     # corpo, che regge bene i testi lunghi, e JetBrains Mono per il codice.
