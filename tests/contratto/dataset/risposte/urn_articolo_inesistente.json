@@ -1,0 +1,8 @@
+{
+ "stato": 404,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "message": "dataPubblicazioneGazzetta:Sat Aug 18 00:00:00 CEST 1990 codi…",
+  "code": null
+ }
+}

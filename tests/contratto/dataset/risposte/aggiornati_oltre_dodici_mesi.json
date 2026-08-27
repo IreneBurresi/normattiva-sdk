@@ -1,0 +1,8 @@
+{
+ "stato": 400,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "message": "periodo di esportazione superiore a 12 mesi",
+  "code": "1501"
+ }
+}

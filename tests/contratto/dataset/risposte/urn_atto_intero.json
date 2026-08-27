@@ -1,0 +1,34 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "code": null,
+  "message": null,
+  "data": {
+   "atto": {
+    "titolo": "LEGGE 7 agosto 1990, n. 241",
+    "sottoTitolo": "  Nuove norme in materia di procedimento amministrativo e di…",
+    "articoloHtml": "<div class=\"bodyTesto\"> <div class=\"preamble-before-title-akn\"> La Camera dei deputati ed il Senato della Repubblica hanno a</div> <h2 class=\"preamble-title-akn\"> IL PRESIDENTE DELLA REPUBBLICA</h2> <h2 class=\"preamble-end-akn\"> PROMULGA</h2> <p class=\"formula-introduttiva\"> la seguente legge:</p> <h2 class=\"article-num-akn\" id=\"art_1\"> Art. 1</h2> <div class=\"article-heading-akn\"> (Principi generali dell'attivit&agrave; amministrativa)</div> <div class=\"art-commi-div-akn\"> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 1.</span><span class=\"art_text_in_comma\"> L'attivit&agrave; amministrativa persegue i fini determinati dalla legge ed&egrave; retta da criteri di economicit&agrave; , di efficacia, di imparzialit&agrave; , di pubblicit&agrave; e di trasparenza secondo le modalit&agrave; previste dalla presente legge e dalle altre disposizioni che&egrave; dai principi dell'ordinamento comunitario.<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 1-bis.</span><span class=\"art_text_in_comma\"> La pubblica amministrazione, nell'adozione di atti di natura<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 1-ter.</span><span class=\"art_text_in_comma\"> I soggetti privati preposti all'esercizio di attivit&agrave; amministrative assicurano il rispetto dei criteri e dei prin<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 2.</span><span class=\"art_text_in_comma\"> La pubblica amministrazione non pu&ograve; aggravare il procedimento se non per straordinarie e motivat<br> </span> </div> <div class=\"ins-akn\" eid=\"ins_1\"> <div class=\"art-comma-div-akn\"> <span class=\"art_text_in_comma\"> ((2-bis. I rapporti tra il cittadino e la pubblica amministr</span> </div> </div> </div> </div>",
+    "tipoProvvedimentoDescrizione": "LEGGE",
+    "tipoProvvedimentoCodice": "PLE",
+    "annoProvvedimento": 1990,
+    "meseProvvedimento": 8,
+    "giornoProvvedimento": 7,
+    "numeroProvvedimento": 241,
+    "tipoSupplementoCode": "NO",
+    "numeroSupplemento": 0,
+    "annoGU": 1990,
+    "meseGU": 8,
+    "giornoGU": 18,
+    "numeroGU": 192,
+    "dataPubblicazioneInGazzetta": null,
+    "articoloDataInizioVigenza": "20200915",
+    "articoloDataFineVigenza": "99999999",
+    "testoInVigore": null
+   },
+   "lista": null,
+   "message": "ricerca effettuata con successo"
+  },
+  "success": true
+ }
+}

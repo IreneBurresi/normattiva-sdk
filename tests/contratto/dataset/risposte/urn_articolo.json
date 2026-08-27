@@ -1,0 +1,34 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "code": null,
+  "message": null,
+  "data": {
+   "atto": {
+    "titolo": "LEGGE 7 agosto 1990, n. 241",
+    "sottoTitolo": "  Nuove norme in materia di procedimento amministrativo e di…",
+    "articoloHtml": "<div class=\"bodyTesto\"> <h2 class=\"preamble-title-akn\"></h2> <h2 class=\"preamble-end-akn\"></h2> <h2 class=\"article-num-akn\" id=\"art_2\"> Art. 2</h2> <div class=\"article-heading-akn\"> (Conclusione del procedimento)</div> <div class=\"art-commi-div-akn\"> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 1.</span><span class=\"art_text_in_comma\"> Ove il procedimento consegua obbligatoriamente ad un'istanza&agrave; , inammissibilit&agrave; , improcedibilit&agrave; o infondatezza della domanda, le pubbliche amministrazioni c&ograve; consistere in un sintetico riferimento al punto di fatto o d<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 2.</span><span class=\"art_text_in_comma\"> Nei casi in cui disposizioni di legge ovvero i provvedimenti<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 3.</span><span class=\"art_text_in_comma\"> Con uno o pi&ugrave; decreti del Presidente del Consiglio dei ministri, adottati <a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1988-08-23;400~art17-com3\" target=\"_blank\"> articolo 17, comma 3, della legge 23 agosto 1988, n. 400</a> , su proposta dei Ministri competenti e di concerto con i Mi<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 4.</span><span class=\"art_text_in_comma\"> Nei casi in cui, tenendo conto della sostenibilit&agrave; dei tempi sotto il profilo dell'organizzazione amministrativ&agrave; del procedimento, sono indispensabili termini superiori a no<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 4-bis.</span><span class=\"art_text_in_comma\"> Le pubbliche amministrazioni misurano e pubblicano nel propr<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:decreto.legislativo:1997-08-28;281~art8\" target=\"_blank\"> articolo 8 del decreto legislativo 28 agosto 1997, n. 281</a> , sono definiti modalit&agrave; e criteri di misurazione dei tempi effettivi di conclusione &egrave; le ulteriori modalit&agrave; di pubblicazione di cui al primo periodo.<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 5.</span><span class=\"art_text_in_comma\"> Fatto salvo quanto previsto da specifiche disposizioni norma&agrave; di garanzia e di vigilanza disciplinano, in conformit&agrave; ai propri ordinamenti, i termini di conclusione dei procedim<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 6.</span><span class=\"art_text_in_comma\"> I termini per la conclusione del procedimento decorrono dall&egrave; ad iniziativa di parte.<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 7.</span><span class=\"art_text_in_comma\"> Fatto salvo quanto previsto dall'articolo 17, i termini di c&agrave; non attestati in documenti gi&agrave; in possesso dell'amministrazione stessa o non direttamente a<br> </span> </div> <div class=\"art-comma-div-akn\"> <span class=\"comma-num-akn\"> 8.</span><span class=\"art_text…[3925 caratteri omessi]",
+    "tipoProvvedimentoDescrizione": "LEGGE",
+    "tipoProvvedimentoCodice": "PLE",
+    "annoProvvedimento": 1990,
+    "meseProvvedimento": 8,
+    "giornoProvvedimento": 7,
+    "numeroProvvedimento": 241,
+    "tipoSupplementoCode": "NO",
+    "numeroSupplemento": 0,
+    "annoGU": 1990,
+    "meseGU": 8,
+    "giornoGU": 18,
+    "numeroGU": 192,
+    "dataPubblicazioneInGazzetta": null,
+    "articoloDataInizioVigenza": "20210601",
+    "articoloDataFineVigenza": "99999999",
+    "testoInVigore": null
+   },
+   "lista": null,
+   "message": "ricerca effettuata con successo"
+  },
+  "success": true
+ }
+}

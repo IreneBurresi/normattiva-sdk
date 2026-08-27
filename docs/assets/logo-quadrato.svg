@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="normattiva-sdk, libreria non ufficiale">
+  <!-- La colonna: la legge come istituzione. Le scanalature sono in accento,
+       così il colore sta dentro la sagoma e non la sottolinea da fuori.
+       Che non sia il marchio di Normattiva lo dicono la tavolozza del progetto
+       e la parola scritta: niente tricolore, niente emblema, niente blu di Stato. -->
+  <rect width="64" height="64" rx="14" fill="#1c1834"/>
+
+  <!-- Dall'alto: abaco, echino, fusto rastremato, toro, plinto. -->
+  <rect x="18.5" y="11" width="27" height="4.5" rx="1.5" fill="#f6f5f1"/>
+  <path d="M20.5 15.5h23l-2.5 3.5h-18z" fill="#f6f5f1"/>
+  <path d="M23 19h18l1 26H22z" fill="#f6f5f1"/>
+  <path d="M22 45h20l2.5 3.5H19.5z" fill="#f6f5f1"/>
+  <rect x="18.5" y="48.5" width="27" height="4.5" rx="1.5" fill="#f6f5f1"/>
+
+  <g stroke="#6b5fb0" stroke-width="2.2" stroke-linecap="round">
+    <path d="M27 23v18M32 23v18M37 23v18"/>
+  </g>
+</svg>

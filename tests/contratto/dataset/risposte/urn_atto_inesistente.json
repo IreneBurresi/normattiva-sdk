@@ -1,0 +1,8 @@
+{
+ "stato": 404,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "message": "atto non trovato",
+  "code": "404"
+ }
+}

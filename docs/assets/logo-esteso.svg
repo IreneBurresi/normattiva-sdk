@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 72" role="img"
+     aria-label="normattiva-sdk, libreria non ufficiale">
+  <!-- Il testo segue il tema di sistema; la piastrella no, resta scura sempre. -->
+  <style>
+    .mono  { font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace; }
+    .testo { fill: #1e2321; }
+    .fioco { fill: #565f59; }
+    @media (prefers-color-scheme: dark) {
+      .testo { fill: #e9e7e0; }
+      .fioco { fill: #a8a79e; }
+    }
+  </style>
+
+  <g transform="translate(4,4)">
+    <rect width="64" height="64" rx="14" fill="#1c1834"/>
+    <rect x="18.5" y="11" width="27" height="4.5" rx="1.5" fill="#f6f5f1"/>
+    <path d="M20.5 15.5h23l-2.5 3.5h-18z" fill="#f6f5f1"/>
+    <path d="M23 19h18l1 26H22z" fill="#f6f5f1"/>
+    <path d="M22 45h20l2.5 3.5H19.5z" fill="#f6f5f1"/>
+    <rect x="18.5" y="48.5" width="27" height="4.5" rx="1.5" fill="#f6f5f1"/>
+    <g stroke="#6b5fb0" stroke-width="2.2" stroke-linecap="round">
+      <path d="M27 23v18M32 23v18M37 23v18"/>
+    </g>
+  </g>
+
+  <text x="82" y="37" class="mono testo" font-size="23" font-weight="500"
+        letter-spacing="-.4">normattiva<tspan fill="#6b5fb0" font-weight="700">-sdk</tspan></text>
+  <text x="83.5" y="56" class="mono fioco" font-size="9.5" letter-spacing="1.2">unofficial</text>
+</svg>

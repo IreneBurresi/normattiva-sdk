@@ -1,0 +1,34 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "code": null,
+  "message": null,
+  "data": {
+   "atto": {
+    "titolo": "REGIO DECRETO 19 ottobre 1930, n. 1398",
+    "sottoTitolo": "Approvazione del testo definitivo del Codice Penale. (030U13…",
+    "articoloHtml": "<div class=\"bodyTesto\"> <h2 class=\"preamble-title-akn\"></h2> <h2 class=\"preamble-end-akn\"></h2> <span class=\"attachment-just-text\"><div style=\"text-align:center;\"> Art. 416-bis.<br> <br> Associazioni di tipo mafioso anche straniere<br> <br> Chiunque fa parte di un'associazione di tipo mafioso formata&ugrave; persone,&egrave; punito con la reclusione<div class=\"ins-akn\" eid=\"ins_1\"> ((da dieci a quindici anni))</div> .<br> <br> Coloro che promuovono, dirigono o organizzano l'associazione&ograve; solo, con la reclusione<div class=\"ins-akn\" eid=\"ins_2\"> ((da dodici a diciotto anni))</div> .<br> <br> L'associazione&egrave; di tipo mafioso quando coloro che ne fanno parte si avvalgon&agrave; che ne deriva per commettere delitti, per acquisire in modo &agrave; economiche, di concessioni, di autorizzazioni, appalti e ser&egrave; o per altri ovvero al fine di impedire od ostacolare il libe&egrave; o ad altri in occasione di consultazioni elettorali.<br> <br> Se l'associazione&egrave; armata si applica la pena della reclusione<div class=\"ins-akn\" eid=\"ins_3\"> ((da dodici a venti anni))</div> nei casi previsti dal primo comma e<div class=\"ins-akn\" eid=\"ins_4\"> ((da quindici a ventisei anni))</div> nei casi previsti dal secondo comma.<br> <br> L'associazione si considera armata quando i partecipanti han&agrave; , per il conseguimento della finalit&agrave; dell'associazione, di armi o materie esplodenti, anche se oc<br> <br> Se le attivit&agrave; economiche di cui gli associati intendono assumere o mantene&agrave; .<br> <br> Nei confronti del condannato&egrave; sempre obbligatoria la confisca delle cose che servirono o f<br> 55. (118)<br> <br> Le disposizioni del presente articolo si applicano anche all<br> (96) (125) (233)<br> <br> </span> <div class=\"art_aggiornamento-akn\"> <div class=\"art_aggiornamento_separator-akn\"> -------------</div> <div class=\"art_aggiornamento_title-akn\"> AGGIORNAMENTO (96)</div> <div class=\"art_aggiornamento_testo-akn\"> <br> La<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1965-05-31;575\" target=\"_blank\"> L. 31 maggio 1965, n. 575</a> come modificata dalla<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1982-09-13;646\" target=\"_blank\"> L. 13 settembre 1982, n. 646</a> ha disposto:<br> - (con l'art. 7, comma 1) che le pene stabilite per il delit&egrave; commesso da persona gi&agrave; sottoposta con provvedimento definitivo a misura di prevenzi<br> -(con l'art. 7, comma 3) che alla pena&egrave; aggiunta una misura di sicurezza detentiva.</div> </div> <div class=\"art_aggiornamento-akn\"> <div class=\"art_aggiornamento_separator-akn\"> -------------</div> <div class=\"art_aggiornamento_title-akn\"> AGGIORNAMENTO (118)</div> <div class=\"art_aggiornamento_testo-akn\"> <br> La<a href=\"http://www.normattiva.it/uri-res/N2Ls?urn:nir:stato:legge:1990-03-19;55\" target=\"_blank\"> L. 19 marzo 1990, n. 55</a> ha disposto (con l'art. 36, comma 2) che restano tuttavia fe<a href=\"http://www.normattiva.it/uri-res/N2Ls?…[1653 caratteri omessi]",
+    "tipoProvvedimentoDescrizione": "REGIO DECRETO",
+    "tipoProvvedimentoCodice": "PRD",
+    "annoProvvedimento": 1930,
+    "meseProvvedimento": 10,
+    "giornoProvvedimento": 19,
+    "numeroProvvedimento": 1398,
+    "tipoSupplementoCode": "NO",
+    "numeroSupplemento": 0,
+    "annoGU": 1930,
+    "meseGU": 10,
+    "giornoGU": 26,
+    "numeroGU": 251,
+    "dataPubblicazioneInGazzetta": null,
+    "articoloDataInizioVigenza": "20150614",
+    "articoloDataFineVigenza": "99999999",
+    "testoInVigore": null
+   },
+   "lista": null,
+   "message": "ricerca effettuata con successo"
+  },
+  "success": true
+ }
+}

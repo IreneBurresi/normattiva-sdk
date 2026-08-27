@@ -1,0 +1,53 @@
+{
+ "code": null,
+ "message": null,
+ "data": {
+  "atto": null,
+  "lista": [
+   {
+    "titolo": "LEGGE 28 dicembre 2001, n. 448",
+    "sottoTitolo": "  Disposizioni per la formazione del bilancio annuale e pluriennale\r\ndello Stato (legge finanziaria 2002).\r\n",
+    "articoloHtml": "<div class=\"bodyTesto\">\n        <h2 class=\"preamble-title-akn\"></h2>\n        <h2 class=\"preamble-end-akn\"></h2>\n        <h2 class=\"article-num-akn\" id=\"art_2\">Art. 2</h2>\n        <div class=\"article-heading-akn\">\n            (Modificazioni alla disciplina dell'IRPEF per le famiglie, della\n            <br>\n            detraibilit&agrave; delle spese sostenute dai soggetti sordomuti e della deducibi</span></div>",
+    "tipoProvvedimentoDescrizione": "LEGGE",
+    "tipoProvvedimentoCodice": "PLE",
+    "annoProvvedimento": 2001,
+    "meseProvvedimento": 12,
+    "giornoProvvedimento": 28,
+    "numeroProvvedimento": 448,
+    "tipoSupplementoCode": "SO",
+    "numeroSupplemento": 285,
+    "annoGU": 2001,
+    "meseGU": 12,
+    "giornoGU": 29,
+    "numeroGU": 301,
+    "dataPubblicazioneInGazzetta": null,
+    "articoloDataInizioVigenza": "20020101",
+    "articoloDataFineVigenza": "99999999",
+    "testoInVigore": null
+   },
+   {
+    "titolo": "LEGGE 28 dicembre 2001, n. 448",
+    "sottoTitolo": "  Ripubblicazione  del  testo  della  legge 28 dicembre 2001, n. 448,\nrecante:  \"Disposizioni  per  la  formazione  del  bilancio annuale e\npluriennale  dello  Stato  (legge finanziaria 2002)\", corredato delle\nrelative  note.  (Legge  pubblicata  in  supplemento  ordinario  alla\nGazzetta Ufficiale - serie generale - n. 301 del 29 dicembre 2001).\n",
+    "articoloHtml": "<div class=\"bodyTesto\">\n        <h2 class=\"preamble-title-akn\"></h2>\n        <h2 class=\"preamble-end-akn\"></h2>\n        <h2 class=\"article-num-akn\" id=\"art_2\">Art. 2</h2>\n        <div class=\"article-pre-comma-text-akn\">\n            (Modificazioni alla disciplina dell'IRPEF per le famiglie, della detraibilit&agrave; delle spese sostenute dai soggetti sordomuti e della deducibilit&agrave; delle spes</span></div>",
+    "tipoProvvedimentoDescrizione": "LEGGE",
+    "tipoProvvedimentoCodice": "PLE",
+    "annoProvvedimento": 2001,
+    "meseProvvedimento": 12,
+    "giornoProvvedimento": 28,
+    "numeroProvvedimento": 448,
+    "tipoSupplementoCode": "SO",
+    "numeroSupplemento": 20,
+    "annoGU": 2002,
+    "meseGU": 1,
+    "giornoGU": 30,
+    "numeroGU": 25,
+    "dataPubblicazioneInGazzetta": null,
+    "articoloDataInizioVigenza": "0",
+    "articoloDataFineVigenza": "99999999",
+    "testoInVigore": null
+   }
+  ],
+  "message": "ricerca effettuata con successo"
+ },
+ "success": true
+}

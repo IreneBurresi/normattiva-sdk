@@ -1,0 +1,18 @@
+{
+ "stato": 200,
+ "tipo_contenuto": "application/json",
+ "corpo": {
+  "listaAtti": [],
+  "facetMap": {
+   "anno_provvedimento": [],
+   "codice_tipo_provvedimento": [],
+   "descrizione_emettitore": []
+  },
+  "numeroPagine": 0,
+  "numeroAttiTrovati": 0,
+  "paginaCorrente": 1,
+  "numeroElementiPerPagina": 0,
+  "message": null,
+  "numeroFileRicerca": 0
+ }
+}
