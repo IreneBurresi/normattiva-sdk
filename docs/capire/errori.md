@@ -237,8 +237,6 @@ dell'API è cambiato: è il caso che il
 
 ## Cosa fare, per categoria
 
-La tabella riassume quando conviene riprovare:
-
 | Errore | Ha senso riprovare? | Cosa fare |
 |---|---|---|
 | `InvalidArgumentError` | no | correggere il codice |

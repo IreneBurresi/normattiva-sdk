@@ -5,9 +5,7 @@ hide:
 
 # Riferimento
 
-Classi, metodi, parametri ed eccezioni, uno per uno, con la firma esatta. Gli
-esempi con il prompt `>>>` si incollano in un interprete così come sono: non
-richiedono un client aperto né una connessione.
+Classi, metodi, parametri ed eccezioni, uno per uno, con la firma esatta.
 
 | Pagina | Che cosa contiene |
 |---|---|

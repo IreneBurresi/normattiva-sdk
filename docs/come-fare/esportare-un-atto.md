@@ -229,9 +229,9 @@ atto.versioni             # tutte, dalla più vecchia alla più recente
 atto.aggiornamenti        # le modifiche, come le descrive il servizio
 ```
 
-`abrogato` è un'informazione, non un motivo per nascondere il testo:
-l'abrogazione toglie efficacia a un atto per il futuro, ma il testo abrogato
-resta consultabile e resta applicabile ai fatti avvenuti mentre era in vigore.
+`abrogato` segnala lo stato dell'atto, e il testo resta comunque disponibile;
+che cosa comporti l'abrogazione lo spiega
+[come è fatto un atto](../capire/come-e-fatto-un-atto.md#la-vita-di-un-atto-nel-tempo).
 
 Ogni [`Aggiornamento`][normattiva.Aggiornamento] descrive una modifica con le
 parole del servizio:
@@ -375,5 +375,5 @@ normattiva.save_collection("Leggi di delegazione europea", "delega.zip")
 
 !!! warning "`download_collection` restituisce un archivio vuoto"
 
-    È un difetto del servizio, non della libreria: finché dura, quelle
-    collezioni si prendono con `save_collection`, che scrive il file su disco.
+    Finché il servizio si comporta così, quelle collezioni si prendono con
+    `save_collection`, che scrive il file su disco.

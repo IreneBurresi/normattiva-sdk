@@ -45,9 +45,8 @@ una versione nuova senza cancellare la precedente, e la legge 241 del 1990 ne ha
 «quando».
 
 Lo stesso corpus è pubblicato come open data su
-[dati.normattiva.it](https://dati.normattiva.it), con un'API HTTP gratuita che
-risponde senza chiave e senza registrazione. `normattiva-sdk` la interroga da
-Python: copre tutti e quindici gli endpoint, in versione sincrona e asincrona, e
+[dati.normattiva.it](https://dati.normattiva.it), con un'API HTTP gratuita.
+`normattiva-sdk` la interroga da Python, in versione sincrona e asincrona, e
 traduce le risposte in oggetti tipizzati.
 
 Se il diritto italiano non è il tuo mestiere,

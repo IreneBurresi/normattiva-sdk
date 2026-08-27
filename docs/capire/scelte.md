@@ -30,7 +30,7 @@ plausibile.
 Un identificatore inventato non fallisce in modo visibile: ottiene un `404`,
 che è la stessa risposta che il servizio dà a un atto inesistente. Chi lo
 riceve conclude che l'atto non c'è, e va a cercare altrove un testo che invece
-esiste. Sollevare distingue i due casi.
+esiste; per questo la libreria preferisce sollevare un'eccezione.
 
 Lo stesso vale per gli allegati dei codici, che la libreria non deduce ma
 elenca uno per uno in [`codici`](../riferimento/codici.md), e per la `vigenza`
@@ -40,7 +40,8 @@ di oggi facendolo passare per quello storico.
 
 ## Italiano e inglese nello stesso nome
 
-Il confine non è fra italiano e inglese, ma fra dominio e tecnica.
+Il criterio di scelta è la distinzione fra dominio e tecnica, non la lingua in
+sé.
 
 Il dominio giuridico è in italiano: `dettaglio`, `vigenza`, `atto`, `comma`,
 `gazzetta`, `cronologia`. Tradurre `vigenza` vorrebbe dire inventare un termine
@@ -52,7 +53,7 @@ Lo strato tecnico è in inglese: `ConnectionError`, `retries`, `timeout`,
 chi scrive Python riconosce da qualunque altra libreria; italianizzarli
 costringerebbe a impararli di nuovo.
 
-I due mondi si incontrano senza mescolarsi dentro lo stesso nome: `Export` ha
+Le due convenzioni convivono nella stessa firma: `Export` ha
 un metodo `wait()` e restituisce `AttoStorico`; `dettaglio()` accetta `vigenza`
 e solleva `ConnectionError`. Messaggi d'errore e documentazione restano in
 italiano.

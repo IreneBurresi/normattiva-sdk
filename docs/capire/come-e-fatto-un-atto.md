@@ -14,7 +14,8 @@ versioni.
 
 Un provvedimento si identifica con tre elementi: **che tipo di atto è**,
 **quando è stato emanato** e **che numero ha**. La libreria li raccoglie in
-[`EstremiAtto`][normattiva.EstremiAtto].
+[`EstremiAtto`][normattiva.EstremiAtto], che ogni modello espone nel campo
+`estremi`.
 
 ```python
 atto.estremi.denominazione  # 'LEGGE'
@@ -78,7 +79,8 @@ un'abbreviazione, e le due liste non coincidono: vedi
 
 ## Come è fatto dentro
 
-Un atto è un albero. Le foglie rilevanti sono gli **articoli**, e dentro
+Un atto è un albero. Il corpo dell'atto, la sequenza dei suoi articoli, si
+chiama **articolato**; le foglie rilevanti sono gli **articoli**, e dentro
 ciascuno il testo è diviso in **commi**.
 
 ```mermaid
@@ -159,7 +161,8 @@ ed è [la ragione per cui i suoi articoli non rispondono sotto il decreto stesso
 
 Quando una modifica inserisce un articolo nuovo fra il 2 e il 3, gli articoli
 successivi non vengono rinumerati: si aggiunge un **2-bis**. Poi un 2-ter, un
-2-quater, e così via con gli ordinali latini.
+2-quater, e così via con gli ordinali latini. In un atto esportato si vedono
+al loro posto:
 
 ```python
 for articolo in atto.vigente.articoli():
@@ -222,9 +225,8 @@ Nella libreria è [`FinestraVigenza`][normattiva.FinestraVigenza], e una finestr
 senza fine è quella tuttora in vigore.
 
 **Multivigenza** è la proprietà di una banca dati che conserva tutte le versioni
-succedutesi nel tempo, e non solo l'ultima. È quello che distingue Normattiva
-dalla maggior parte delle raccolte normative, ed è la ragione per cui
-`dettaglio` accetta una data.
+succedutesi nel tempo, e non solo l'ultima. È la ragione per cui `dettaglio`
+accetta una data.
 
 **Testo originale** è la versione come è uscita in Gazzetta, prima di qualunque
 modifica; nella libreria si chiede con `vigenza="originale"`.

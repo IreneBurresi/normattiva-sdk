@@ -26,8 +26,7 @@ i campi ci siano, e che siano del tipo registrato.
 | compare un campo nuovo | passa, con avviso | è un'opportunità, non un guasto |
 | l'endpoint non risponde | **salta** | il servizio è in avaria; il contratto è un'altra cosa |
 
-L'ultima riga è la più importante. Un servizio in avaria fa fallire tutti i
-test insieme, e un monitoraggio che segnala ogni disservizio come scostamento
+Un servizio in avaria fa fallire tutti i test insieme, e un monitoraggio che segnala ogni disservizio come scostamento
 smette di essere letto. Un unico gestore trasforma quindi ogni
 `ConnectionError` in uno skip motivato; uno scostamento vero continua a
 fallire.

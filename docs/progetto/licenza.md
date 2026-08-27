@@ -13,11 +13,9 @@ mantenuto da loro, e nessuno di loro risponde di quello che fa.
 Il nome «Normattiva» compare qui per identificare il servizio con cui la
 libreria dialoga, non per suggerire un rapporto che non esiste.
 
-È **gratuita**, in licenza **MIT**, e lo resterà. Il testo completo della
-licenza è nel file
+La libreria è distribuita con licenza **MIT**. Il testo completo è nel file
 [`LICENSE`](https://github.com/ireneburresi/normattiva-sdk/blob/main/LICENSE)
-del repository. Nessun costo, nessuna chiave, nessuna registrazione: neanche
-l'API di Normattiva ne chiede.
+del repository.
 
 ## Da dove vengono i dati
 

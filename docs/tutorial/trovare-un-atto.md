@@ -47,8 +47,8 @@ print(normattiva.dettaglio(primo).testo[:200])
 ```
 
 Conviene questa strada anche quando l'URN si saprebbe scrivere: per una dozzina
-di tipi di atto, quasi tutti storici, una forma URN verificata non esiste, e
-`dettaglio` per quelli passa dalle coordinate di Gazzetta.
+di tipi di atto, quasi tutti storici, un URN non esiste, e `dettaglio` li
+raggiunge comunque partendo dal risultato della ricerca.
 
 ## Scorriamo più di una pagina
 

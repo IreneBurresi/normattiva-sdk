@@ -5,8 +5,6 @@ Il testo di una legge cambia nel tempo. Normattiva conserva ogni versione, e
 
 ## Chiedere il testo di un giorno preciso
 
-L'esempio è completo: si incolla in un file e si esegue.
-
 ```python
 from datetime import date
 

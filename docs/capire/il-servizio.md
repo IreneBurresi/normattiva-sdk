@@ -63,8 +63,9 @@ Il servizio ha due modelli di dati, e la libreria li tiene distinti.
 
 **Il percorso interattivo** (`dettaglio`, `cronologia`) restituisce il testo di
 **un atto o un articolo** in **una finestra di vigenza**. Arriva come HTML
-generato da Akoma Ntoso, che la libreria scompone in testo piano, commi, note
-di aggiornamento e formula introduttiva.
+generato da Akoma Ntoso, lo standard XML dei documenti normativi, e la libreria
+lo scompone in testo piano, commi, note di aggiornamento e formula
+introduttiva.
 
 **L'esportazione** restituisce un **atto intero** con **tutte** le sue
 versioni, in un archivio ZIP di documenti JSON strutturati ad albero.
@@ -80,7 +81,7 @@ flowchart LR
 Un modello unico richiederebbe campi opzionali fuorvianti: il testo sarebbe
 presente per il percorso interattivo e assente per l'export, dove al suo posto
 c'è l'articolato. Le due famiglie di modelli restano separate perché le due
-risposte sono strutturalmente diverse. La tabella riassume le differenze:
+risposte sono strutturalmente diverse.
 
 |  | `DettaglioAtto` | `AttoStorico` |
 |---|---|---|
@@ -142,9 +143,8 @@ riesce a costruire.
 
 ## Gli endpoint
 
-L'API open data espone quindici endpoint, e la libreria li copre tutti. La
-corrispondenza fra metodi ed endpoint sta in
-[gli endpoint](../riferimento/endpoint.md).
+L'API open data espone quindici endpoint. La corrispondenza fra metodi ed
+endpoint sta in [gli endpoint](../riferimento/endpoint.md).
 
 ### I criteri con due nomi
 

@@ -23,9 +23,8 @@ precedente. Si chiama multivigenza. La legge 241 del 1990 ha sessantuno
 versioni, e per leggerne una si indica una data.
 
 Lo stesso corpus è pubblicato come open data su
-[dati.normattiva.it](https://dati.normattiva.it), con un'API HTTP gratuita che
-risponde senza chiave e senza registrazione. Questa libreria la interroga da
-Python, in versione sincrona e asincrona, e
+[dati.normattiva.it](https://dati.normattiva.it), con un'API HTTP gratuita.
+Questa libreria la interroga da Python, in versione sincrona e asincrona, e
 traduce le risposte in oggetti tipizzati.
 
 > **Progetto indipendente e non ufficiale.** Non è affiliato con l'[Istituto
@@ -115,7 +114,7 @@ classi, metodi ed eccezioni.
 
 ## API
 
-`Normattiva` e `AsyncNormattiva` coprono tutti e quindici gli endpoint e si
+`Normattiva` e `AsyncNormattiva` coprono l'intera API open data e si
 rispecchiano metodo per metodo; nella versione asincrona gli iteratori diventano
 iteratori asincroni.
 

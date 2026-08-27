@@ -16,8 +16,8 @@ with Normattiva() as normattiva:
 
 Il percorso che abbiamo usato finora restituisce un articolo alla volta, e degli
 articoli molto lunghi restituisce solo i primi cento commi. L'esportazione
-restituisce l'atto completo, articolato e versioni comprese, e non si ferma ai
-cento commi.
+restituisce l'atto completo, con tutti gli articoli e tutte le versioni, e non
+si ferma ai cento commi.
 
 In cambio non è immediata: si avvia, si attende, si scarica.
 

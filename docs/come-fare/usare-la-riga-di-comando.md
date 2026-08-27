@@ -144,8 +144,7 @@ costano una richiesta in più.
 
 Senza `--massimo` si paga una richiesta sola e si ottiene una pagina, che si
 sfoglia con `--pagina` e `--per-pagina`. Con `--massimo` il comando scorre le
-pagine finché ha raccolto quel numero di atti, e quindi costa più richieste: il
-nome dell'opzione rende esplicito il costo.
+pagine finché ha raccolto quel numero di atti, e quindi costa più richieste.
 
 ```bash
 normattiva cerca appalti --massimo 200 --json > appalti.json
@@ -191,7 +190,7 @@ ogni voce, con il suffisso di vigenza attaccato.
 !!! warning "Non tutti gli articoli hanno un originale"
 
     `cronologia` parte dalla prima pubblicazione. Un articolo inserito da una
-    novella, come il 416-bis del codice penale, nel testo originale non c'era: il
+    modifica successiva, come il 416-bis del codice penale, nel testo originale non c'era: il
     comando esce con `nessun atto per la richiesta` e il codice 3. Non è un
     difetto della richiesta, è la storia di quell'articolo.
 

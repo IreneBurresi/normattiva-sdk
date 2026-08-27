@@ -163,8 +163,6 @@ parole nel titolo o nel testo, vigenza a una data, classe redazionale e i due
 intervalli di date. L'elenco completo, con il tipo di ciascuno, sta in
 [`ricerca_avanzata`][normattiva.Normattiva.ricerca_avanzata].
 
-Tre cose da sapere prima di scrivere i criteri:
-
 **`denominazione` vuole il nome esatto del dizionario**, cioè `"LEGGE"` o
 `"DECRETO LEGISLATIVO"`, non l'abbreviazione. I valori ammessi li elenca
 `denominazioni()`, ed è l'unico modo di conoscerli: non c'è una regola per
@@ -180,8 +178,9 @@ emanazione = (None, date(1950, 12, 31))    # fino al 1950
 
 **`classe` è la classificazione redazionale dell'atto**, non il suo stato
 giuridico: `SENZA_AGGIORNAMENTI` è un atto mai modificato, `AGGIORNATO` un atto
-modificato almeno una volta, `ABROGATO` un atto abrogato. Un atto abrogato resta
-consultabile e resta applicabile ai fatti avvenuti mentre era in vigore.
+modificato almeno una volta, `ABROGATO` un atto abrogato. Che cosa comporti
+l'abrogazione lo spiega
+[come è fatto un atto](../capire/come-e-fatto-un-atto.md#la-vita-di-un-atto-nel-tempo).
 
 Senza nessun criterio la ricerca avanzata risponde con l'intero corpus, oltre
 duecentomila atti: è una richiesta ammessa, e la prima pagina costa quanto
