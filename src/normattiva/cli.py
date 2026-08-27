@@ -474,7 +474,7 @@ def _esegui_esporta(argomenti: argparse.Namespace) -> Uscita:
             stile,
             [
                 ("Archivio", str(percorso)),
-                ("Format", str(esportazione.format)),
+                ("Formato", str(esportazione.format)),
                 ("Dimensione", _dimensione(dimensione)),
                 ("Token", esportazione.token),
             ],
