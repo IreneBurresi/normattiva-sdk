@@ -17,6 +17,9 @@
 
 SDK non ufficiale per Normattiva, il portale della legge vigente dello Stato italiano
 
+*Unofficial Python client for Normattiva, the Italian legislation database.
+Documentation is in Italian, as is the domain.*
+
 [Normattiva](https://www.normattiva.it) conserva di ogni atto tutte le versioni
 che si sono succedute: ogni modifica ne apre una nuova senza cancellare la
 precedente. Si chiama multivigenza. La legge 241 del 1990 ha sessantuno
