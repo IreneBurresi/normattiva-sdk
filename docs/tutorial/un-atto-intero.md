@@ -1,10 +1,7 @@
 # Un atto intero
 
-Quarta e ultima lezione. Finora abbiamo letto un articolo per volta. Qui
-prendiamo un atto intero, con tutte le sue versioni, e lo rileggiamo da disco
-senza tornare in rete.
-
-Questa lezione fa una richiesta lunga: l'esportazione impiega circa un minuto.
+Finora abbiamo letto un articolo per volta. Un atto intero, con tutte le sue
+versioni, si ottiene dall'esportazione, che impiega circa un minuto.
 
 ```python
 from datetime import date
@@ -102,13 +99,7 @@ print(len(di_nuovo.atti[0].versioni))
 Da qui in avanti l'atto si rilegge da disco quante volte serve, senza chiedere
 di nuovo al servizio la stessa cosa.
 
-## Che cosa abbiamo fatto
-
-In quattro lezioni abbiamo letto il testo di un articolo, l'abbiamo riletto a
-due date del passato, ne abbiamo percorso la storia, trovato un atto partendo
-dalle parole e infine scaricato un atto intero con tutte le sue versioni.
-
-Da qui:
+## Da qui
 
 - le guide di [come fare](../come-fare/index.md), una per obiettivo:
   identificare un atto, cercarlo, leggerlo a una data, esportarlo intero,

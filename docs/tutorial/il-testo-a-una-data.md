@@ -1,10 +1,7 @@
 # Il testo a una data
 
-Seconda lezione di quattro. Nella prima abbiamo visto che ogni risposta porta
-una finestra di vigenza. Qui la usiamo: chiediamo il testo di un giorno preciso,
-confrontiamo due versioni dello stesso articolo e percorriamo tutta la storia.
-
-Riprendiamo da dove eravamo, dentro il blocco `with`:
+Ogni risposta porta una finestra di vigenza. Da lì si arriva a chiedere il testo
+di un giorno preciso.
 
 ```python
 from datetime import date
@@ -120,11 +117,5 @@ Ogni elemento è un `DettaglioAtto` completo, con il testo di quella versione.
 `cronologia` costa una richiesta per versione, quindi con `massimo` si paga solo
 quello che serve.
 
-## Che cosa abbiamo fatto
-
-Abbiamo chiesto il testo di una data precisa, letto la finestra che il servizio
-restituisce insieme al testo, confrontato due versioni dello stesso articolo e
-percorso la sua storia una versione per volta.
-
-Finora l'identificatore lo conoscevamo già. Nella prossima lezione partiamo
+Finora l'identificatore lo conoscevamo già. Nella prossima lezione si parte
 dalle parole: [trovare un atto](trovare-un-atto.md).

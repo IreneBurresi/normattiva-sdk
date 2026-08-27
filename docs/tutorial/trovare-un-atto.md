@@ -1,8 +1,6 @@
 # Trovare un atto
 
-Terza lezione di quattro. Finora l'URN lo conoscevamo già. Qui partiamo dalle
-parole, torniamo dal risultato al testo, e vediamo la scorciatoia per gli atti
-più citati.
+Finora l'URN lo conoscevamo già. Quando non si conosce, si parte dalle parole.
 
 ```python
 from normattiva import Normattiva
@@ -92,12 +90,5 @@ allegato al R.D. 262 del 1942. È anche il motivo per cui `codici` esiste: gli
 articoli dei codici rispondono solo attraverso l'allegato in cui furono
 approvati, e quale sia cambia da codice a codice.
 
-## Che cosa abbiamo fatto
-
-Abbiamo cercato per parole, letto il totale e i risultati di una pagina, scorso
-più pagine con un iteratore pigro, e raggiunto un articolo di codice chiamandolo
-per nome.
-
-Ci manca un pezzo: finora abbiamo letto un articolo per volta. Nell'ultima
-lezione prendiamo un atto intero, con tutte le sue versioni:
-[un atto intero](un-atto-intero.md).
+Finora abbiamo letto un articolo per volta. Nell'ultima lezione l'atto arriva
+intero: [un atto intero](un-atto-intero.md).
