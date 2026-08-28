@@ -80,7 +80,7 @@ def riduci(valore: Any) -> Any:
 
 def _salva_risposta(campione: Campione, esito: rete.Esito) -> None:
     destinazione = rete.RISPOSTE / f"{campione.nome}.json"
-    if campione.forma == "zip" and esito.status == 200:
+    if campione.forma == "zip" and esito.stato == 200:
         archivio = zipfile.ZipFile(io.BytesIO(esito.contenuto))
         dentro = {
             "@nomi": archivio.namelist()[:ELEMENTI_MASSIMI],
@@ -98,7 +98,7 @@ def _salva_risposta(campione: Campione, esito: rete.Esito) -> None:
     destinazione.write_text(
         json.dumps(
             {
-                "stato": esito.status,
+                "stato": esito.stato,
                 "tipo_contenuto": esito.tipo_contenuto,
                 "corpo": corpo,
             },
@@ -132,7 +132,7 @@ def registra(scelti: list[str] | None = None) -> int:
                 continue
             impronte[campione.nome] = rete.impronta_di(campione, esito)
             _salva_risposta(campione, esito)
-            print(f"  ok {campione.nome:<38} {esito.status}  {len(esito.contenuto):>8} B")
+            print(f"  ok {campione.nome:<38} {esito.stato}  {len(esito.contenuto):>8} B")
 
     rete.IMPRONTE.write_text(
         json.dumps(

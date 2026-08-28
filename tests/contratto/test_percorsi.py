@@ -43,7 +43,7 @@ from normattiva import (
     normalize_accents,
 )
 from normattiva._wire import _VERSIONE_FILE
-from normattiva.modelli import ExportMode, Format
+from normattiva.modelli import ExportMode, Format, Sort
 
 pytestmark = [pytest.mark.rete, pytest.mark.timeout(600)]
 
@@ -94,7 +94,7 @@ class TestDallaRicercaAlTesto:
         """
         senza_urn = None
         for parola in ("regolamento", "luogotenenziale", "commissario"):
-            esito = nonostante_i_guasti(client.ricerca, parola, ordine="vecchio", per_pagina=50)
+            esito = nonostante_i_guasti(client.ricerca, parola, sort=Sort.OLDEST, per_pagina=50)
             senza_urn = next((a for a in esito.atti if not a.ha_urn), None)
             if senza_urn is not None:
                 break
@@ -300,7 +300,7 @@ class TestCollezioni:
     def test_salvo_una_collezione_in_akn(self, client: Normattiva, tmp_path) -> None:
         piccola = min(client.collections(), key=lambda c: c.total_atti)
         percorso = client.save_collection(
-            piccola.nome, tmp_path / "collezione.zip", format=Format.AKN
+            piccola.name, tmp_path / "collezione.zip", format=Format.AKN
         )
         if percorso.stat().st_size == 0:
             pytest.skip("lo scarico sincrono delle collezioni restituisce un archivio vuoto")
@@ -309,7 +309,7 @@ class TestCollezioni:
     def test_scarico_la_collezione_piu_piccola(self, client: Normattiva) -> None:
         piccola = min(client.collections(), key=lambda c: c.total_atti)
         try:
-            corpus = client.download_collection(piccola.nome, mode=ExportMode.ORIGINALE)
+            corpus = client.download_collection(piccola.name, mode=ExportMode.ORIGINALE)
         except Exception as guasto:
             pytest.skip(f"lo scarico sincrono delle collezioni non funziona: {guasto}")
         assert corpus.atti
@@ -432,7 +432,7 @@ class TestEsportazione:
         self, client: Normattiva, esportazione_conclusa, tmp_path
     ) -> None:
         akn = client.export_from_token(esportazione_conclusa.token, format=Format.AKN)
-        with pytest.raises(ValueError, match="salva"):
+        with pytest.raises(ValueError, match=r"save\(\)"):
             akn.download()
 
 
