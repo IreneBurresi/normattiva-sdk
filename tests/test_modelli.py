@@ -1,9 +1,11 @@
+import re
 from datetime import date
 
 import pytest
 
 from normattiva.errori import VersionNotFoundError
 from normattiva.modelli import (
+    DENOMINAZIONI_URN,
     AttoStorico,
     ClasseProvvedimento,
     DettaglioAtto,
@@ -85,6 +87,18 @@ class TestEstremiAtto:
     def test_denominazione_tradotta_in_urn(self, denominazione: str, atteso: str) -> None:
         estremi = EstremiAtto(denominazione=denominazione, data=date(1990, 8, 7), numero="1")
         assert estremi.urn.denominazione == atteso
+
+    @pytest.mark.parametrize("denominazione", sorted(DENOMINAZIONI_URN))
+    def test_ogni_forma_urn_ricalca_la_sua_denominazione(self, denominazione: str) -> None:
+        """La forma URN è la denominazione in minuscolo, con i punti al posto degli spazi.
+
+        La mappa è scritta a mano perché le denominazioni indirizzabili sono
+        diciotto su trenta, e quali siano lo dice il servizio, non una regola.
+        Come si scrivono, però, una regola ce l'ha, e un refuso che la violi
+        rende irraggiungibili tutti gli atti di quel tipo.
+        """
+        atteso = re.sub(r"[ -]+", ".", denominazione.lower())
+        assert DENOMINAZIONI_URN[denominazione] == atteso
 
     @pytest.mark.parametrize(
         ("denominazione", "numero", "atteso"),
