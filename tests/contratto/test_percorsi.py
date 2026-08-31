@@ -43,7 +43,7 @@ from normattiva import (
     normalize_accents,
 )
 from normattiva._wire import _VERSIONE_FILE
-from normattiva.modelli import ExportMode, Format
+from normattiva.modelli import DENOMINAZIONI_URN, ExportMode, Format
 
 pytestmark = [pytest.mark.rete, pytest.mark.timeout(600)]
 
@@ -88,18 +88,31 @@ class TestDallaRicercaAlTesto:
 
         Restavano illeggibili: si trovavano cercando e poi ci si fermava. Il
         servizio però li rende dalle coordinate di Gazzetta, che il risultato
-        della ricerca porta già, come verificato su un decreto-legge
-        luogotenenziale del 1917. Se un giorno smettesse, questa prova cade e la libreria torna a
-        promettere una lettura che non può fare.
+        della ricerca porta già. Se un giorno smettesse, questa prova cade e la
+        libreria torna a promettere una lettura che non può fare.
+
+        I tipi non mappati si chiedono per denominazione, non sperando che
+        affiorino da una ricerca a testo pieno: sono quasi tutti storici e in
+        cinquanta risultati non compaiono mai.
         """
+        non_mappate = [
+            d.descrizione
+            for d in nonostante_i_guasti(client.denominazioni)
+            if d.descrizione.strip().upper() not in DENOMINAZIONI_URN
+        ]
+        assert non_mappate, "il servizio non ha più tipi senza forma URN: la prova non ha oggetto"
+
         senza_urn = None
-        for parola in ("regolamento", "luogotenenziale", "commissario"):
-            esito = nonostante_i_guasti(client.ricerca, parola, ordine="vecchio", per_pagina=50)
+        for denominazione in non_mappate:
+            esito = nonostante_i_guasti(
+                client.ricerca_avanzata, denominazione=denominazione, per_pagina=5
+            )
             senza_urn = next((a for a in esito.atti if not a.ha_urn), None)
             if senza_urn is not None:
                 break
-        if senza_urn is None:
-            pytest.skip("nessun atto di tipo non mappato in queste pagine")
+        assert senza_urn is not None, (
+            "nessuno dei tipi senza forma URN rende atti: il ponte via Gazzetta non è più provabile"
+        )
 
         with pytest.raises(InvalidUrnError):
             _ = senza_urn.urn
@@ -300,7 +313,7 @@ class TestCollezioni:
     def test_salvo_una_collezione_in_akn(self, client: Normattiva, tmp_path) -> None:
         piccola = min(client.collections(), key=lambda c: c.total_atti)
         percorso = client.save_collection(
-            piccola.nome, tmp_path / "collezione.zip", format=Format.AKN
+            piccola.name, tmp_path / "collezione.zip", format=Format.AKN
         )
         if percorso.stat().st_size == 0:
             pytest.skip("lo scarico sincrono delle collezioni restituisce un archivio vuoto")
@@ -309,7 +322,7 @@ class TestCollezioni:
     def test_scarico_la_collezione_piu_piccola(self, client: Normattiva) -> None:
         piccola = min(client.collections(), key=lambda c: c.total_atti)
         try:
-            corpus = client.download_collection(piccola.nome, mode=ExportMode.ORIGINALE)
+            corpus = client.download_collection(piccola.name, mode=ExportMode.ORIGINALE)
         except Exception as guasto:
             pytest.skip(f"lo scarico sincrono delle collezioni non funziona: {guasto}")
         assert corpus.atti
@@ -432,7 +445,7 @@ class TestEsportazione:
         self, client: Normattiva, esportazione_conclusa, tmp_path
     ) -> None:
         akn = client.export_from_token(esportazione_conclusa.token, format=Format.AKN)
-        with pytest.raises(ValueError, match="salva"):
+        with pytest.raises(ValueError, match=r"save\(\)"):
             akn.download()
 
 

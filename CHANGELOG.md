@@ -5,6 +5,12 @@ versioni il [versionamento semantico](https://semver.org/lang/it/).
 
 ## [Unreleased]
 
+### Fixed
+
+- La forma URN del decreto del Capo provvisorio dello Stato conteneva `status`
+  al posto di `stato`: gli URN composti per quel tipo di atto non risolvevano,
+  e `dettaglio()` rispondeva `NotFoundError` su tutti i 1222 atti del corpus.
+
 ## [0.1.0] - 2026-08-27
 
 Prima versione.

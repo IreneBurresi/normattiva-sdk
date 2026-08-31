@@ -87,7 +87,7 @@ def interroga(
 
 def impronta_di(campione: Campione, esito: Esito) -> dict[str, list[str]]:
     """La forma di una risposta, stato e tipo di contenuto compresi."""
-    if campione.forma == "zip" and esito.status == 200:
+    if campione.forma == "zip" and esito.stato == 200:
         corpo = forme.impronta_zip(esito.contenuto)
     elif campione.forma == "testo" or not esito.contenuto:
         corpo = forme.impronta_testo(esito.contenuto)
@@ -97,7 +97,7 @@ def impronta_di(campione: Campione, esito: Esito) -> dict[str, list[str]]:
         except (json.JSONDecodeError, UnicodeDecodeError):
             corpo = forme.impronta_testo(esito.contenuto)
     return {
-        "@stato": [str(esito.status)],
+        "@stato": [str(esito.stato)],
         "@tipo-contenuto": [esito.tipo_contenuto.split(";")[0].strip() or "assente"],
         **corpo,
     }

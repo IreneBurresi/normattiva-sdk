@@ -80,7 +80,7 @@ Un tipo che qui non compare si cita per esteso, quindi
 DENOMINAZIONI_URN = {
     "COSTITUZIONE": "costituzione",
     "DECRETO": "decreto",
-    "DECRETO DEL CAPO PROVVISORIO DELLO STATO": "decreto.del.capo.provvisorio.dello.status",
+    "DECRETO DEL CAPO PROVVISORIO DELLO STATO": "decreto.del.capo.provvisorio.dello.stato",
     "DECRETO DEL PRESIDENTE DEL CONSIGLIO DEI MINISTRI": (
         "decreto.del.presidente.del.consiglio.dei.ministri"
     ),
